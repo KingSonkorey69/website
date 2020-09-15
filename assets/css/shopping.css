@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+/* Add a black background color to the top navigation */
+html {
+   box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+      /* set the margin to 0px */
+      margin: 0px;
+      /* set the padding to 0px */
+      padding: 0px;
+      /* dont want to have the down scroll bar */
+      overflow-x: hidden;
+      box-sizing: border-box;
+}
+
+
+ /* to actually make the navigation stick even when you scroll  */
+ .section1 {
+    position: -webkit-sticky;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 30;
+    display: flex;
+    padding: 12px 10px;
+    justify-content: space-around;
+    background-color: #f8bd7f;
+    height: 95px;
+    align-items: center;
+    box-shadow: 0 4px 6px -1px rgba(8, 8, 8, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+ }
+ 
+ /* the title */
+ .section1 > a {
+    font-family: "Playfair Display", serif;
+    font-size: 35px;
+    letter-spacing: 0.1rem;
+    color: black;
+ }
+ .title-right a {
+    margin-right: 20px;
+    font-size: 25px;
+    color: black;
+    transition: all 0.4s ease-in;
+    text-decoration: none;
+ }
+ .title-right a:hover {
+    text-decoration: underline;
+    color: darkgrey;
+    letter-spacing: 0.2em;
+ }
+ 
+i {
+	margin-right: 10px;
+}
+.shopping{
+   margin-top: 7%;
+   height: 700px;
+   height: 600px;
+background-color: #f5f1da;
+display: flex;
+flex-direction: column;
+
+}
+/*------------------------*/
+input:focus,
+button:focus,
+.form-control:focus{
+	outline: none;
+	box-shadow: none;
+}
+.form-control:disabled, .form-control[readonly]{
+	background-color: #fff;
+}
+.table tr,
+.table tr td{
+	align-items: middle;
+}
+.button-container{
+	display: flex;
+	align-items: center;
+}
+.button-container .form-control{
+	max-width: 80px;
+	align-items: center;
+	display: flex;
+	margin: 0px 5px;
+}
+#myTable .form-control{
+	width: auto;
+	display: flex;
+}
+.cart-qty-plus,
+.cart-qty-minus{
+	width: 38px;
+	height: 38px;
+	background-color: #fff;
+	border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+.cart-qty-plus:hover,
+.cart-qty-minus:hover{
+	background-color: #5161ce;
+	color: #fff;
+}
+
+.img-prdct img{
+  width: 30%;
+  height: 30%;
+}
+/* starting of the footer section 4 */
+.section4 {
+   display: flex;
+   flex-direction: row;
+   align-items: flex-start;
+   justify-content: space-around;
+   width: 100%;
+   height: 300px;
+   padding: 30px;
+   margin-top: -5%;
+   background-color: #00416d;
+   font: bold 25px "Playfair Display", serif;
+}
+.section4 h1 {
+   color: #f5f1da;
+   font-family: 15px "Playfair Display", serif;
+   margin: 0;
+}
+
+.footer-left {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   align-items: center;
+   height: 40%;
+   justify-content: space-between;
+}
+.footer-left h1 {
+   font-size:25px;
+   color: #f5f1da;
+}
+.footer-left a {
+   color: #fca311;
+   text-decoration: none;
+}
+
+.footer-right {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   align-items: center;
+   height: 65%;
+   justify-content: space-between;
+}
+
+.footer-right h1 {
+   font-size: 25px;
+   color: #f5f1da;
+}
+
+.footer-right span {
+   color: #fca311;
+}
+
+.footer-right span a {
+   font-weight: normal;
+   font-size: 15px;
+   /* line-height: 12; */
+}
+.footer-right a {
+   color: #fca311;
+   text-decoration: none;
+}
+.footer-right span a {
+   color: #fca311;
+   text-decoration: none;
+}
+.footer-center{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   align-items: center;
+   height: 45%;
+   justify-content: space-between;
+}
+
+.footer-center span {
+   font-size: 25px;
+   color: #f5f1da;
+}
+
+.footer-center span a {
+   font-weight: normal;
+   font-size: 17px;
+   /* line-height: 12; */
+}
+.footer-center a {
+   color: #fca311;
+   text-decoration: none;
+}
+.footer-center span a {
+   color: #fca311;
+   text-decoration: none;
+}
+.fa {
+   height: 20%;
+   font-size: 30px;
+   text-align: center;
+   text-decoration: none;
+ }
+ 
+ .fa:hover {
+     opacity: 0.7;
+ }
+ 
+ .fa-facebook {
+  
+   color:#fca311;
+ }
+ 
+ .fa-twitter {
+  
+   color: #fca311;
+ }
+ 
+ .fa-google {
+  
+   color: #fca311;
+ }
+ 
+
+.section5{
+   display: flex;
+   flex-direction: row;
+   align-items: flex-start;
+   justify-content: space-around;
+   width: 100%;
+   padding: 30px;
+   background-color: #00416d;
+  
+}
+
+.sam{
+   display: flex;
+   flex-direction: row;
+   align-items: flex-start;
+   width: 100%;
+}
+
+ .hr{
+    width: 100%;
+    height: 1px;
+    color: #fca311;
+ }
+ 
+ 
+span{
+   color:#e9a331;
+   font: bold 25px "Playfair Display", serif;
+}
+
+
+.last {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   height: 50%;
+   justify-content: space-between;
+}
+.last span{
+   color:#e9a331;
+   font: bold 25px "Playfair Display", serif;
+}
+.ee {
+   width: 290px;
+   height: 10px;
+   padding-top: 0.675rem;
+   padding-bottom: 0.675rem;
+   border: 1px solid #fff;
+   background-color: transparent;
+   color: #e9a331;
+   font-family: "Bitter", serif;
+   letter-spacing: 0.1rem;
+   font-size: 14px;
+   transition: 1s ease-in-out;
+   outline: none;
+}
+
+.ee:hover {
+   background-color: #fff;
+}
+
+.bb {
+   -webkit-appearance: button;
+   width: 40%;
+  
+   padding: 0.675rem 1.5rem;
+   border-style: solid;
+   border-width: 1px;
+   border-color: #f2f2f2;
+   background-color: transparent;
+   -webkit-transition: color 300ms ease, border-color 300ms ease, background-color 300ms ease;
+   transition: color 300ms ease, border-color 300ms ease, background-color 300ms ease;
+   color: #e9a331;
+   font-family: "Bitter", serif;
+   font-size: 0.675rem;
+   letter-spacing: 0.1rem;
+   text-transform: uppercase;
+   transition: 1s ease-in-out;
+}
+
+.bb:hover {
+   background-color: lavender;
+}
+
+/* 
+ 

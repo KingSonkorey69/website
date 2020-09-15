@@ -1,0 +1,184 @@
+body {
+    height: 100%;
+    width:100%;
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+#book{
+    size: 48px;
+    color:#e9a331 ;
+}
+.heading {
+    display: block;
+    /* text-align: center; */
+    width: 100%;
+    padding: 12px 16px;
+    background-color: #263238;
+    color: #e9a331;
+    font-family: 'Bitter', serif;
+    font-size: 0.675rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+.user{
+    float:left;
+}
+
+.container {
+    padding:30px;
+    background-color: #f7f5dd;
+}
+img{
+    display: block;
+    margin-top: -18px;
+    margin-left: 550px;
+    float: left;
+}
+.content-table{
+    border-collapse: collapse;
+    margin:25px 0;
+    font-size: 0.9em;
+    min-width:600px;
+    border-radius: 5px 5px 0 0;
+    overflow:hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.content-table thead tr{
+    background-color:#263238;
+    color:#ffffffff;
+    text-align: left;
+    font-weight: bold;
+}
+.content-table th,
+.content-table td{
+    padding: 12px 15px;
+}
+.content-table tbody tr{
+    border-bottom:1px solid #dddddd;
+}
+.content-table tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+.content-table tbody tr:last-of-type{
+    border-bottom: 2px solid #263238;
+}
+
+#firstname:hover {
+    background-color: lavender;
+}
+
+#email:hover {
+    background-color: lavender;
+}
+
+#address:hover {
+    background-color: lavender;
+}
+#lastname:hover {
+    background-color: lavender;
+}
+#contact:hover {
+    background-color: lavender;
+}
+
+.update {
+    border-radius: 20px;
+    -webkit-appearance: button;
+    width: 150px;
+    margin-bottom: 1.25rem;
+    padding: 10px 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e9a331;
+    background-color: transparent;
+    -webkit-transition: color 300ms ease, border-color 300ms ease, background-color 300ms ease;
+    transition: color 300ms ease, border-color 300ms ease, background-color 300ms ease;
+    color: #e9a331;
+    font-family: 'Bitter', serif;
+    font-size: 0.675rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    transition: 2s ease-in-out;
+}
+
+.update:hover {
+    background-color: black;
+}
+
+.delete {
+    border-radius: 20px;
+    -webkit-appearance: button;
+    width: 150px;
+    margin-bottom: 1.25rem;
+    padding: 10px 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e9a331;
+    background-color: transparent;
+    -webkit-transition: color 300ms ease, border-color 300ms ease, background-color 300ms ease;
+    transition: color 300ms ease, border-color 300ms ease, background-color 300ms ease;
+    color: #e9a331;
+    font-family: 'Bitter', serif;
+    font-size: 0.675rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    transition: 2s ease-in-out;
+
+}
+
+.delete:hover {
+    background-color: black;
+}
+
+.upload {
+    border-radius: 20px;
+    -webkit-appearance: button;
+    width: 150px;
+    margin-bottom: 1.25rem;
+    padding: 10px 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e9a331;
+    background-color: transparent;
+    -webkit-transition: color 300ms ease, border-color 300ms ease, background-color 300ms ease;
+    transition: color 300ms ease, border-color 300ms ease, background-color 300ms ease;
+    color: #e9a331;
+    font-family: 'Bitter', serif;
+    font-size: 0.675rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    transition: 2s ease-in-out;
+
+}
+
+.upload:hover {
+    background-color: black;
+}
+
+.clear {
+    border-radius: 20px;
+    -webkit-appearance: button;
+    width: 150px;
+    margin-bottom: 1.25rem;
+    padding: 10px 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e9a331;
+    background-color: transparent;
+    -webkit-transition: color 300ms ease, border-color 300ms ease, background-color 300ms ease;
+    transition: color 300ms ease, border-color 300ms ease, background-color 300ms ease;
+    color: #e9a331;
+    font-family: 'Bitter', serif;
+    font-size: 0.675rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    transition: 2s ease-in-out;
+}
+
+.clear:hover {
+    background-color: black;
+}
+.crud{
+    text-align: left;
+}
