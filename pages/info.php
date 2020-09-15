@@ -1,7 +1,7 @@
 <?php
 
 
-include_once "crud.php";
+include_once "../src/crud.php";
 
 ?>
 <!DOCTYPE html>
@@ -19,7 +19,7 @@ include_once "crud.php";
     <!-- Font Awesome Icon Library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" type="text/css" href="./assets/css/info.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/info.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
@@ -30,7 +30,7 @@ include_once "crud.php";
     <section class="info1">
 
         <!-- The name of the author -->
-        <a href="index.php"> GABRIEL KIMOTHO GITHINJI</a>
+        <a href="../index.php"> GABRIEL KIMOTHO GITHINJI</a>
 
         <div class="info_title_right">
 
@@ -48,7 +48,7 @@ include_once "crud.php";
     <section id="animated-example" class="animated bounceInLeft info2">
 
         <div class="kikuyu">
-            <img src="./assets/images/kikuyu.jpg">
+            <img src="../assets/images/kikuyu.jpg">
         </div>
 
         <div class="info_detail">
@@ -93,9 +93,9 @@ include_once "crud.php";
         <div id="backInUp" class="middle">
             <?php foreach (getImages('book_info') as $key => $value) : ?>
                 <div class="book">
-                    <img class="book" src="./assets/images/<?php echo $value['book_image']; ?>" width="130px" height="200px">
+                    <img class="book" src="../assets/images/<?php echo $value['book_image']; ?>" width="130px" height="200px">
                     <div class="paragraph">
-                    <p><?php echo $value['id'];?></p>
+                        <p><?php echo $value['id']; ?></p>
                         <p><?php echo $value['book_title']; ?></p>
                         <p><?php echo $value['book_upload_date']; ?></p>
                     </div>
@@ -112,59 +112,59 @@ include_once "crud.php";
 
 
 
-<!-- The footer will some information of the author -->
-<section class="info4 ">
+    <!-- The footer will some information of the author -->
+    <section class="info4 ">
 
-<div class="footer-left">
-    <h1> Links</h1>
+        <div class="footer-left">
+            <h1> Links</h1>
 
-    <a href="#">Books</a>
-    <a href="#">About</a>
+            <a href="#">Books</a>
+            <a href="#">About</a>
 
-</div>
-
-
-
-<div class="footer-right">
-    <h1> Contact</h1>
-
-    <span>0722868642</span>
-    <span>P.O Box 241-00600</span>
-    <span>Nairobi, Kenya</span>
-
-    <a href="ggwanjata@yahoo.com">ggwanjata@yahoo.com</a>
+        </div>
 
 
-</div>
-<div class="footer-center">
-    <span>Follow Me</span>
-<a href="#" class="fa fa-facebook"></a>
-    <a href="#" class="fa fa-twitter"></a>
-    <a href="#" class="fa fa-google"></a>
-  
 
-</div>
+        <div class="footer-right">
+            <h1> Contact</h1>
+
+            <span>0722868642</span>
+            <span>P.O Box 241-00600</span>
+            <span>Nairobi, Kenya</span>
+
+            <a href="ggwanjata@yahoo.com">ggwanjata@yahoo.com</a>
 
 
-<div class="last">
-    <input type="email" name="EMAIL" value="" placeholder=" ENTER YOUR EMAIL......" class="ee">
+        </div>
+        <div class="footer-center">
+            <span>Follow Me</span>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
 
-    <input type="submit" value="Join now" class="bb">
-    <img class="payment-img" src="//africa-public.food.jumia.com/dynamic/production/ke/images/paymenttypes/filepath_10_full.png">
-    
-</div>
 
-</section>
+        </div>
 
-<div class="hr"></div>
 
-<section class="info5">
+        <div class="last">
+            <input type="email" name="EMAIL" value="" placeholder=" ENTER YOUR EMAIL......" class="ee">
 
-<div class="sam">
-    <span>© 2020 GGK, All rights reserved.</span>
+            <input type="submit" value="Join now" class="bb">
+            <img class="payment-img" src="//africa-public.food.jumia.com/dynamic/production/ke/images/paymenttypes/filepath_10_full.png">
 
-</div>
-</section>
+        </div>
+
+    </section>
+
+    <div class="hr"></div>
+
+    <section class="info5">
+
+        <div class="sam">
+            <span>© 2020 GGK, All rights reserved.</span>
+
+        </div>
+    </section>
 
     <!-- This is where the user will be able to talk with the author directly -->
     <!--Start of Tawk.to Script-->

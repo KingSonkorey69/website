@@ -1,74 +1,87 @@
 <?php
-require_once ('database.php');
-require_once ('crud.php');
+require_once('../src/database.php');
+require_once('../src/crud.php');
 ?>
 
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <link rel="stylesheet" href="img.css">
+<head>
+    <link rel="stylesheet" href="img.css">
 
-    </head>
-
-
-    <body>
-
-        <div class="content"><h1> Book Info</h1>
-        </div>
-        
-        <form class="box" action="fileupload.php" method="post" enctype="multipart/form-data">
-            <input type="text" name="book_title" id="book_title" placeholder="Book Title">
-            <label>Select image:<input type="file" name="fileToUpload" id="fileToUpload"></label>
-            <input type="text" name="book_author_name" id="book_author_name" placeholder="Book Author Name">
-            <input type="date" name="book_upload_date" id="book_upload_date" placeholder="Book Upload Date">
-            <input type="text" name="book_isbno" id="book_isbno" placeholder="Book ISBNO...">
-            <input type="text" name="book_synopsis" id="book_synopsis" placeholder="Book Synopsis">
-            <input type="text" name="book_price" id="book_price" placeholder="Book Price">
-            <input type="submit" value="Upload Data" name="submit">
-
-        </form>
+</head>
 
 
-        <table class="content-table">
-            <thead>
+<body>
+
+    <div class="content">
+        <h1> Book Info</h1>
+    </div>
+
+    <form class="box" action="fileupload.php" method="post" enctype="multipart/form-data">
+        <input type="text" name="book_title" id="book_title" placeholder="Book Title">
+        <label>Select image:<input type="file" name="fileToUpload" id="fileToUpload"></label>
+        <input type="text" name="book_author_name" id="book_author_name" placeholder="Book Author Name">
+        <input type="date" name="book_upload_date" id="book_upload_date" placeholder="Book Upload Date">
+        <input type="text" name="book_isbno" id="book_isbno" placeholder="Book ISBNO...">
+        <input type="text" name="book_synopsis" id="book_synopsis" placeholder="Book Synopsis">
+        <input type="text" name="book_price" id="book_price" placeholder="Book Price">
+        <input type="submit" value="Upload Data" name="submit">
+
+    </form>
+
+
+    <table class="content-table">
+        <thead>
+            <tr>
+
+                <th>Book Title</th>
+                <th>Book Author Name</th>
+                <th>Book Upload date</th>
+                <th>Book IsbNo</th>
+                <th>Book Synopsis </th>
+                <th>Book Price</th>
+
+            </tr>
+        </thead>
+
+        <?php foreach (getImages('book_info') as $key) : ?>
+            <img src="../assets/<?php echo $key['book_image']; ?>" /> <br>
+            <tbody>
                 <tr>
 
-                    <th>Book Title</th>
-                    <th>Book Author Name</th>
-                    <th>Book Upload date</th>
-                    <th>Book IsbNo</th>
-                    <th>Book Synopsis </th>
-                    <th>Book Price</th>
 
+
+                    <td>
+                        <h4 class="crud"><?php echo $key['book_title']; ?></h4>
+                    </td>
+
+                    <td>
+                        <h4 class="crud"><?php echo $key['book_author_name']; ?></h4>
+                    </td>
+
+                    <td>
+                        <h4 class="crud"><?php echo $key['book_upload_date']; ?></h4>
+                    </td>
+
+                    <td>
+                        <h4 class="crud"><?php echo $key['book_isbno']; ?></h4>
+                    </td>
+
+                    <td>
+                        <h4 class="crud"><?php echo $key['book_synopsis']; ?></h4>
+                    </td>
+
+                    <td>
+                        <h4 class="crud"><?php echo $key['book_price']; ?></h4>
+                    </td>
                 </tr>
-            </thead>
-            
-            <?php foreach (getImages('book_info') as $key) : ?>
-            <img src=web/<?php echo $key['book_image']; ?>"/><br>
-                <tbody>
-                    <tr>
-                        
-
-                
-                        <td><h4 class="crud"><?php echo $key['book_title']; ?></h4></td>
-
-                        <td> <h4 class="crud"><?php echo $key['book_author_name']; ?></h4></td>
-
-                        <td> <h4 class="crud"><?php echo $key['book_upload_date']; ?></h4></td>
-
-                        <td><h4 class="crud"><?php echo $key['book_isbno']; ?></h4></td>
-
-                        <td><h4 class="crud"><?php echo $key['book_synopsis']; ?></h4></td>
-
-                        <td><h4 class="crud"><?php echo $key['book_price']; ?></h4></td>
-                    </tr>
-                </tbody>   
-                <tr>
+            </tbody>
+            <tr>
                 <form action="img_update.php" method="post">
                     <td><input type="text" name="book_image" id="book_title" placeholder="Book image"></td>
                     <td><input type="text" name="book_title" id="book_title" placeholder="Book Title"></td>
-<!--                    <td><label>Select image:<input type="file" name="fileToUpload" id="fileToUpload"></label></td>-->
+                    <!--                    <td><label>Select image:<input type="file" name="fileToUpload" id="fileToUpload"></label></td>-->
                     <td> <input type="text" name="book_author_name" id="book_author_name" placeholder="Book Author Name"></td>
                     <td> <input type="date" name="book_upload_date" id="book_upload_date" placeholder="Book Upload Date"></td>
                     <td><input type="text" name="book_isbno" id="book_isbno" placeholder="Book ISBNO..."></td>

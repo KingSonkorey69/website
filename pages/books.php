@@ -1,7 +1,7 @@
 <?php
 
 
-include_once "crud.php";
+include_once "../src/crud.php";
 
 ?>
 <!DOCTYPE html>
@@ -16,12 +16,9 @@ include_once "crud.php";
     <title>Gabriel Githinji Kimotho</title>
     <!--  -->
     <!-- Link the css together with the page -->
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
-  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
 
-    <link rel="stylesheet" type="text/css" href="./assets/css/book.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/book.css">
 
     <!--  -->
     <!-- Linking google fonts on the page -->
@@ -39,35 +36,36 @@ include_once "crud.php";
 
 <body>
     <section class="read1">
-            <!-- The name of the author -->
-            <a href="index.php"> GABRIEL KIMOTHO GITHINJI</a>
+        <!-- The name of the author -->
+        <a href="../index.php"> GABRIEL KIMOTHO GITHINJI</a>
 
-            <div class="read_right">
-                <!-- <a>Books</a> -->
-                <a  href="books.php">Books</a>
-                <!-- contact information -->
-                <a href="contact.php">About</a>
+        <div class="read_right">
+            <!-- <a>Books</a> -->
+            <a href="books.php">Books</a>
+            <!-- contact information -->
+            <a href="contact.php">About</a>
 
-            </div>        
+        </div>
     </section>
 
     <!-- This is the second section -->
 
-    <section id="animated-example" class="animated bounceInLeft read2"> 
-       
-       
+    <section id="animated-example" class="animated bounceInLeft read2">
+
+
         <div class="read_details">
 
-            <p id="center"><b>This forum is divided into different cohorts as follows:</b></p><hr>
-            
+            <p id="center"><b>This forum is divided into different cohorts as follows:</b></p>
+            <hr>
+
             <br>
-        <br>
+            <br>
             1. Young reader’s corner: here there are beginners in Kiswahili books and Kiswahili stories. <br><br>
             2. Kiswahili Literary works for High School students (Form 1 to 4).<br><br>
             3. General poems and Mashairi.<br><br>
             4. Gikuyu beginner’s books.<br><br>
             5. Gikuyu general reader’s corner; here there are novels,<br>
-             plays and even Marebeta for adults.<br><br>
+            plays and even Marebeta for adults.<br><br>
             6. There’s also a forum for those who would like to learn Gikuyu<br>
             language and also those linguistic students researching on Gikuyu language.<br><br>
             7. Parents and teachers are encouraged to choose the right books for their children/ pupils and students.<br><br>
@@ -78,9 +76,9 @@ include_once "crud.php";
 
         </div>
     </section>
-        
 
-<!-- This will contain the title and some of the books -->
+
+    <!-- This will contain the title and some of the books -->
     <section class="read3">
 
         <div class="row w-clearfix">
@@ -96,11 +94,11 @@ include_once "crud.php";
         <div id="backInUp" class="middle">
             <?php foreach (getImages('book_info') as $key => $value) : ?>
                 <div class="book">
-                    <img class="book" src="./assets/images/<?php echo $value['book_image']; ?>" width="130px" height="200px">
+                    <img class="book" src="../assets/images/<?php echo $value['book_image']; ?>" width="130px" height="200px">
                     <div class="paragraph">
-                    <p><?php echo $value['id'];?></p>
-                    <p><?php echo $value['book_title']; ?></p>
-                    <p><?php echo $value['book_upload_date']; ?></p>
+                        <p><?php echo $value['id']; ?></p>
+                        <p><?php echo $value['book_title']; ?></p>
+                        <p><?php echo $value['book_upload_date']; ?></p>
                     </div>
                 </div>
             <?php
@@ -111,61 +109,61 @@ include_once "crud.php";
 
     </section>
 
-    
-   <!-- The footer will some information of the author -->
-   <section class="read4 ">
 
-<div class="footer-left">
-    <h1> Links</h1>
+    <!-- The footer will some information of the author -->
+    <section class="read4 ">
 
-    <a href="#">Books</a>
-    <a href="#">About</a>
+        <div class="footer-left">
+            <h1> Links</h1>
 
-</div>
+            <a href="#">Books</a>
+            <a href="#">About</a>
 
-
-
-<div class="footer-right">
-    <h1> Contact</h1>
-
-    <span>0722868642</span>
-    <span>P.O Box 241-00600</span>
-    <span>Nairobi, Kenya</span>
-
-    <a href="ggwanjata@yahoo.com">ggwanjata@yahoo.com</a>
+        </div>
 
 
-</div>
-<div class="footer-center">
-    <span>Follow Me</span>
-<a href="#" class="fa fa-facebook"></a>
-    <a href="#" class="fa fa-twitter"></a>
-    <a href="#" class="fa fa-google"></a>
-  
 
-</div>
+        <div class="footer-right">
+            <h1> Contact</h1>
+
+            <span>0722868642</span>
+            <span>P.O Box 241-00600</span>
+            <span>Nairobi, Kenya</span>
+
+            <a href="ggwanjata@yahoo.com">ggwanjata@yahoo.com</a>
 
 
-<div class="last">
-    <input type="email" name="EMAIL" value="" placeholder=" ENTER YOUR EMAIL......" class="ee">
+        </div>
+        <div class="footer-center">
+            <span>Follow Me</span>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
 
-    <input type="submit" value="Join now" class="bb">
-    <img class="payment-img" src="//africa-public.food.jumia.com/dynamic/production/ke/images/paymenttypes/filepath_10_full.png">
-    
-</div>
 
-</section>
+        </div>
 
-<div class="hr"></div>
 
-<section class="read5">
+        <div class="last">
+            <input type="email" name="EMAIL" value="" placeholder=" ENTER YOUR EMAIL......" class="ee">
 
-<div class="sam">
-    <span>© 2020 GGK, All rights reserved.</span>
+            <input type="submit" value="Join now" class="bb">
+            <img class="payment-img" src="//africa-public.food.jumia.com/dynamic/production/ke/images/paymenttypes/filepath_10_full.png">
 
-</div>
-</section>
-         <!-- This is where the user will be able to talk with the author directly -->
+        </div>
+
+    </section>
+
+    <div class="hr"></div>
+
+    <section class="read5">
+
+        <div class="sam">
+            <span>© 2020 GGK, All rights reserved.</span>
+
+        </div>
+    </section>
+    <!-- This is where the user will be able to talk with the author directly -->
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
         var Tawk_API = Tawk_API || {},

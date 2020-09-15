@@ -8,7 +8,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" type="text/css" href="./assets/css/contact.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/contact.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
@@ -20,7 +20,7 @@
 <body>
     <section class="contact1">
         <!-- The name of the author -->
-        <a href="index.php"> GABRIEL KIMOTHO GITHINJI</a>
+        <a href="../index.php"> GABRIEL KIMOTHO GITHINJI</a>
 
         <div class="contact_title_right">
             <!-- <a>Books</a> -->
@@ -37,36 +37,36 @@
 
         <!-- This is where the new books will enter with animation bounce in left -->
         <div class="kikuyu">
-            <img src="./assets/images/mzae.jpg">
+            <img src="../assets/images/mzae.JPG">
         </div>
 
         <div class="contact_info">
-            <h1 >AUTHORS PROFILE</h1>
+            <h1>AUTHORS PROFILE</h1>
             <hr>
 
-                Mr. Gabriel Githinji Kimotho is a holder of a Bachelor of Education Degree<br>
-                    from The University of Nairobi and a Master’s Degree holder from the same University.
-                <br><br>
+            Mr. Gabriel Githinji Kimotho is a holder of a Bachelor of Education Degree<br>
+            from The University of Nairobi and a Master’s Degree holder from the same University.
+            <br><br>
 
-                He has been a career teacher for over 28 years in various public schools<br>
-                    and private schools. He started his teaching career at Ngorika Secondary School in Nyandarua County.
-                <br><br>
+            He has been a career teacher for over 28 years in various public schools<br>
+            and private schools. He started his teaching career at Ngorika Secondary School in Nyandarua County.
+            <br><br>
 
-                He Has a vast experience in teaching mixed day and boarding schools,<br>
-                    Public and International schools gave him enormous knowledge in the behavior of teenagers.
-                <br><br>
-                He was involved in Drama and Music festivals where his students competed in National competitions.<br><br>
-                He has written many poems, Mashairi, Short stories, <br>
-                    Plays and Novels in Kiswahili, English and Gikuyu languages.
-                <br><br>
-            
+            He Has a vast experience in teaching mixed day and boarding schools,<br>
+            Public and International schools gave him enormous knowledge in the behavior of teenagers.
+            <br><br>
+            He was involved in Drama and Music festivals where his students competed in National competitions.<br><br>
+            He has written many poems, Mashairi, Short stories, <br>
+            Plays and Novels in Kiswahili, English and Gikuyu languages.
+            <br><br>
+
 
         </div>
 
     </section>
 
 
-   
+
     <!-- The footer will some information of the author -->
     <section class="contact4 ">
 
@@ -93,28 +93,28 @@
         </div>
         <div class="footer-center">
             <span>Follow Me</span>
-        <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-facebook"></a>
             <a href="#" class="fa fa-twitter"></a>
             <a href="#" class="fa fa-google"></a>
-          
+
 
         </div>
 
-      
+
         <div class="last">
             <input type="email" name="EMAIL" value="" placeholder=" ENTER YOUR EMAIL......" class="ee">
 
             <input type="submit" value="Join now" class="bb">
             <img class="payment-img" src="//africa-public.food.jumia.com/dynamic/production/ke/images/paymenttypes/filepath_10_full.png">
-            
+
         </div>
-      
+
     </section>
 
-   <div class="hr"></div>
-    
+    <div class="hr"></div>
+
     <section class="contact5">
-    
+
         <div class="sam">
             <span>© 2020 GGK, All rights reserved.</span>
 
