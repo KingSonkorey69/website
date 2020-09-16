@@ -51,7 +51,7 @@ include_once "./src/crud.php";
     <section class="section1">
 
         <!-- The name of the author -->
-        <a href="index.php"> GABRIEL KIMOTHO GITHINJI</a>
+        <a href="index.php"> GABRIEL KIMOTHO GITHINJI.</a>
 
         <!-- The quick links will be at the right -->
         <div class="title-right">
