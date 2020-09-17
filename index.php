@@ -533,6 +533,8 @@ include_once "crud.php";
 
 
     </section>
+
+    
     <section class="newsletter">
         <div class="sub">
         <span>Subscribe To Our Newsletter</span>
