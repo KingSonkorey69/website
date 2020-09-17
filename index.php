@@ -51,7 +51,7 @@ include_once "./src/crud.php";
     <section class="section1">
 
         <!-- The name of the author -->
-        <a href="index.php"> GABRIEL KIMOTHO GITHINJI.</a>
+        <a href="index.php"> <img src="logo-01.png" /></a>
 
         <!-- The quick links will be at the right -->
         <div class="title-right">
@@ -119,6 +119,16 @@ include_once "./src/crud.php";
         <!-- This button will lead you to the books page where all the books will be displayed  -->
         <button class="websa"><a href="./pages/books.php">View More Books</a></button>
 
+        <section class="newsletter">
+        <div class="sub">
+        <span>Subscribe To Our Newsletter</span>
+        </div>
+        <div class="join">
+            <input type="email" name="EMAIL" value="" placeholder=" ENTER YOUR EMAIL......" class="ee">
+
+            <input type="submit" value="Join now" class="bb">
+       
+        </div>
 
     </section>
 
@@ -157,10 +167,8 @@ include_once "./src/crud.php";
 
 
         <div class="last">
-            <input type="email" name="EMAIL" value="" placeholder=" ENTER YOUR EMAIL......" class="ee">
-
-            <input type="submit" value="Join now" class="bb">
-            <img class="payment-img" src="//africa-public.food.jumia.com/dynamic/production/ke/images/paymenttypes/filepath_10_full.png">
+           
+            <img class="payment-img" src="Till Number.png">
 
         </div>
 
