@@ -1,5 +1,5 @@
 <?php
-include_once "./src/crud.php";
+include_once "crud.php";
 ?>
 
 <!DOCTYPE html>
@@ -21,7 +21,7 @@ include_once "./src/crud.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+   
     <script>
         //
         //get all the books 
@@ -51,13 +51,13 @@ include_once "./src/crud.php";
     <section class="section1">
 
         <!-- The name of the author -->
-        <a href="index.php"> <img src="./assets/images/logo-01.png" /></a>
+        <a href="index.php"> <img class="logo" src="logo-01.png" ></a>
 
         <!-- The quick links will be at the right -->
         <div class="title-right">
             <!-- This link will show you all the Books -->
-            <a href="./pages/books.php">Books</a>
-            <a href="./pages/contact.php">About</a>
+            <a href="books.php">Books</a>
+            <a href="contact.php">About</a>
         </div>
 
 
@@ -74,7 +74,7 @@ include_once "./src/crud.php";
             <p class="hero1">This is not a kikuyu story. It’s a story about the kikuyu culture.</p>
             <p class="hero1">Out Now</p>
             <!-- This button will actually tell you more or what you want to know about the book -->
-            <button class="web"><a href="pages/info.php">Learn More</a></button>
+            <button class="web"><a href="info.php">Learn More</a></button>
         </div>
         <!-- the image  -->
         <div class="kikuyu">
@@ -117,9 +117,11 @@ include_once "./src/crud.php";
 
         </div>
         <!-- This button will lead you to the books page where all the books will be displayed  -->
-        <button class="websa"><a href="./pages/books.php">View More Books</a></button>
+        <button class="websa"><a href="books.php">View More Books</a></button>
 
-        <section class="newsletter">
+
+    </section>
+    <section class="newsletter">
         <div class="sub">
         <span>Subscribe To Our Newsletter</span>
         </div>
@@ -158,26 +160,26 @@ include_once "./src/crud.php";
         </div>
         <div class="footer-center">
             <span>Follow Me</span>
-            <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-facebook"></a>
             <a href="#" class="fa fa-twitter"></a>
             <a href="#" class="fa fa-google"></a>
-
+          
 
         </div>
 
-
+      
         <div class="last">
-           
+        
             <img class="payment-img" src="./assets/images/Till Number.png">
-
+            
         </div>
-
+      
     </section>
 
-    <div class="hr"></div>
-
+   <div class="hr"></div>
+    
     <section class="section5">
-
+    
         <div class="sam">
             <span>© 2020 GGK, All rights reserved.</span>
 
