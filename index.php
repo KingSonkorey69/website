@@ -60,7 +60,7 @@ include_once "crud.php";
             <a href="contact.php">About</a>
         </div>
         <section>
-            
+
         </section>
 
 
@@ -124,6 +124,8 @@ include_once "crud.php";
 
 
     </section>
+
+    <!-- this is the newsletter section -->
     <section class="newsletter">
         <div class="sub">
         <span>Subscribe To Our Newsletter</span>
