@@ -138,6 +138,7 @@ include_once "crud.php";
         </div>
 
     </section>
+    <section></section>
 
     <!-- The footer will some information of the author -->
     <section class="section4 ">
