@@ -59,6 +59,9 @@ include_once "crud.php";
             <a href="books.php">Books</a>
             <a href="contact.php">About</a>
         </div>
+        <section>
+            
+        </section>
 
 
     </section>
