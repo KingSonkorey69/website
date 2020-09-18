@@ -144,8 +144,8 @@ include_once "crud.php";
             <a href="#">About</a>
 
         </div>
-
-
+        <div>
+        </div>
 
         <div class="footer-right">
             <h1> Contact</h1>
