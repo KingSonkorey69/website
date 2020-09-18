@@ -529,7 +529,7 @@ include_once "crud.php";
 
         </div>
         <!-- This button will lead you to the books page where all the books will be displayed  -->
-        <button class="websa"><a href="books.php">View More Books</a></button>
+        <button class="websa"><a href="./pages/books.php">View More Books</a></button>
 
 
     </section>
