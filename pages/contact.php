@@ -26,7 +26,7 @@
             <!-- <a>Books</a> -->
             <a href="./pages/books.php">Books</a>
             <!-- contact information -->
-            <a href=".pages/contact.php">About</a>
+            <a href="./pages/contact.php">About</a>
 
         </div>
         </div>
