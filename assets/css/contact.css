@@ -453,6 +453,18 @@ span{
    .websa {
       width: 70%;
    }
+   .newsletter{
+      display: flex;
+      flex-direction: column;
+      height: 50%;
+      justify-content: space-around;
+   }
+   .join{
+      display: flex;
+      flex-direction: column;
+      height: 50%;
+      justify-content: space-around;
+   }
    .contact4 {
       display: flex;
       flex-direction: column;
