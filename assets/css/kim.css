@@ -17,7 +17,7 @@ body {
    position: -webkit-sticky;
    position: fixed;
    top: 0px;
-  width: 100%;
+   width: 100%;
    z-index: 30;
    display: flex;
    padding: 10px 20px;
