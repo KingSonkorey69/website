@@ -57,7 +57,6 @@ a {
 
 /* The start of the section 2  */
 .info2 {
-   margin-top: 7%;
    display: flex;
    flex-direction: row;
    padding: 30px;
