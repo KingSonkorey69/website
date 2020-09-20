@@ -388,6 +388,10 @@ span{
       flex-direction: column;
       justify-content: center;
    }
+   .logo{
+      width:250px;
+     height: 90px;
+   }
    .contact1 > a {
       color: black;
       font-weight: 800;
