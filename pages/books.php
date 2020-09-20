@@ -1,7 +1,7 @@
 <?php
 
 
-include_once "../src/crud.php";
+include_once "../../crud.php";
 
 ?>
 <!DOCTYPE html>

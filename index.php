@@ -1,5 +1,5 @@
 <?php
-include_once "./src/crud.php";
+include_once "../../crud.php";
 ?>
 
 <!DOCTYPE html>
@@ -121,7 +121,7 @@ include_once "./src/crud.php";
 
 
     </section>
-    
+
     <section class="newsletter">
         <div class="sub">
         <span>Subscribe To Our Newsletter</span>
