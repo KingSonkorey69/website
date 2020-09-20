@@ -74,7 +74,7 @@ include_once "../../crud.php";
             <p class="hero1">This is not a kikuyu story. It’s a story about the kikuyu culture.</p>
             <p class="hero1">Out Now</p>
             <!-- This button will actually tell you more or what you want to know about the book -->
-            <button class="web"><a href="info.php">Learn More</a></button>
+            <button class="web"><a href="./pages/info.php">Learn More</a></button>
         </div>
         <!-- the image  -->
         <div class="kikuyu">
