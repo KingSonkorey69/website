@@ -1,5 +1,5 @@
 <?php
-include_once "../../crud.php";
+include_once "../src/crud.php";
 ?>
 
 <!DOCTYPE html>
