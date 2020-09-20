@@ -20,7 +20,8 @@
 <body>
     <section class="contact1">
         <!-- The name of the author -->
-        <a href="../index.php"> GABRIEL KIMOTHO GITHINJI</a>
+        <!-- The name of the author -->
+        <a href="index.php"> <img class="logo" src="../assets/images/logo-01.png" ></a>
 
         <div class="contact_title_right">
             <!-- <a>Books</a> -->

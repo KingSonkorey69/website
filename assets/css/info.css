@@ -57,6 +57,7 @@ a {
 
 /* The start of the section 2  */
 .info2 {
+
    display: flex;
    flex-direction: row;
    padding: 30px;
@@ -64,6 +65,10 @@ a {
    width: 100%;
    height: 600px;
    background-color: #f5f1da;
+}
+.logo{
+   width:350px;
+  height: 90px;
 }
 /* the image styling */
 .kikuyu{

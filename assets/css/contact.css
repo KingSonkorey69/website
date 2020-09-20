@@ -170,7 +170,10 @@ a {
 }
 
 
-
+.logo{
+   width:350px;
+  height: 90px;
+}
 /* starting of the footer section 4 */
 .contact4 {
    display: flex;

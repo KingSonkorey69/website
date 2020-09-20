@@ -28,7 +28,8 @@ include_once "../src/crud.php";
     <section class="info1">
 
         <!-- The name of the author -->
-        <a href="../index.php"> GABRIEL KIMOTHO GITHINJI</a>
+         <!-- The name of the author -->
+         <a href="index.php"> <img class="logo" src="../assets/images/logo-01.png" ></a>
 
         <div class="info_title_right">
 
