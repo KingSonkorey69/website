@@ -56,8 +56,8 @@ include_once "./src/crud.php";
         <!-- The quick links will be at the right -->
         <div class="title-right">
             <!-- This link will show you all the Books -->
-            <a href="./pages/books.php">Books</a>
-            <a href="./pages/contact.php">About</a>
+            <a href="books.php">Books</a>
+            <a href="contact.php">About</a>
         </div>
 
 

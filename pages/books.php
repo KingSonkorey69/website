@@ -41,9 +41,9 @@ include_once "./src/crud.php";
 
         <div class="read_right">
             <!-- <a>Books</a> -->
-            <a href="./pages/books.php">Books</a>
+            <a href="books.php">Books</a>
             <!-- contact information -->
-            <a href=".pages/contact.php">About</a>
+            <a href="contact.php">About</a>
 
         </div>
     </section>
