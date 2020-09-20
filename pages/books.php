@@ -33,6 +33,7 @@ include_once "../src/crud.php";
 </head>
 
 <body>
+
     <section class="read1">
         <!-- The name of the author -->
         <a href="../index.php"> GABRIEL KIMOTHO GITHINJI</a>
@@ -156,7 +157,7 @@ include_once "../src/crud.php";
       
         <div class="last">
         
-            <img class="payment-img" src="./assets/images/Till Number.png">
+            <img class="payment-img" src="../assets/images/Till Number.png">
             
         </div>
       
