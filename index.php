@@ -121,6 +121,7 @@ include_once "./src/crud.php";
 
 
     </section>
+    
     <section class="newsletter">
         <div class="sub">
         <span>Subscribe To Our Newsletter</span>

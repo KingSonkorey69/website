@@ -251,16 +251,100 @@ h2 {
    font: bold 25px "Playfair Display", serif;
 
 }
+.newsletter {
+   margin-top: -5%;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   width: 100%;
+   height: 150px;
+   background-color: #b9ac92;
+   justify-content: space-around;
+}
+.sub span{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-betwen;
+   width: 50%;
+   color:#00416d;
+   font: bold 35px "Playfair Display", serif;
+}
+.sub {
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   justify-content: space-betwen;
+}
+
+.join{
+   width: 60%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+}
+.ee {
+   width: 260px;
+   padding-top: 0.675rem;
+   padding-bottom: 0.675rem;
+   border: 1px solid #fff;
+   background-color: transparent;
+   color: #00416d;
+   font-family: "Bitter", serif;
+   letter-spacing: 0.1rem;
+   font-size: 14px;
+   transition: 1s ease-in-out;
+   outline: none;
+}
+
+.ee:hover {
+   background-color: lavender;
+}
+
+.bb {
+   width: 30%;
+   padding: 0.675rem 1.5rem;
+   border-style: solid;
+   border-width: 1px;
+   border-color: #f2f2f2;
+   background-color: transparent;
+   -webkit-transition: color 300ms ease, border-color 300ms ease, background-color 300ms ease;
+   transition: color 300ms ease, border-color 300ms ease, background-color 300ms ease;
+   color: #00416d;
+   font-family: "Bitter", serif;
+   font-size: 0.675rem;
+   letter-spacing: 0.1rem;
+   text-transform: uppercase;
+   transition: 1s ease-in-out;
+}
+
+.bb:hover {
+   background-color: lavender;
+}
+
+
+
+/* starting of the footer section 4 */
+.info4 {
+   display: flex;
+   flex-direction: row;
+   align-items: flex-start;
+   justify-content: space-around;
+   width: 100%;
+   height: 300px;
+   padding: 30px;
+   background-color: #00416d;
+   font: bold 25px "Playfair Display", serif;
+}
 .info4 h1 {
    color: #f5f1da;
-   font-family: 20px "Playfair Display", serif;
+   font-family: 17px "Playfair Display", serif;
    margin: 0;
 }
 
 .footer-left {
    display: flex;
    flex-direction: column;
-   align-items: flex-start;
+  
    align-items: center;
    height: 40%;
    justify-content: space-between;
@@ -277,7 +361,7 @@ h2 {
 .footer-right {
    display: flex;
    flex-direction: column;
-   align-items: flex-start;
+   
    align-items: center;
    height: 55%;
    justify-content: space-between;
@@ -308,7 +392,7 @@ h2 {
 .footer-center{
    display: flex;
    flex-direction: column;
-   align-items: flex-start;
+   
    align-items: center;
    height: 45%;
    justify-content: space-between;
@@ -357,9 +441,24 @@ h2 {
   
    color: #fca311;
  }
+ .last {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   height: 100%;
+   justify-content: space-between;
+}
+
+.payment-img{
+   display: inherit;
+   flex-direction: inherit;
+   width: 200px;
+   height:150px;
+}
+
  
 
-.info5{
+.section5{
    display: flex;
    flex-direction: row;
    align-items: flex-start;
@@ -387,60 +486,6 @@ h2 {
 span{
    color:#e9a331;
    font: bold 25px "Playfair Display", serif;
-}
-
-
-.last {
-   display: flex;
-   flex-direction: column;
-   align-items: flex-start;
-   height: 50%;
-   justify-content: space-between;
-}
-.last span{
-   color:#e9a331;
-   font: bold 25px "Playfair Display", serif;
-}
-.ee {
-   width: 290px;
-   height: 10px;
-   padding-top: 0.675rem;
-   padding-bottom: 0.675rem;
-   border: 1px solid #fff;
-   background-color: transparent;
-   color: #e9a331;
-   font-family: "Bitter", serif;
-   letter-spacing: 0.1rem;
-   font-size: 14px;
-   transition: 1s ease-in-out;
-   outline: none;
-}
-
-.ee:hover {
-   background-color: #fff;
-}
-
-.bb {
-   -webkit-appearance: button;
-   width: 40%;
-  
-   padding: 0.675rem 1.5rem;
-   border-style: solid;
-   border-width: 1px;
-   border-color: #f2f2f2;
-   background-color: transparent;
-   -webkit-transition: color 300ms ease, border-color 300ms ease, background-color 300ms ease;
-   transition: color 300ms ease, border-color 300ms ease, background-color 300ms ease;
-   color: #e9a331;
-   font-family: "Bitter", serif;
-   font-size: 0.675rem;
-   letter-spacing: 0.1rem;
-   text-transform: uppercase;
-   transition: 1s ease-in-out;
-}
-
-.bb:hover {
-   background-color: lavender;
 }
 
 /* 

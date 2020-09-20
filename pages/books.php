@@ -109,6 +109,18 @@ include_once "../src/crud.php";
 
     </section>
 
+    <section class="newsletter">
+        <div class="sub">
+        <span>Subscribe To Our Newsletter</span>
+        </div>
+        <div class="join">
+            <input type="email" name="EMAIL" value="" placeholder=" ENTER YOUR EMAIL......" class="ee">
+
+            <input type="submit" value="Join now" class="bb">
+       
+        </div>
+
+    </section>
 
     <!-- The footer will some information of the author -->
     <section class="read4 ">
@@ -120,14 +132,14 @@ include_once "../src/crud.php";
             <a href="#">About</a>
 
         </div>
-
-
+        <div>
+        </div>
 
         <div class="footer-right">
             <h1> Contact</h1>
 
             <span>0722868642</span>
-            <span>P.O Box 241-00600</span>
+            <span>P.O Box 241-00100</span>
             <span>Nairobi, Kenya</span>
 
             <a href="ggwanjata@yahoo.com">ggwanjata@yahoo.com</a>
@@ -136,28 +148,26 @@ include_once "../src/crud.php";
         </div>
         <div class="footer-center">
             <span>Follow Me</span>
-            <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-facebook"></a>
             <a href="#" class="fa fa-twitter"></a>
             <a href="#" class="fa fa-google"></a>
-
+          
 
         </div>
 
-
+      
         <div class="last">
-            <input type="email" name="EMAIL" value="" placeholder=" ENTER YOUR EMAIL......" class="ee">
-
-            <input type="submit" value="Join now" class="bb">
-            <img class="payment-img" src="//africa-public.food.jumia.com/dynamic/production/ke/images/paymenttypes/filepath_10_full.png">
-
+        
+            <img class="payment-img" src="./assets/images/Till Number.png">
+            
         </div>
-
+      
     </section>
 
-    <div class="hr"></div>
-
-    <section class="read5">
-
+   <div class="hr"></div>
+    
+    <section class="section5">
+    
         <div class="sam">
             <span>© 2020 GGK, All rights reserved.</span>
 
