@@ -51,7 +51,7 @@ include_once "./src/crud.php";
     <section class="section1">
 
         <!-- The name of the author -->
-        <a href="index.php"> <img class="logo" src="logo-01.png" ></a>
+        <a href="index.php"> <img class="logo" src="./assets/images/logo-01.png" ></a>
 
         <!-- The quick links will be at the right -->
         <div class="title-right">
