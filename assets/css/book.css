@@ -574,7 +574,70 @@ span{
       padding: 40px 0;
       text-align: center;
    }
-  
+   .newsletter{
+      margin-top:15%;
+      display:flex;
+      align-items: center;
+      flex-direction: column;
+      height: 150px;
+   }
+   .sub span{
+      color:#00416d;
+      font: bold 25px "Playfair Display", serif;
+      width: 100%;
+   }
+   .sub {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height:50%;
+      justify-content: space-betwen;
+   }
+   
+   .join{
+      width: 60%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+   }
+   .ee {
+      width: 260px;
+      padding-top: 0.675rem;
+      padding-bottom: 0.675rem;
+      border: 1px solid #fff;
+      background-color: transparent;
+      color: #00416d;
+      font-family: "Bitter", serif;
+      letter-spacing: 0.1rem;
+      font-size: 14px;
+      transition: 1s ease-in-out;
+      outline: none;
+   }
+   
+   .ee:hover {
+      background-color: lavender;
+   }
+   
+   .bb {
+      width: 30%;
+      padding: 0.675rem 1.5rem;
+      border-style: solid;
+      border-width: 1px;
+      border-color: #f2f2f2;
+      background-color: transparent;
+      -webkit-transition: color 300ms ease, border-color 300ms ease, background-color 300ms ease;
+      transition: color 300ms ease, border-color 300ms ease, background-color 300ms ease;
+      color: #00416d;
+      font-family: "Bitter", serif;
+      font-size: 0.675rem;
+      letter-spacing: 0.1rem;
+      text-transform: uppercase;
+      transition: 1s ease-in-out;
+   }
+   
+   .bb:hover {
+      background-color: lavender;
+   }
    .read4 {
       display: flex;
       flex-direction: column;
