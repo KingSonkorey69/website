@@ -699,7 +699,9 @@ span{
       width: 90%;
    }
    .newsletter{
+      margin-top:-7%;
       display:flex;
+      align-items: center;
       flex-direction: column;
       height: 50%;
    }
