@@ -93,10 +93,9 @@ include_once "../src/crud.php";
 
         <div id="backInUp" class="middle">
             <?php foreach (getImages('book_info') as $key => $value) : ?>
-                <div class="book">
+                <div class="book" id="<?php echo $value['id'] ?>">
                     <img class="book" src="../assets/images/<?php echo $value['book_image']; ?>" width="130px" height="200px">
                     <div class="paragraph">
-                        <p><?php echo $value['id']; ?></p>
                         <p><?php echo $value['book_title']; ?></p>
                         <p><?php echo $value['book_upload_date']; ?></p>
                     </div>
