@@ -715,11 +715,11 @@ span{
       flex-direction: row;
       width: 100%;
       height:50%;
-      justify-content: space-betwen;
+      justify-content: space-around;
    }
    
    .join{
-      width: 60%;
+      width: 100%;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
