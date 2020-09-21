@@ -722,7 +722,7 @@ span{
       width: 60%;
       display: flex;
       flex-direction: row;
-      justify-content: space-around;
+      justify-content: space-between;
    }
    .ee {
       width: 260px;
