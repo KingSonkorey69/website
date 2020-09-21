@@ -466,6 +466,7 @@ span{
    }
    
    .join{
+      align-items:center;
       width: 100%;
       display: flex;
       flex-direction: row;
