@@ -37,14 +37,15 @@ include_once "./src/crud.php";
                 //
                 //open a new window to go to the place where i will display the books
                 window.location.href = "info.php";
+                //
                 //get the div form the info php where to actually place the book itself
+                const info_2 = document.getElementsByClassName(".info2");
                 //
                 //clear the html/its section
+                info_2.innerHTML = '';
                 //
                 //replace the html with the current html
-                //
-                //
-
+                info_2.innerHTML =  x;
             });
             //
         });
