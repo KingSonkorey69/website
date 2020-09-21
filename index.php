@@ -45,7 +45,7 @@ include_once "./src/crud.php";
                 info_2.innerHTML = '';
                 //
                 //replace the html with the current html
-                info_2.innerHTML =  x;
+                info_2.innerHTML =  book;
             });
             //
         });
