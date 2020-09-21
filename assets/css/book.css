@@ -595,6 +595,7 @@ span{
    }
    
    .join{
+      margin-top: -2%;
       align-items: center;
       width: 60%;
       display: flex;

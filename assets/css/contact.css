@@ -450,7 +450,7 @@ span{
       display:flex;
       align-items: center;
       flex-direction: column;
-      height: 250px;
+      height: 150px;
    }
    .sub span{
       color:#00416d;
@@ -466,6 +466,7 @@ span{
    }
    
    .join{
+      margin-top:-2%;
       align-items: center;
       width: 60%;
       display: flex;
