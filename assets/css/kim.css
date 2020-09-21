@@ -703,7 +703,7 @@ span{
       display:flex;
       align-items: center;
       flex-direction: column;
-      height: 250px;
+      height: 150px;
    }
    .sub span{
       color:#00416d;
