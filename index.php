@@ -37,6 +37,14 @@ include_once "./src/crud.php";
                 //
                 //open a new window to go to the place where i will display the books
                 window.location.href = "info.php";
+                //get the div form the info php where to actually place the book itself
+                //
+                //clear the html/its section
+                //
+                //replace the html with the current html
+                //
+                //
+
             });
             //
         });
