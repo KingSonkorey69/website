@@ -704,7 +704,8 @@ span{
       height: 50%;
    }
    .join{
-      
+      display: flex;
+      flex-direction: column;
    }
    .section4 {
       display: flex;
