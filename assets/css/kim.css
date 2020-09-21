@@ -703,7 +703,7 @@ span{
       display:flex;
       align-items: center;
       flex-direction: column;
-      height: 150px;
+      height: 250px;
    }
    .sub span{
       color:#00416d;
@@ -715,7 +715,7 @@ span{
       flex-direction: row;
       width: 100%;
       height:50%;
-      justify-content: space-around;
+      justify-content: space-between;
    }
    
    .join{
