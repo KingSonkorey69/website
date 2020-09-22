@@ -484,7 +484,7 @@ span {
         height: 200px;
     }
     .sub span {
-        margin-top: -9%;
+        margin-top: -13%;
         display: flex;
         flex-direction: inherit;
         align-items: center;
