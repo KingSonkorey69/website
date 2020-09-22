@@ -634,6 +634,9 @@ span {
         height: 200px;
     }
     .sub span {
+        display: flex;
+        flex-direction: inherit;
+        align-items: center;
         color: #00416d;
         font: bold 25px "Playfair Display", serif;
         width: 100%;
