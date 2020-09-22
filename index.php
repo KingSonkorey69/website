@@ -44,7 +44,7 @@ include_once "./src/crud.php";
                 //clear the html/its section
                 info_2.innerHTML = '';
                 //
-                //replace the html with the current html
+                //replace the html with the current html of the book that i have clicked on.
                 info_2.innerHTML =  book;
             });
             //
