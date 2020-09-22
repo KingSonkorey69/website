@@ -75,7 +75,7 @@ a {
    display: flex;
    flex-direction: row;
    justify-content: flex-start;
-   height: 90%;
+   height: 650px;
    width: 40%;
 }
 .kikuyu> img {
