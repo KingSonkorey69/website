@@ -93,9 +93,9 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin-top: 4%;
+    margin-top: 2%;
     height: 750px;
-    width: 30%;
+    width: 40%;
 }
 
 .kikuyu>img {
