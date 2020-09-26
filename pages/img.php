@@ -1,6 +1,7 @@
 <?php
 require_once('../src/database.php');
 require_once('../src/crud.php');
+require_once('../src/fileupload.php');
 ?>
 
 <!DOCTYPE html>
