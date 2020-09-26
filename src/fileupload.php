@@ -1,8 +1,8 @@
 <?php
 
 //require the database connection
-require_once "../database.php";
-require_once "../debug.php";
+require_once "database.php";
+require_once "debug.php";
 
 
 $target_dir = "assets/images/";
