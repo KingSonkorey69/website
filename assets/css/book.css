@@ -186,7 +186,7 @@ h2 {
 .middle {
     display: flex;
     flex-direction: row;
-    margin-bottom: 20px;
+    flex-wrap: wrap;
     padding-top: 50px;
     padding-left: 50px;
     padding-right: 50px;
