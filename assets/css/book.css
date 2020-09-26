@@ -240,6 +240,11 @@ h2 {
     width: 100%;
 }
 
+.book {
+    height: 50%;
+    width: 30%;
+}
+
 .paragraph {
     color: black;
     font-family: "Playfair Display", serif;
