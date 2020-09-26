@@ -7,7 +7,7 @@ require_once ('crud.php');
 <html>
 
     <head>
-        <link rel="stylesheet" href="img.css">
+        <link rel="stylesheet" href="./assets/css/img.css">
 
     </head>
 
