@@ -65,7 +65,7 @@ if ($uploadOk == 0) {
         
         
         if ($db->exec($sql)>0) {
-            header('location: ./pages/books.php');
+            header('location: ../pages/books.php');
         } else {
             die($db->errorCode());
         }
