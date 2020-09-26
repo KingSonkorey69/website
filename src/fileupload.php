@@ -5,7 +5,7 @@ require_once "database.php";
 require_once "debug.php";
 
 
-$target_dir = "./assets/images/";
+$target_dir = "assets/images/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $image_name =  basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
