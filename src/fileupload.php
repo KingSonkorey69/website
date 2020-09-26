@@ -3,7 +3,6 @@
 //require the database connection
 require_once "./database.php";
 require_once "./debug.php";
-require_once "./pages/img.php";
 
 
 $target_dir = "assets/images/";
