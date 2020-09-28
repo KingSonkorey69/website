@@ -195,7 +195,7 @@ h2 {
     animation-name: example;
     background-color: #f5f1da;
     animation-duration: 1.8s;
-    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .samuel {
@@ -248,8 +248,8 @@ h2 {
 }
 
 .book {
-    height: 70%;
-    width: 50%;
+    height: 50%;
+    width: 30%;
 }
 
 .paragraph {
