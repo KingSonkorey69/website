@@ -166,11 +166,7 @@
     .middle {
         display: flex;
         flex-direction: row;
-        margin-bottom: 20px;
-        padding-top: 50px;
-        padding-left: 50px;
-        padding-right: 50px;
-        padding-bottom: 50px;
+        padding: 50px;
         justify-content: center;
         animation-name: example;
         background-color: #f5f1da;
