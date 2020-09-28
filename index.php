@@ -109,10 +109,10 @@ include_once "./src/crud.php";
         <!-- This is the where the book images will be shown together with the (title, date)
         and all the books -->
 
-        <div class="middle">
+        <div class="middle" id="<?php echo $value['id']?>">
 
             <?php foreach (getImages('book_info') as $key => $value) : ?>
-                <div class="samuel" id="<?php echo $value['id']?>">
+                
 
                 <a href="info.php?q=<?php echo $value['id'] ?>">
 
@@ -123,7 +123,7 @@ include_once "./src/crud.php";
                         <p><?php echo $value['book_upload_date']; ?></p>
                     </div>
                     </a>
-                </div>
+                
             <?php
             endforeach;
             ?>

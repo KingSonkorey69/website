@@ -264,13 +264,7 @@
         background-color: #9e9e9b;
         flex-wrap: wrap;
         justify-content: space-around;
-    }
-    
-    .samuel {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+        height: auto;
     }
     /* The animation entrance */
     

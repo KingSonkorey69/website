@@ -217,13 +217,6 @@
         width: 100%;
     }
     
-    .samuel {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
     .book {
         height: 50%;
         width: 30%;

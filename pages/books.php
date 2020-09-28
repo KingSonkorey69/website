@@ -79,7 +79,7 @@ include_once "../src/crud.php";
 
 
     <!-- This will contain the title and some of the books -->
-    <section class="read3">
+    <section id="backInUp" class="read3">
 
         <div class="row w-clearfix">
             <div class="col-12">
@@ -91,9 +91,8 @@ include_once "../src/crud.php";
             </div>
         </div>
 
-        <div id="backInUp" class="middle">
+        <div  class="middle" id="<?php echo $value['id'] ?>">
             <?php foreach (getImages('book_info') as $key => $value) : ?>
-                <div class="samuel" id="<?php echo $value['id'] ?>">
                 <a href="info.php?q=<?php echo $value['id'] ?>">
                     <img class="book" src="../assets/images/<?php echo $value['book_image']; ?>" >
                     <div class="paragraph">
@@ -101,7 +100,7 @@ include_once "../src/crud.php";
                         <p><?php echo $value['book_upload_date']; ?></p>
                     </div>
                 </a>
-                </div>
+                
             <?php
             endforeach;
             ?>
