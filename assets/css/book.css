@@ -97,7 +97,7 @@
         display: flex;
         flex-direction: column;
         margin-top: 30px;
-        width: auto;
+        width: 100%;
         height: auto;
         animation-name: example;
         justify-content: space-around;
@@ -170,9 +170,10 @@
         flex-direction: row;
         background-color: #f5f1da;
         flex-wrap: wrap;
+        position: fixed;
+        width: 100%;
+        padding: 12px 10px;
         align-items: center;
-        padding: 0px 46px;
-        width: 70%;
         justify-content: space-between;
     }
     /* The animation entrance */
