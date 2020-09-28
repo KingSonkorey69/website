@@ -98,6 +98,7 @@
         flex-direction: column;
         margin-top: 30px;
         width: auto;
+        align-items: center;
         height: auto;
         animation-name: example;
         padding: 0px 26px;
@@ -169,7 +170,6 @@
     .middle {
         display: flex;
         flex-direction: row;
-        justify-content: center;
         background-color: #f5f1da;
         flex-wrap: wrap;
         width: 70%;

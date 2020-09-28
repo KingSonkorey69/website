@@ -185,6 +185,7 @@
         flex-direction: column;
         margin-top: 30px;
         width: auto;
+        align-items: center;
         padding: 0px 46px;
         height: auto;
         animation-name: example;
