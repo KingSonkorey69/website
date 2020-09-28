@@ -100,7 +100,7 @@
         width: 100%;
         height: auto;
         animation-name: example;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
     /* this is for the view mor books hr styling */
     
