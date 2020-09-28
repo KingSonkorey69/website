@@ -258,7 +258,8 @@
         flex-direction: row;
         background-color: #f5f1da;
         flex-wrap: wrap;
-        padding: 50px;
+        padding-left: 10%;
+        padding-right: 10%;
         width: 100%;
         align-items: center;
         justify-content: space-between;
