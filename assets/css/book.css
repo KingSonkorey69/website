@@ -168,7 +168,7 @@
             .middle {
                 display: flex;
                 flex-direction: row;
-                background-color: #f5f1da;
+                /* background-color: #f5f1da; */
                 flex-wrap: wrap;
                 justify-content: center;
                 justify-content: center;
