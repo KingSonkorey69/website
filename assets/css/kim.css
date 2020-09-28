@@ -261,10 +261,9 @@
         padding-right: 50px;
         padding-bottom: 50px;
         justify-content: center;
-        background-color: #9e9e9b;
+        background-color: #f5f1da;
         flex-wrap: wrap;
         justify-content: space-around;
-        height: auto;
     }
     /* The animation entrance */
     
@@ -307,7 +306,7 @@
     }
     
     .book {
-        height: 50%;
+        height: 45%;
         width: 30%;
     }
     
