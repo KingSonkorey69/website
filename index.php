@@ -95,6 +95,7 @@ include_once "./src/crud.php";
 
     <!-- This is where some of the books will be displayed -->
     <section id="backInUp" class="section3">
+        
         <!-- This is where the title of showing the books will be..... -->
         <div class="row w-clearfix">
             <div class="col-12">
