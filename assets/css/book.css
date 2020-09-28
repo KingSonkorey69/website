@@ -175,6 +175,7 @@
         animation-name: example;
         background-color: #f5f1da;
         animation-duration: 1.8s;
+        flex-wrap: wrap;
         justify-content: space-around;
     }
     /* The animation entrance */
