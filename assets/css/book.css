@@ -112,7 +112,7 @@ hr {
     flex-direction: column;
     margin-top: 30px;
     width: 100%;
-    height: 600px;
+    height: 880px;
     background-color: #f5f1da;
 }
 
@@ -195,12 +195,6 @@ h2 {
     animation-name: example;
     background-color: #f5f1da;
     animation-duration: 1.8s;
-    flex-wrap: wrap;
-}
-
-.samuel {
-    display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
 }
 
