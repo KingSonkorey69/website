@@ -100,7 +100,7 @@
         width: 100%;
         height: auto;
         animation-name: example;
-        animation-duration: 1.8s;
+        justify-content: space-evenly;
     }
     /* this is for the view mor books hr styling */
     
