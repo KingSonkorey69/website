@@ -255,6 +255,7 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        align-content: space-between;
         margin-bottom: 20px;
         padding-top: 50px;
         padding-left: 50px;
@@ -264,8 +265,7 @@
         animation-name: example;
         background-color: #f5f1da;
         animation-duration: 1.8s;
-        justify-content: space-between;
-        height: auto;
+        justify-content: space-around;
     }
     /* The animation entrance */
     
