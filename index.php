@@ -114,7 +114,7 @@ include_once "./src/crud.php";
             <?php foreach (getImages('book_info') as $key => $value) : ?>
                 <div class="samuel" id="<?php echo $value['id']?>">
 
-                <a href="info.php?q=<?php echo $value['id'] ?>>
+                <a href="info.php?q=<?php echo $value['id'] ?>">
 
                     <img class="book" src="./assets/images/<?php echo $value['book_image']; ?>" alt="">
 
