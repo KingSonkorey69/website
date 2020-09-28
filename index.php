@@ -112,11 +112,13 @@ include_once "./src/crud.php";
         <div class="middle">
 
             <?php foreach (getImages('book_info') as $key => $value) : ?>
-                <div class="samuel" id="<?php echo $value['id'] ?>">
-                <a href="info.php?q=<?php echo $value['id'] ?>
-                    <img class="book"  src="./assets/images/<?php echo $value['book_image']; ?>" width="130px" height="200px">
-                    <div class="paragraph">
+                <div class="samuel" id="<?php echo $value['id']?>">
 
+                <a href="info.php?q=<?php echo $value['id'] ?>>
+
+                    <img class="book"  src="./assets/images/<?php echo $value['book_image']; ?>" width="130px" height="200px">
+
+                    <div class="paragraph">
                         <p><?php echo $value['book_title']; ?></p>
                         <p><?php echo $value['book_upload_date']; ?></p>
                     </div>
