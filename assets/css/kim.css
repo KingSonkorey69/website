@@ -321,6 +321,8 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        height: 50%;
+        width: 100%;
     }
     
     .websa {
