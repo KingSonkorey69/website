@@ -186,9 +186,7 @@
         margin-top: 30px;
         width: 100%;
         height: 600px;
-        animation-name: example;
-        justify-content: space-between;
-        animation-duration: 1.8s;
+        justify-content: space-around;
     }
     /* this is for the view mor books hr styling */
     
@@ -252,16 +250,23 @@
     }
     /* End of the horizontal rule styling */
     /* This hold the books  */
+    /* The animation entrance */
+    /* This hold the books  */
     
     .middle {
         display: flex;
         flex-direction: row;
+        margin-bottom: 20px;
+        padding-top: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 50px;
         justify-content: center;
+        animation-name: example;
         background-color: #f5f1da;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        animation-duration: 1.8s;
+        justify-content: space-around;
     }
-    /* The animation entrance */
     
     @-webkit-keyframes backInUp {
         0% {
