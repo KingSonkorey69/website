@@ -97,11 +97,11 @@
         display: flex;
         flex-direction: column;
         margin-top: 30px;
-        width: 100%;
+        width: auto;
         height: auto;
         animation-name: example;
-        padding: 15px 26px;
-        justify-content: space-between;
+        padding: 0px 26px;
+        justify-content: space-around;
     }
     /* this is for the view mor books hr styling */
     
@@ -172,6 +172,7 @@
         justify-content: center;
         background-color: #f5f1da;
         flex-wrap: wrap;
+        width: 70%;
         justify-content: space-between;
     }
     /* The animation entrance */
