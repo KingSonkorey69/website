@@ -116,7 +116,7 @@ include_once "./src/crud.php";
 
                 <a href="info.php?q=<?php echo $value['id'] ?>">
 
-                    <img class="book" src="./assets/images/<?php echo $value['book_image']; ?>" alt="">
+                    <img class="book" src="./assets/images/<?php echo $value['book_image']; ?>" >
 
                     <div class="paragraph">
                         <p><?php echo $value['book_title']; ?></p>
