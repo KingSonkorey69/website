@@ -170,10 +170,8 @@
         flex-direction: row;
         background-color: #f5f1da;
         flex-wrap: wrap;
-        padding-left: 10%;
-        padding-right: 10%;
         justify-content: center;
-        justify-content: space-between;
+        justify-content: space-around;
     }
     /* The animation entrance */
     
