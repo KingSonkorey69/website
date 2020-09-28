@@ -98,6 +98,7 @@
         flex-direction: column;
         margin-top: 30px;
         width: 100%;
+        padding: 12px 10px;
         height: auto;
         animation-name: example;
         justify-content: space-around;
@@ -170,9 +171,7 @@
         flex-direction: row;
         background-color: #f5f1da;
         flex-wrap: wrap;
-        position: fixed;
         width: 100%;
-        padding: 12px 10px;
         align-items: center;
         justify-content: space-between;
     }

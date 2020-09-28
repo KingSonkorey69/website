@@ -184,6 +184,7 @@
         display: flex;
         flex-direction: column;
         margin-top: 30px;
+        padding: 12px 10px;
         width: 100%;
         height: auto;
         animation-name: example;
@@ -258,9 +259,7 @@
         flex-direction: row;
         background-color: #f5f1da;
         flex-wrap: wrap;
-        position: fixed;
         width: 100%;
-        padding: 12px 10px;
         align-items: center;
         justify-content: space-between;
     }
