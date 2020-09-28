@@ -185,8 +185,6 @@
         flex-direction: column;
         margin-top: 30px;
         width: auto;
-        align-items: center;
-        padding: 0px 46px;
         height: auto;
         animation-name: example;
         justify-content: space-around;
@@ -261,6 +259,8 @@
         justify-content: center;
         flex-wrap: wrap;
         width: 70%;
+        align-items: center;
+        padding: 0px 46px;
         justify-content: space-between;
     }
     /* The animation entrance */

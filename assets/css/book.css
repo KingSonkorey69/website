@@ -98,10 +98,8 @@
         flex-direction: column;
         margin-top: 30px;
         width: auto;
-        align-items: center;
         height: auto;
         animation-name: example;
-        padding: 0px 26px;
         justify-content: space-around;
     }
     /* this is for the view mor books hr styling */
@@ -172,6 +170,8 @@
         flex-direction: row;
         background-color: #f5f1da;
         flex-wrap: wrap;
+        align-items: center;
+        padding: 0px 46px;
         width: 70%;
         justify-content: space-between;
     }
