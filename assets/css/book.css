@@ -187,6 +187,7 @@ h2 {
 .middle {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     padding-top: 50px;
     padding-left: 50px;
     padding-right: 50px;
@@ -196,7 +197,6 @@ h2 {
     background-color: #f5f1da;
     animation-duration: 1.8s;
     justify-content: space-around;
-    height: 900px;
 }
 
 
@@ -241,7 +241,7 @@ h2 {
 }
 
 .book {
-    height: 50%;
+    height: 70%;
     width: 30%;
 }
 
