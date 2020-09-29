@@ -182,7 +182,7 @@
     /* this is for the view mor books hr styling */
     
     .section3 {
-        margin-top: 10%;
+        margin-top: 20%;
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -318,6 +318,8 @@
     
     .websa {
         margin-top: 5rem;
+        margin-left: 585px;
+        margin-right: 650px;
         -webkit-appearance: button;
         width: 22%;
         margin-bottom: 1.25rem;
@@ -420,7 +422,7 @@
     }
     
     .section4 {
-        margin-top: -2%;
+        margin-top: -1%;
         display: flex;
         flex-direction: row;
         align-items: flex-start;
