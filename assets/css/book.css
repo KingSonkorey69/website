@@ -94,10 +94,11 @@
     /* Starting of the section 3 */
     
     .read3 {
+        margin-top: 30px;
         display: flex;
         flex-direction: column;
-        margin-top: 30px;
         width: 100%;
+        justify-content: space-around;
         height: 780px;
         animation-name: example;
         animation-duration: 1.8s;
@@ -164,16 +165,30 @@
     }
     /* End of the horizontal rule styling */
     /* This hold the books  */
+    /* The animation entrance */
     
     .middle {
         display: flex;
-        flex-wrap: wrap;
         flex-direction: row;
-        background-color: hsl(51, 57%, 91%);
+        flex-wrap: wrap;
         justify-content: space-between;
-        width: 100%;
+        background-color: #f5f1da;
+        padding: 2% 10%;
     }
-    /* The animation entrance */
+    
+    .paragraph {
+        color: black;
+        font-family: "Playfair Display", serif;
+        font-weight: bold;
+        font-size: 20px;
+        letter-spacing: 0.1rem;
+    }
+    
+    .paragraph img {
+        margin-top: 1rem;
+        height: 290px;
+        width: 220px;
+    }
     
     @-webkit-keyframes backInUp {
         0% {
@@ -211,19 +226,6 @@
         -webkit-animation-timing-function: ease-out;
         animation-timing-function: ease-out;
         width: 100%;
-    }
-    
-    .book {
-        height: 235px;
-        width: 210px;
-    }
-    
-    .paragraph {
-        color: black;
-        font-family: "Playfair Display", serif;
-        font-weight: bold;
-        font-size: 20px;
-        letter-spacing: 0.1rem;
     }
     
     .newsletter {
