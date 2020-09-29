@@ -260,7 +260,7 @@
         flex-wrap: wrap;
         flex-direction: row;
         background-color: #f5f1da;
-        padding: 2% 10%;
+        padding: -2% 10%;
         justify-content: space-around;
         width: 100%;
     }
@@ -318,8 +318,7 @@
     }
     
     .websa {
-        margin-left: 585px;
-        margin-right: 650px;
+        margin-top: 5rem;
         -webkit-appearance: button;
         width: 22%;
         margin-bottom: 1.25rem;
@@ -422,7 +421,7 @@
     }
     
     .section4 {
-        margin-top: 5%;
+        margin-top: 2%;
         display: flex;
         flex-direction: row;
         align-items: flex-start;
