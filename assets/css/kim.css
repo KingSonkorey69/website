@@ -257,18 +257,11 @@
     
     .middle {
         display: flex;
-        flex-wrap: wrap;
         flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
         background-color: #f5f1da;
-        padding: -2% 10%;
-        justify-content: space-around;
-        width: 100%;
-    }
-    
-    .paragraph img {
-        margin-top: 3rem;
-        height: 250px;
-        width: 200px;
+        padding: 2% 10%;
     }
     
     .paragraph {
@@ -277,6 +270,12 @@
         font-weight: bold;
         font-size: 20px;
         letter-spacing: 0.1rem;
+    }
+    
+    .paragraph img {
+        margin-top: 3rem;
+        height: 290px;
+        width: 220px;
     }
     
     @-webkit-keyframes backInUp {
@@ -348,7 +347,7 @@
     /* end of section 3 */
     
     .newsletter {
-        margin-top: 15%;
+        margin-top: 12%;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -421,7 +420,7 @@
     }
     
     .section4 {
-        margin-top: 2%;
+        margin-top: -2%;
         display: flex;
         flex-direction: row;
         align-items: flex-start;
