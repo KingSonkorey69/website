@@ -355,7 +355,8 @@
         align-items: center;
         width: 100%;
         height: 150px;
-        background-color: #b9ac92;
+        padding: 2% 10%;
+        background-color: #00416d;
         justify-content: space-around;
     }
     
@@ -364,7 +365,7 @@
         flex-direction: row;
         justify-content: space-betwen;
         width: 50%;
-        color: #00416d;
+        color: whitesmoke;
         font: bold 35px "Playfair Display", serif;
     }
     
@@ -386,9 +387,9 @@
         width: 260px;
         padding-top: 0.675rem;
         padding-bottom: 0.675rem;
-        border: 1px solid #fff;
+        border: 1px solid #00416d;
         background-color: transparent;
-        color: #00416d;
+        color: whitesmoke;
         font-family: "Bitter", serif;
         letter-spacing: 0.1rem;
         font-size: 14px;
@@ -405,11 +406,11 @@
         padding: 0.675rem 1.5rem;
         border-style: solid;
         border-width: 1px;
-        border-color: #f2f2f2;
+        border-color: #00416d;
         background-color: transparent;
         -webkit-transition: color 300ms ease, border-color 300ms ease, background-color 300ms ease;
         transition: color 300ms ease, border-color 300ms ease, background-color 300ms ease;
-        color: #00416d;
+        color: whitesmoke;
         font-family: "Bitter", serif;
         font-size: 0.675rem;
         letter-spacing: 0.1rem;

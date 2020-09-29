@@ -135,7 +135,10 @@ hr {
     flex-direction: column;
     margin-top: 30px;
     width: 100%;
-    height: 680px;
+    height: 780px;
+    justify-content: space-around;
+    animation-name: example;
+    animation-duration: 1.8s;
 }
 
 
@@ -209,16 +212,24 @@ h2 {
 .middle {
     display: flex;
     flex-direction: row;
-    margin-bottom: 20px;
-    padding-top: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 50px;
-    justify-content: center;
-    animation-name: example;
+    flex-wrap: wrap;
+    justify-content: space-between;
     background-color: #f5f1da;
-    animation-duration: 1.8s;
-    justify-content: space-around;
+    padding: 2% 10%;
+}
+
+.paragraph {
+    color: black;
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 0.1rem;
+}
+
+.paragraph img {
+    margin-top: 3rem;
+    height: 290px;
+    width: 220px;
 }
 
 
@@ -262,28 +273,8 @@ h2 {
     width: 100%;
 }
 
-.paragraph {
-    color: black;
-    font-family: "Playfair Display", serif;
-    font-weight: bold;
-    font-size: 20px;
-    letter-spacing: 0.1rem;
-}
-
 
 /* starting of the footer section 4 */
-
-.info4 {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-around;
-    width: 100%;
-    height: 300px;
-    padding: 30px;
-    background-color: #00416d;
-    font: bold 25px "Playfair Display", serif;
-}
 
 .newsletter {
     margin-top: -5%;
@@ -292,7 +283,7 @@ h2 {
     align-items: center;
     width: 100%;
     height: 150px;
-    background-color: #b9ac92;
+    background-color: #00416d;
     justify-content: space-around;
 }
 
@@ -301,7 +292,7 @@ h2 {
     flex-direction: row;
     justify-content: space-betwen;
     width: 50%;
-    color: #00416d;
+    color: whitesmoke;
     font: bold 35px "Playfair Display", serif;
 }
 
@@ -323,9 +314,9 @@ h2 {
     width: 260px;
     padding-top: 0.675rem;
     padding-bottom: 0.675rem;
-    border: 1px solid #fff;
+    border: 1px solid #00416d;
     background-color: transparent;
-    color: #00416d;
+    color: whitesmoke;
     font-family: "Bitter", serif;
     letter-spacing: 0.1rem;
     font-size: 14px;
@@ -342,11 +333,11 @@ h2 {
     padding: 0.675rem 1.5rem;
     border-style: solid;
     border-width: 1px;
-    border-color: #f2f2f2;
+    border-color: #00416d;
     background-color: transparent;
     -webkit-transition: color 300ms ease, border-color 300ms ease, background-color 300ms ease;
     transition: color 300ms ease, border-color 300ms ease, background-color 300ms ease;
-    color: #00416d;
+    color: whitesmoke;
     font-family: "Bitter", serif;
     font-size: 0.675rem;
     letter-spacing: 0.1rem;
@@ -632,13 +623,14 @@ span {
         align-items: center;
         flex-direction: column;
         height: 200px;
+        background-color: #00416d;
     }
     .sub span {
         margin-top: -13%;
         display: flex;
         flex-direction: inherit;
         align-items: center;
-        color: #00416d;
+        color: whitesmoke;
         font: bold 25px "Playfair Display", serif;
         width: 100%;
     }
@@ -662,9 +654,10 @@ span {
         width: 260px;
         padding-top: 0.675rem;
         padding-bottom: 0.675rem;
-        border: 1px solid #fff;
+        border: 1px solid;
+        background-color: #00416d;
         background-color: transparent;
-        color: #00416d;
+        color: whitesmoke;
         font-family: "Bitter", serif;
         letter-spacing: 0.1rem;
         font-size: 14px;
@@ -679,11 +672,11 @@ span {
         padding: 0.675rem 1.5rem;
         border-style: solid;
         border-width: 1px;
-        border-color: #f2f2f2;
+        border-color: #00416d;
         background-color: transparent;
         -webkit-transition: color 300ms ease, border-color 300ms ease, background-color 300ms ease;
         transition: color 300ms ease, border-color 300ms ease, background-color 300ms ease;
-        color: #00416d;
+        color: whitesmoke;
         font-family: "Bitter", serif;
         font-size: 0.675rem;
         letter-spacing: 0.1rem;
