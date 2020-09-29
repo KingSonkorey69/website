@@ -182,7 +182,7 @@
     /* this is for the view mor books hr styling */
     
     .section3 {
-        margin-top: 20%;
+        margin-top: 10%;
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -266,8 +266,8 @@
     
     .paragraph img {
         margin-top: 3rem;
-        height: 190px;
-        width: 100px;
+        height: 250px;
+        width: 200px;
     }
     
     .paragraph {
@@ -348,7 +348,7 @@
     /* end of section 3 */
     
     .newsletter {
-        margin-top: 15%;
+        margin-top: 7%;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -422,7 +422,7 @@
     /* starting of the footer section 4 */
     
     .section4 {
-        margin-top: 15%;
+        margin-top: 9%;
         flex-direction: row;
         align-items: flex-start;
         justify-content: space-around;
