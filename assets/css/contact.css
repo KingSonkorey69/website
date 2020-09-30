@@ -118,12 +118,11 @@ a {
     display: flex;
     flex-direction: row;
     height: 80%;
-    width: 30%;
+    width: 50%;
 }
 
 .kikuyu>img {
     max-width: 100%;
-    object-fit: cover;
 }
 
 
