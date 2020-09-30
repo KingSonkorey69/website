@@ -4,6 +4,10 @@ html {
     box-sizing: border-box;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     /* set the margin to 0px */
     margin: 0px;
@@ -27,14 +31,14 @@ body {
     padding: 12px 10px;
     justify-content: space-around;
     background-color: #f8bd7f;
-    height: 95px;
+    height: 130px;
     align-items: center;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 .logo {
     width: 250px;
-    height: 90px;
+    height: auto;
 }
 
 
