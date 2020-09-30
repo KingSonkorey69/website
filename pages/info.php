@@ -29,7 +29,7 @@ include_once "../src/crud.php";
 
         <!-- The name of the author -->
          <!-- The name of the author -->
-         <a href="index.php"> <img class="logo" src="../assets/images/logo-01.png" ></a>
+         <a href="./index.php"> <img class="logo" src="../assets/images/logo-01.png" ></a>
 
         <div class="info_title_right">
 
