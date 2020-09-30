@@ -2,6 +2,10 @@ html {
     box-sizing: border-box;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     /* set the margin to 0px */
     margin: 0px;
@@ -71,7 +75,6 @@ a {
 /* The start of the section 2  */
 
 .info2 {
-    margin-top: 7%;
     display: flex;
     flex-direction: row;
     padding: 30px;
@@ -83,7 +86,7 @@ a {
 
 .logo {
     width: 250px;
-    height: 90px;
+    height: auto;
 }
 
 
@@ -93,14 +96,12 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin-top: 2%;
     height: 750px;
     width: 40%;
 }
 
 .kikuyu>img {
     max-width: 100%;
-    object-fit: cover;
 }
 
 .info_header {
@@ -133,9 +134,7 @@ hr {
 .info3 {
     display: flex;
     flex-direction: column;
-    margin-top: 15%;
     width: 100%;
-    height: 780px;
     justify-content: space-around;
     animation-name: example;
     animation-duration: 1.8s;
@@ -277,7 +276,7 @@ h2 {
 /* starting of the footer section 4 */
 
 .newsletter {
-    margin-top: 15%;
+    padding: 0px 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -291,7 +290,6 @@ h2 {
     display: flex;
     flex-direction: row;
     justify-content: space-betwen;
-    width: 50%;
     color: #00416d;
     font: bold 35px "Playfair Display", serif;
 }

@@ -1,7 +1,10 @@
-    c
     /* Add a black background color to the top navigation */
     
     html {
+        box-sizing: border-box;
+    }
+    
+    * {
         box-sizing: border-box;
     }
     
@@ -33,7 +36,7 @@
     
     .logo {
         width: 250px;
-        height: 90px;
+        height: auto;
     }
     /* the title */
     
@@ -67,7 +70,6 @@
     /* starting of the section 2 css */
     
     .section2 {
-        margin-top: 9%;
         display: flex;
         flex-direction: row;
         padding: 30px;
@@ -92,7 +94,7 @@
     
     .kikuyu {
         height: 650px;
-        width: 30%;
+        width: 40%;
         display: inherit;
         flex-direction: inherit;
         justify-content: right;
@@ -100,7 +102,6 @@
     
     .kikuyu>img {
         max-width: 100%;
-        object-fit: cover;
     }
     /* the aniamtion used for the etrance */
     
@@ -182,11 +183,9 @@
     /* this is for the view mor books hr styling */
     
     .section3 {
-        margin-top: 15%;
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 780px;
         justify-content: space-around;
         animation-name: example;
         animation-duration: 1.8s;
@@ -349,12 +348,12 @@
     /* end of section 3 */
     
     .newsletter {
-        margin-top: 15%;
         display: flex;
         flex-direction: row;
         align-items: center;
         width: 100%;
         height: 150px;
+        padding: 0px 20px;
         background-color: #b9ac92;
         justify-content: space-around;
     }
@@ -363,7 +362,6 @@
         display: flex;
         flex-direction: row;
         justify-content: space-betwen;
-        width: 50%;
         color: #00416d;
         font: bold 35px "Playfair Display", serif;
     }
