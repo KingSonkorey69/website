@@ -3,6 +3,7 @@ require_once('database.php');
 //
 //get the data from the server 
 if(isset($_GET["q"])){
+    //get the data
     $id= $_GET['q'];
 
 
