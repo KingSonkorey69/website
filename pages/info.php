@@ -45,7 +45,7 @@ include_once "../src/crud.php";
 
     <!-- This is where the book that you have clicked on will appear and will also appear with its information -->
     <section id="animated-example" class="animated bounceInLeft info2">
-    <?php echo $value['id'] ?>
+    <?php echo $data->name ?>
 
         <div class="kikuyu">
             <img src="../assets/images/kikuyu.jpg">
@@ -94,7 +94,7 @@ include_once "../src/crud.php";
             <?php foreach (getImages('book_info') as $key => $value) : ?>
                 
                 <div class="paragraph">
-                <a href="info.php?q=<?php echo $value['id'] ?>">
+                <a href="get_data.php?q=<?php echo $value['id'] ?>">
                     <img class="book" src="../assets/images/<?php echo $value['book_image']; ?>" >
                    
                         <p><?php echo $value['book_title']; ?></p>
