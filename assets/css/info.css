@@ -76,6 +76,7 @@ a {
 
 .info2 {
     display: flex;
+    margin-top: 20%;
     flex-direction: row;
     padding: 30px;
     justify-content: space-around;

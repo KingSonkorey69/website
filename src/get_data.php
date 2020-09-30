@@ -8,6 +8,6 @@ $sql = "SELECT FROM book_info WHERE id= $id";
 
 }else{
 //echo an error message if we dint get here
-die("you dot have the data");
+die("you do not have the data");
 
 }

@@ -45,6 +45,7 @@ include_once "../src/crud.php";
 
     <!-- This is where the book that you have clicked on will appear and will also appear with its information -->
     <section id="animated-example" class="animated bounceInLeft info2">
+    <?php echo $value['id'] ?>
 
         <div class="kikuyu">
             <img src="../assets/images/kikuyu.jpg">
