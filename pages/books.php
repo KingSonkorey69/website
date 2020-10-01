@@ -92,23 +92,23 @@ include_once "../src/crud.php";
         </div>
 
         <div class="middle" id="<?php echo $value['id'] ?> ">
-            <a href="../src/get_data.php?q=<?php echo $value['id'] ?>">
+          
                 <?php foreach (getImages('book_info') as $key => $value) : ?>
-
+                    <a href="../src/get_data.php?q=<?php echo $value['id'] ?>">
                     <div class="paragraph">
 
                         <img class="book" src="../assets/images/<?php echo $value['book_image']; ?>">
 
                         <p><?php echo $value['book_title']; ?></p>
                         <p><?php echo $value['book_upload_date']; ?></p>
-
+                        </a>
                     </div>
 
 
                 <?php
                 endforeach;
                 ?>
-            </a>
+            
         </div>
 
     </section>
