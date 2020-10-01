@@ -38,7 +38,7 @@ body {
 
 .logo {
     width: 360px;
-    height: auto;
+    height: 200px;
 }
 
 
@@ -87,7 +87,7 @@ a {
 /* starting of the section 2 css */
 
 .contact2 {
-    margin-top: 12%;
+    margin-top: 10%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
