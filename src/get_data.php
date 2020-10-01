@@ -63,7 +63,13 @@ $data = $result->fetchObject();
     <section id="animated-example" class="animated bounceInLeft info2">
         //
         <?php echo $data->name ?>
+        <img class="book" src="../assets/images/<?php echo $value['book_image']; ?>">
 
+<p><?php echo $value['book_title']; ?></p>
+
+<p><?php echo $value['book_title']; ?></p>
+<p><?php echo $value['book_author']; ?></p>
+<p><?php echo $value['book_upload_date']; ?></p>
         </div>
 
     </section>
