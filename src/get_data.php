@@ -1,5 +1,6 @@
 <?php
 require_once('database.php');
+$id;
 //
 //get the data from the server 
 if (isset($_GET["q"])) {
