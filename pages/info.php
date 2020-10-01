@@ -20,6 +20,7 @@ include_once "../src/crud.php";
     <link rel="stylesheet" type="text/css" href="../assets/css/info.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <?php echo $data->name ?>
 
 </head>
 

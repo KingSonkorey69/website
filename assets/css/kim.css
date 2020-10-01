@@ -620,6 +620,7 @@
             height: 200px;
             width: 100%;
             padding: 0%;
+            box-shadow: 0 4px 6px -1px rgba(8, 8, 8, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
         }
         .section1 {
             flex-direction: column;
@@ -684,8 +685,7 @@
             text-align: center;
         }
         .websa {
-            margin: 0%;
-            padding: 0%;
+            margin-top: 5%;
             align-items: center;
             width: 90%;
         }
@@ -702,7 +702,7 @@
             flex-direction: inherit;
             align-items: center;
             color: #00416d;
-            font: bold 25px "Playfair Display", serif;
+            font: bold 20px "Playfair Display", serif;
             width: 100%;
         }
         .sub {

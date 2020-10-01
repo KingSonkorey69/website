@@ -483,15 +483,14 @@ span {
         align-items: center;
         flex-direction: column;
         height: 200px;
-        background-color: #00416d;
     }
     .sub span {
         margin-top: -13%;
         display: flex;
         flex-direction: inherit;
         align-items: center;
-        color: whitesmoke;
-        font: bold 25px "Playfair Display", serif;
+        color: #00416d;
+        font: bold 20px "Playfair Display", serif;
         width: 100%;
     }
     .sub {
@@ -514,9 +513,9 @@ span {
         width: 260px;
         padding-top: 0.675rem;
         padding-bottom: 0.675rem;
-        border: 1px solid #00416d;
+        border: 1px solid #fff;
         background-color: transparent;
-        color: whitesmoke;
+        color: #00416d;
         font-family: "Bitter", serif;
         letter-spacing: 0.1rem;
         font-size: 14px;
@@ -531,11 +530,11 @@ span {
         padding: 0.675rem 1.5rem;
         border-style: solid;
         border-width: 1px;
-        border-color: #00416d;
+        border-color: #f2f2f2;
         background-color: transparent;
         -webkit-transition: color 300ms ease, border-color 300ms ease, background-color 300ms ease;
         transition: color 300ms ease, border-color 300ms ease, background-color 300ms ease;
-        color: whitesmoke;
+        color: #00416d;
         font-family: "Bitter", serif;
         font-size: 0.675rem;
         letter-spacing: 0.1rem;
