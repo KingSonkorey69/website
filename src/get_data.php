@@ -1,5 +1,6 @@
 <?php
 require_once('database.php');
+require_once('crud.php');
 $id;
 //
 //get the data from the server 
