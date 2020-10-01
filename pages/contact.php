@@ -87,8 +87,8 @@
         <div class="footer-left">
             <h1> Links</h1>
 
-            <a href="#">Books</a>
-            <a href="#">About</a>
+            <a href="books.php">Books</a>
+            <a href="contact.php">About</a>
 
         </div>
         <div>

@@ -159,8 +159,8 @@ include_once "./src/crud.php";
         <div class="footer-left">
             <h1> Links</h1>
 
-            <a href="#">Books</a>
-            <a href="#">About</a>
+            <a href="../pages/books.php">Books</a>
+            <a href="../pages/contact.php">About</a>
 
         </div>
         <div>
