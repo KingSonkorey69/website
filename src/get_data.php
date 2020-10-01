@@ -3,9 +3,8 @@ require_once('database.php');
 $id;
 //
 //get the data from the server 
-if (isset($_GET["q"])) {
-    //get the data
-    $id = $_GET["q"];
+if (isset($_GET['q'])) {
+    $id = $_GET['q'];
 } else {
     //echo an error message if we dint get here
     die("you do not have the data");
@@ -16,6 +15,8 @@ $sql = "SELECT FROM book_info WHERE id= $id";
 $result = $conn->query($sql);
 //
 $data = $result->fetchObject();
+
+
 ?>
 
 <!DOCTYPE html>
@@ -60,6 +61,7 @@ $data = $result->fetchObject();
 
     <!-- This is where the book that you have clicked on will appear and will also appear with its information -->
     <section id="animated-example" class="animated bounceInLeft info2">
+        //
         <?php echo $data->name ?>
 
         </div>
