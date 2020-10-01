@@ -36,8 +36,8 @@ include_once "../src/crud.php";
 
     <section class="read1">
         <!-- The name of the author -->
-       <!-- The name of the author -->
-       <a href="../index.php"><img class="logo" src="../assets/images/logo-01.png" ></a>
+        <!-- The name of the author -->
+        <a href="../index.php"><img class="logo" src="../assets/images/logo-01.png"></a>
 
         <div class="read_right">
             <!-- <a>Books</a> -->
@@ -91,36 +91,37 @@ include_once "../src/crud.php";
             </div>
         </div>
 
-        <div  class="middle" id="<?php echo $value['id'] ?> ">
-            <?php foreach (getImages('book_info') as $key => $value) : ?>
-                
-                <div class="paragraph">
-                <a href="get_data.php?q=<?php echo $value['id'] ?>">
-                    <img class="book" src="../assets/images/<?php echo $value['book_image']; ?>" >
-                   
+        <div class="middle" id="<?php echo $value['id'] ?> ">
+            <a href="../src/get_data.php?q=<?php echo $value['id'] ?>">
+                <?php foreach (getImages('book_info') as $key => $value) : ?>
+
+                    <div class="paragraph">
+
+                        <img class="book" src="../assets/images/<?php echo $value['book_image']; ?>">
+
                         <p><?php echo $value['book_title']; ?></p>
                         <p><?php echo $value['book_upload_date']; ?></p>
-                        </a>
-                    </div>
-             
-                
-            <?php
-            endforeach;
-            ?>
 
+                    </div>
+
+
+                <?php
+                endforeach;
+                ?>
+            </a>
         </div>
 
     </section>
 
     <section class="newsletter">
         <div class="sub">
-        <span>Subscribe To Our Newsletter</span>
+            <span>Subscribe To Our Newsletter</span>
         </div>
         <div class="join">
             <input type="email" name="EMAIL" value="" placeholder=" ENTER YOUR EMAIL......" class="ee">
 
             <input type="submit" value="Join now" class="bb">
-       
+
         </div>
 
     </section>
@@ -151,26 +152,26 @@ include_once "../src/crud.php";
         </div>
         <div class="footer-center">
             <span>Follow Me</span>
-        <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-facebook"></a>
             <a href="#" class="fa fa-twitter"></a>
             <a href="#" class="fa fa-google"></a>
-          
+
 
         </div>
 
-      
+
         <div class="last">
-        
+
             <img class="payment-img" src="../assets/images/Till Number.png">
-            
+
         </div>
-      
+
     </section>
 
-   <div class="hr"></div>
-    
+    <div class="hr"></div>
+
     <section class="section5">
-    
+
         <div class="sam">
             <span>© 2020 GGK, All rights reserved.</span>
 

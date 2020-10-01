@@ -11,8 +11,9 @@ if (isset($_GET["q"])) {
 }
 //get the id from the database 
 $sql = "SELECT FROM book_info WHERE id= $id";
+//
 $result = $conn->query($sql);
-
+//
 $data = $result->fetchObject();
 ?>
 
@@ -23,7 +24,7 @@ $data = $result->fetchObject();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../../assets/css/info.css">
+    
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <!-- Font Awesome Icon Library -->
@@ -32,7 +33,7 @@ $data = $result->fetchObject();
     <link rel="stylesheet" type="text/css" href="../../assets/css/info.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-   
+
 
 </head>
 
@@ -41,8 +42,8 @@ $data = $result->fetchObject();
     <section class="info1">
 
         <!-- The name of the author -->
-         <!-- The name of the author -->
-         <a href="../index.php"> <img class="logo" src="../assets/images/logo-01.png" ></a>
+        <!-- The name of the author -->
+        <a href="../index.php"> <img class="logo" src="../assets/images/logo-01.png"></a>
 
         <div class="info_title_right">
 
@@ -58,7 +59,7 @@ $data = $result->fetchObject();
 
     <!-- This is where the book that you have clicked on will appear and will also appear with its information -->
     <section id="animated-example" class="animated bounceInLeft info2">
-    <?php echo $data->name ?>
+        <?php echo $data->name ?>
 
         </div>
 
@@ -78,19 +79,19 @@ $data = $result->fetchObject();
         </div>
 
         <!-- This is the where the book images will be shown together with the (title, date) -->
-        <div  class="middle" id="<?php echo $value['id'] ?> ">
+        <div class="middle" id="<?php echo $value['id'] ?> ">
             <?php foreach (getImages('book_info') as $key => $value) : ?>
-                
+
                 <div class="paragraph">
-                <a href="get_data.php?q=<?php echo $value['id'] ?>">
-                    <img class="book" src="../assets/images/<?php echo $value['book_image']; ?>" >
-                   
+                    <a href="get_data.php?q=<?php echo $value['id'] ?>">
+                        <img class="book" src="../assets/images/<?php echo $value['book_image']; ?>">
+
                         <p><?php echo $value['book_title']; ?></p>
                         <p><?php echo $value['book_upload_date']; ?></p>
-                        </a>
-                    </div>
-             
-                
+                    </a>
+                </div>
+
+
             <?php
             endforeach;
             ?>
@@ -102,13 +103,13 @@ $data = $result->fetchObject();
 
     <section class="newsletter">
         <div class="sub">
-        <span>Subscribe To Our Newsletter</span>
+            <span>Subscribe To Our Newsletter</span>
         </div>
         <div class="join">
             <input type="email" name="EMAIL" value="" placeholder=" ENTER YOUR EMAIL......" class="ee">
 
             <input type="submit" value="Join now" class="bb">
-       
+
         </div>
 
     </section>
@@ -139,26 +140,26 @@ $data = $result->fetchObject();
         </div>
         <div class="footer-center">
             <span>Follow Me</span>
-        <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-facebook"></a>
             <a href="#" class="fa fa-twitter"></a>
             <a href="#" class="fa fa-google"></a>
-          
+
 
         </div>
 
-      
+
         <div class="last">
-        
+
             <img class="payment-img" src="../assets/images/Till Number.png">
-            
+
         </div>
-      
+
     </section>
 
-   <div class="hr"></div>
-    
+    <div class="hr"></div>
+
     <section class="section5">
-    
+
         <div class="sam">
             <span>© 2020 GGK, All rights reserved.</span>
 

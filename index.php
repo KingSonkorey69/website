@@ -21,7 +21,7 @@ include_once "./src/crud.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   
+
     <script>
         //
         //get all the books 
@@ -45,7 +45,7 @@ include_once "./src/crud.php";
                 info_2.innerHTML = '';
                 //
                 //replace the html with the current html of the book that i have clicked on.
-                info_2.innerHTML =  book;
+                info_2.innerHTML = book;
             });
             //
         });
@@ -60,7 +60,7 @@ include_once "./src/crud.php";
     <section class="section1">
 
         <!-- The name of the author -->
-        <a href="index.php"> <img class="logo" src="./assets/images/logo-01.png" ></a>
+        <a href="index.php"> <img class="logo" src="./assets/images/logo-01.png"></a>
 
         <!-- The quick links will be at the right -->
         <div class="title-right">
@@ -94,7 +94,7 @@ include_once "./src/crud.php";
     <!-- end of the section -->
 
     <!-- This is where some of the books will be displayed -->
-    <section  id="backInUp" class="section3">
+    <section id="backInUp" class="section3">
 
         <!-- This is where the title of showing the books will be..... -->
         <div class="row w-clearfix">
@@ -110,27 +110,25 @@ include_once "./src/crud.php";
         <!-- This is the where the book images will be shown together with the (title, date)
         and all the books -->
 
-        <div class="middle" id="<?php echo $value['id']?> ">
+        <div class="middle" id="<?php echo $value['id'] ?> ">
+            <a href="../src/get_data.php?q=<?php echo $value['id'] ?>">
+                <?php foreach (getImages('book_info') as $key => $value) : ?>
 
-            <?php foreach (getImages('book_info') as $key => $value) : ?>
-                
+                    <div class="paragraph">
 
-               
-                <div class="paragraph">
-                <a href="get_data.php?q=<?php echo $value['id'] ?>">
-                    <img class="book" src="./assets/images/<?php echo $value['book_image']; ?>" >
+                        <img class="book" src="./assets/images/<?php echo $value['book_image']; ?>">
 
-                  
+
                         <p><?php echo $value['book_title']; ?></p>
                         <p><?php echo $value['book_upload_date']; ?></p>
-                        </a>
-                    </div>
-                   
-                
-            <?php
-            endforeach;
-            ?>
 
+                    </div>
+
+
+                <?php
+                endforeach;
+                ?>
+            </a>
         </div>
         <!-- This button will lead you to the books page where all the books will be displayed  -->
         <button class="websa"><a href="./pages/books.php">View More Books</a></button>
@@ -140,18 +138,18 @@ include_once "./src/crud.php";
 
     <section class="newsletter">
         <div class="sub">
-        <span>Subscribe To Our Newsletter</span>
+            <span>Subscribe To Our Newsletter</span>
         </div>
         <div class="join">
             <input type="email" name="EMAIL" value="" placeholder=" ENTER YOUR EMAIL......" class="ee">
 
             <input type="submit" value="Join now" class="bb">
-       
+
         </div>
 
     </section>
-    
-   <div class="hr"></div>
+
+    <div class="hr"></div>
 
     <!-- The footer will some information of the author -->
     <section class="section4 ">
@@ -179,26 +177,26 @@ include_once "./src/crud.php";
         </div>
         <div class="footer-center">
             <span>Follow Me</span>
-        <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-facebook"></a>
             <a href="#" class="fa fa-twitter"></a>
             <a href="#" class="fa fa-google"></a>
-          
+
 
         </div>
 
-      
+
         <div class="last">
-        
+
             <img class="payment-img" src="./assets/images/Till Number.png">
-            
+
         </div>
-      
+
     </section>
 
-   <div class="hr"></div>
-    
+    <div class="hr"></div>
+
     <section class="section5">
-    
+
         <div class="sam">
             <span>© 2020 GGK, All rights reserved.</span>
 
