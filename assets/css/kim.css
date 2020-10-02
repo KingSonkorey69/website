@@ -311,6 +311,14 @@ h2 {
     margin-top: 3rem;
     height: 290px;
     width: 220px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    border-radius: 5px 5px 0 0;
+}
+
+.paragraph img:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 @-webkit-keyframes backInUp {
@@ -727,6 +735,13 @@ span {
         align-items: center;
         width: 100%;
         height: 70%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        border-radius: 5px;
+        border-radius: 5px 5px 0 0;
+    }
+    .book:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     }
     .paragraph {
         width: 100%;
