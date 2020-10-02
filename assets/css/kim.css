@@ -305,7 +305,7 @@ h2 {
     font-weight: bold;
     font-size: 20px;
     letter-spacing: 0.1rem;
-    align-items: center;
+    text-align: center;
 }
 
 .paragraph img {

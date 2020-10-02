@@ -195,7 +195,7 @@ h2 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: #f5f1da;
+    /* background-color: #f5f1da; */
     padding: 2% 10%;
 }
 
@@ -205,7 +205,7 @@ h2 {
     font-weight: bold;
     font-size: 20px;
     letter-spacing: 0.1rem;
-    align-items: center;
+    text-align: center;
 }
 
 .paragraph img {
