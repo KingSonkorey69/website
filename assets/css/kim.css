@@ -703,8 +703,6 @@ span {
         padding: 0;
     }
     .kikuyu {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        border-radius: 10px;
         width: 100%;
     }
     .info {
@@ -752,11 +750,8 @@ span {
         text-align: center;
     }
     .websa {
-        margin-top: 2.5rem;
-        margin-left: 585px;
-        margin-right: 650px;
         margin-top: 5%;
-        align-items: center;
+        margin-left: 6%;
         width: 90%;
     }
     .newsletter {
