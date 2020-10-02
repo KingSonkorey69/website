@@ -16,6 +16,7 @@ $sql = "SELECT FROM book_info WHERE id= $id";
 $result = $conn->query($sql);
 //
 $data = $result->fetchObject();
+var_dump($id);
 
 
 ?>
