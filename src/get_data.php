@@ -27,7 +27,7 @@ $data = $result->fetchObject();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <!-- Font Awesome Icon Library -->
@@ -57,20 +57,18 @@ $data = $result->fetchObject();
 
         </div>
 
-
     </section>
 
     <!-- This is where the book that you have clicked on will appear and will also appear with its information -->
     <section id="animated-example" class="animated bounceInLeft info2">
-        //
         <?php echo $data->name ?>
         <img class="book" src="../assets/images/<?php echo $value['book_image']; ?>">
 
-<p><?php echo $value['book_title']; ?></p>
+        <p><?php echo $value['book_title']; ?></p>
 
-<p><?php echo $value['book_title']; ?></p>
-<p><?php echo $value['book_author']; ?></p>
-<p><?php echo $value['book_upload_date']; ?></p>
+        <p><?php echo $value['book_title']; ?></p>
+        <p><?php echo $value['book_author']; ?></p>
+        <p><?php echo $value['book_upload_date']; ?></p>
         </div>
 
     </section>
