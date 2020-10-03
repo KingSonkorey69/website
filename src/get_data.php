@@ -57,6 +57,7 @@ $data = $result->fetchObject();
 
         </div>
 
+
     </section>
 
     <!-- This is where the book that you have clicked on will appear and will also appear with its information -->
