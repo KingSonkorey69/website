@@ -1,6 +1,6 @@
 <?php
 require_once "database.php";
-
+$conn = new Database();
 $id;
 //
 //get the data from the server 
@@ -16,7 +16,6 @@ $sql = "SELECT FROM book_info WHERE id= $id";
 $result = $conn->query($sql);
 //
 $data = $result->fetchObject();
-var_dump($id);
 
 
 ?>
