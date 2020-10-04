@@ -67,7 +67,7 @@ $data = $result->fetchObject();
 
         <p><?php echo $value['book_title']; ?></p>
 
-        <p><?php echo $value['book_title']; ?></p>
+        <p><?php echo $value['book_synopsis']; ?></p>
         <p><?php echo $value['book_author']; ?></p>
         <p><?php echo $value['book_upload_date']; ?></p>
         </div>
