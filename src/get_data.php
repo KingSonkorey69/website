@@ -87,6 +87,7 @@ var_dump($data);
 
 
                 Date Published: <?php echo $data->book_upload_date?>.
+                ISBNO: <?php echo $value['book_isbno']; ?>.
             </p>
         </div>
 
