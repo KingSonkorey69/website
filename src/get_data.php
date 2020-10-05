@@ -62,14 +62,35 @@ var_dump($data);
 
     <!-- This is where the book that you have clicked on will appear and will also appear with its information -->
     <section id="animated-example" class="animated bounceInLeft info2">
-        <?php echo $data->book_title?>
         
-        <?php echo $data->book_synopsis?>
-        <?php echo $data->book_author?>
-        <?php echo $data->book_upload_date?>
+        
+      
+        
+        <div class="kikuyu">
         <img class="book" src="../assets/images/<?php echo $data->book_image?>"> 
+        </div>
+      
 
         <p><?php echo $value['book_title']; ?></p>
+        <div class="info_detail">
+            <b>
+                <h1 class="info_header"><?php echo $data->book_title?></h1>
+            </b>
+            <hr>
+
+            <p>
+            <?php echo $data->book_synopsis?>
+            </p>
+
+            
+       
+            <p>
+                Author: <?php echo $data->book_author?>.<br><br>
+
+
+                Date Published: <?php echo $data->book_upload_date?> .
+            </p>
+        </div>
 
         <p><?php echo $value['book_synopsis']; ?></p>
         <p><?php echo $value['book_author']; ?></p>
@@ -97,10 +118,10 @@ var_dump($data);
 
                 <div class="paragraph">
                     <a href="get_data.php?q=<?php echo $value['id'] ?>">
-                        <img class="book" src="../assets/images/<?php echo $value['book_image']; ?>">
+                        <img class="book" src="../../assets/images/<?php echo $data->book_image?>">
 
-                        <p><?php echo $value['book_title']; ?></p>
-                        <p><?php echo $value['book_upload_date']; ?></p>
+                        <p><?php echo $data->book_title?></p>
+                        <p><?php echo $data->book_upload_date?></p>
                     </a>
                 </div>
 
