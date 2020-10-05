@@ -83,11 +83,11 @@ var_dump($data);
             
        
             <p>
-                Author: <?php echo $value['book_author_name']; ?>.<br><br>
+                Author: <?php echo $data->book_author_name?>.<br><br>
 
 
                 Date Published: <?php echo $data->book_upload_date?>.
-                ISBNO: <?php echo $value['book_isbno']; ?>.
+                ISBNO: <?php echo $data->book_isbno?>.
             </p>
         </div>
 
