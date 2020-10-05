@@ -82,8 +82,8 @@ var_dump($data);
 
             
        
-            <p>
-                Author: <?php echo $data->book_author?>.<br><br>
+            <p>saved
+                Author: <?php echo $value['book_author']; ?>.<br><br>
 
 
                 Date Published: <?php echo $data->book_upload_date?>.
