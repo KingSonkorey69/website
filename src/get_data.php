@@ -12,6 +12,7 @@ if (isset($_GET['q'])) {
 }
 //get the id from the database 
 $sql = "SELECT * FROM book_info WHERE id= $id";
+var_dump($sql);
 //
 $result = $conn->query($sql);
 //
