@@ -214,7 +214,7 @@ h2 {
     width: 220px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .paragraph img:hover {
@@ -592,8 +592,14 @@ span {
         width: 100%;
     }
     .book {
-        width: 100%;
-        height: 70%;
+        height: 290px;
+        width: 220px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        border-radius: 5px;
+    }
+    .book:hover {
+        box-shadow: 0 8px 26px 0 rgba(0, 0, 0, 0.2);
     }
     .paragraph {
         width: 100%;
