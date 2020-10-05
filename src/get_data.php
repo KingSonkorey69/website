@@ -63,11 +63,11 @@ var_dump($data);
     <!-- This is where the book that you have clicked on will appear and will also appear with its information -->
     <section id="animated-example" class="animated bounceInLeft info2">
         <?php echo $data->book_title?>
-        <?php echo $data->book_image?>
+        
         <?php echo $data->book_synopsis?>
         <?php echo $data->book_author?>
         <?php echo $data->book_upload_date?>
-        <!-- <img class="book" src="../assets/images/<?php echo $value['book_image']; ?>">
+        <img class="book" src="../assets/images/<?php echo $data->book_image?>"> 
 
         <p><?php echo $value['book_title']; ?></p>
 
