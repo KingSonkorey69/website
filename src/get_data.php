@@ -1,5 +1,6 @@
 <?php
 require_once "database.php";
+include_once "crud.php";
 $conn = new Database();
 $id;
 //
@@ -86,7 +87,7 @@ var_dump($data);
                 Author: <?php echo $data->book_author_name?>.<br><br>
 
 
-                Date Published: <?php echo $data->book_upload_date?>.
+                Date Published: <?php echo $data->book_upload_date?>.<br><br>
                 ISBNO: <?php echo $data->book_isbno?>.
             </p>
         </div>
