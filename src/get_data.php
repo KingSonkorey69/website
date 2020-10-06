@@ -52,9 +52,9 @@ var_dump($data);
         <div class="info_title_right">
 
             <!-- <a>Books</a> -->
-            <a href="books.php">Books</a>
+            <a href="../pages/books.php">Books</a>
             <!-- contact information -->
-            <a href="contact.php">About</a>
+            <a href="../pages/contact.php">About</a>
 
         </div>
 
