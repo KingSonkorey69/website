@@ -9,7 +9,7 @@ include_once "./src/crud.php";
     <title>
         The Front Page
     </title>
-
+<!-- ttt -->
     <!-- All the links to various fonts and also animations -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <!-- <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap" rel="stylesheet"> -->
