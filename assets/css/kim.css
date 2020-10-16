@@ -295,6 +295,7 @@ h2 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 2% 20%;
     /* background-color: #f5f1da; */
 }
 
