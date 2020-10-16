@@ -297,7 +297,7 @@ h2 {
 }
 
 .paragraph {
-    width: 20%;
+    width: 90%;
 }
 
 .paragraph p {
@@ -311,8 +311,8 @@ h2 {
 
 .paragraph img {
     margin-top: 3rem;
-    height: 290px;
-    width: 220px;
+    height: 390px;
+    width: 290px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     border-radius: 5px;
