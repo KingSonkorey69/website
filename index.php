@@ -27,7 +27,7 @@ include_once "./src/crud.php";
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <script type="text/javascript">
         $(document).ready(function() {
-            $('.paragraph`').slick({
+            $('.middle').slick({
 
             });
         });

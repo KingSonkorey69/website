@@ -294,12 +294,12 @@ h2 {
     margin-top: 4%;
     display: flex;
     flex-direction: row;
-    background-color: #000000;
+    justify-content: space-around;
 }
 
 .paragraph {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     width: 60%;
     padding: 100px;
@@ -317,8 +317,8 @@ h2 {
 
 .paragraph img {
     margin-top: 3rem;
-    height: 390px;
-    width: 290px;
+    height: 290px;
+    width: 220px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     border-radius: 5px;
