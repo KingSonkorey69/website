@@ -122,21 +122,19 @@ include_once "./src/crud.php";
         and all the books -->
        
             <div class="middle" id="<?php echo $value['id'] ?> ">
-                <div>
                     <?php foreach (getImages('book_info') as $key => $value) : ?>
                         <a href="../src/get_data.php?q=<?php echo $value['id'] ?>">
                             <div class="paragraph">
-                                <img class="book" src="./assets/images/<?php echo $value['book_image']; ?>">
-                                <p><?php echo $value['book_title']; ?></p>
-                                <p><?php echo $value['book_upload_date']; ?></p>
-                        
+                                <div>
+                                    <img class="book" src="./assets/images/<?php echo $value['book_image']; ?>">
+                                    <p><?php echo $value['book_title']; ?></p>
+                                    <p><?php echo $value['book_upload_date']; ?></p>
+                                </div>
                             </div>
                         </a>
                     <?php
                         endforeach;
                     ?>
-
-                </div>
             </div>
                 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
                 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
