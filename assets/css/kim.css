@@ -298,6 +298,17 @@ h2 {
     /* background-color: #f5f1da; */
 }
 
+.paragraph {
+    margin-right: 6%;
+    margin-left: 6%;
+    margin-top: -8%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+    align-items: center;
+}
+
 .paragraph p {
     color: black;
     font-family: "Playfair Display", serif;
