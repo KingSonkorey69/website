@@ -298,13 +298,10 @@ h2 {
 }
 
 .paragraph {
-    margin-right: 6%;
-    margin-left: 6%;
     width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
 }
 
 .paragraph p {
