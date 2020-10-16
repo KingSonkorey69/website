@@ -9,7 +9,7 @@ include_once "./src/crud.php";
     <title>
         The Front Page
     </title>
-<!-- ttt -->
+    <!-- ttt -->
     <!-- All the links to various fonts and also animations -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <!-- <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap" rel="stylesheet"> -->
@@ -21,6 +21,7 @@ include_once "./src/crud.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
@@ -31,7 +32,7 @@ include_once "./src/crud.php";
             });
         });
     </script>
-<!-- ww -->
+    <!-- ww -->
     <script>
         //
         //get all the books 
@@ -124,24 +125,25 @@ include_once "./src/crud.php";
             <div>
                 <?php foreach (getImages('book_info') as $key => $value) : ?>
                     <a href="../src/get_data.php?q=<?php echo $value['id'] ?>">
-                    <div class="paragraph">
+                        <div class="paragraph">
 
-                        <img class="book" src="./assets/images/<?php echo $value['book_image']; ?>">
-
-
-                        <p><?php echo $value['book_title']; ?></p>
-                        <p><?php echo $value['book_upload_date']; ?></p>
-                        </a>
-                    </div>
+                            <img class="book" src="./assets/images/<?php echo $value['book_image']; ?>">
 
 
-                <?php
-                endforeach;
-                ?>
+                            <p><?php echo $value['book_title']; ?></p>
+                            <p><?php echo $value['book_upload_date']; ?></p>
+                    </a>
             </div>
-              <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+
+        <?php
+                endforeach;
+        ?>
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script type="text/javascript" src="slick/slick.min.js"></script>
+        </div>
+
         </div>
 
         <!-- This button will lead you to the books page where all the books will be displayed  -->
