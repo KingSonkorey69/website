@@ -214,6 +214,7 @@ a {
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: 300px;
     justify-content: space-around;
     animation-name: example;
     animation-duration: 1.8s;
@@ -293,8 +294,9 @@ h2 {
 .middle {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     /* background-color: #f5f1da; */
+    width: 90%;
 }
 
 .paragraph p {
@@ -307,6 +309,7 @@ h2 {
 }
 
 .paragraph img {
+    margin-top: 3rem;
     height: 290px;
     width: 220px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
