@@ -27,7 +27,7 @@ include_once "./src/crud.php";
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <script type="text/javascript">
         $(document).ready(function() {
-            $('.middle').slick({
+            $('.paragraph').slick({
 
             });
         });
@@ -122,33 +122,32 @@ include_once "./src/crud.php";
         and all the books -->
 
         <div class="middle" id="<?php echo $value['id'] ?> ">
-            <div>
-                <?php foreach (getImages('book_info') as $key => $value) : ?>
-                    <a href="../src/get_data.php?q=<?php echo $value['id'] ?>">
-                        <div class="paragraph">
 
+            <?php foreach (getImages('book_info') as $key => $value) : ?>
+                <a href="../src/get_data.php?q=<?php echo $value['id'] ?>">
+                    <div class="paragraph">
+                        <div>
                             <img class="book" src="./assets/images/<?php echo $value['book_image']; ?>">
 
 
                             <p><?php echo $value['book_title']; ?></p>
                             <p><?php echo $value['book_upload_date']; ?></p>
-                    </a>
-            </div>
-
-
-        <?php
-                endforeach;
-        ?>
-        
-
+                </a>
+                <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+                <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+                <script type="text/javascript" src="slick/slick.min.js"></script>
         </div>
-        
         </div>
-        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-        <script type="text/javascript" src="slick/slick.min.js"></script>
-        <!-- This button will lead you to the books page where all the books will be displayed  -->
-        <button class="websa"><a href="./pages/books.php">View More Books</a></button>
+
+
+    <?php
+            endforeach;
+    ?>
+
+    </div>
+
+    <!-- This button will lead you to the books page where all the books will be displayed  -->
+    <button class="websa"><a href="./pages/books.php">View More Books</a></button>
 
 
     </section>
