@@ -293,10 +293,9 @@ h2 {
 .middle {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     /* background-color: #f5f1da; */
     padding: 2% 10%;
-    width: 80%;
 }
 
 .paragraph p {
