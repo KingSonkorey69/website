@@ -261,6 +261,11 @@
         justify-content: space-between;
         /* background-color: #f5f1da; */
         padding: 2% 10%;
+        width: auto;
+    }
+    
+    .paragraph {
+        width: 100%;
     }
     
     .paragraph p {
