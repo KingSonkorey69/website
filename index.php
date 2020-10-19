@@ -137,11 +137,11 @@ include_once "./src/crud.php";
                 endforeach;
                 ?>
             </div>
-            <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+            
+        </div>
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
             <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
             <script type="text/javascript" src="slick/slick.min.js"></script>
-        </div>
-
 
         <!-- This button will lead you to the books page where all the books will be displayed  -->
         <button class="websa"><a href="./pages/books.php">View More Books</a></button>
