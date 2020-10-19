@@ -254,13 +254,11 @@
     /* The animation entrance */
     /* This hold the books  */
     
-    .middle {
+    .middle div {
         margin-top: 4%;
         justify-content: space-around;
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
     }
     /*     
     .paragraph {
