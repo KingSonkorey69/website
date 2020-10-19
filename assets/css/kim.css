@@ -254,7 +254,7 @@
     /* The animation entrance */
     /* This hold the books  */
     
-    .middle div {
+    .middle {
         margin-top: 4%;
         justify-content: space-around;
         display: flex;
