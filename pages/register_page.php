@@ -76,6 +76,24 @@
 
         }
     })
+    login_form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        
+        const formData = new FormData(login_form);
+
+        const response = await fetch("../src/auth/login.php", {
+            method: "POST",
+            body: formData
+        });
+
+        if (await response.status == 201) {
+            console.log(await response.json());
+        } else {
+            const data = await response.json();
+
+        }
+    })
+    
 </script>
 
 </html>
