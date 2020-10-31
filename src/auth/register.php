@@ -67,15 +67,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
     if (empty($name_err) && empty($email_err) && empty($mobile_err) && empty($password_err) && empty($confirm_password_err)) {
-        $sql = "INSERT into users(name, email, mobile, password)VALUES('$name', '$email', '$mobile', '$password')";
+        $password_hash = password_hash($password, PASSWORD_DEFAULT);
+        $sql = "INSERT into users(name, email, mobile, password)VALUES('$name', '$email', '$mobile', '$password_hash')";
         $database->exec($sql);
 
         http_response_code(201);
         $obj = new stdClass;
         $obj->message = "Inserted successfully";
-        $obj->status = http_response_code();
+
 
         echo json_encode($obj);
+        // //implement logic for ui
+        // header("location:");
     } else {
         http_response_code(400);
         $obj = new stdClass;
@@ -84,7 +87,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $obj->mobile_err = $mobile_err;
         $obj->password_err = $password_err;
         $obj->confirm_password_err = $confirm_password_err;
-        $obj->status = http_response_code();
+
 
 
         echo json_encode($obj);
