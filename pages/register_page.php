@@ -76,7 +76,11 @@
 
         }
     })
+    //
+    //this is the login form side....
     login_form.addEventListener('submit', async (e) => {
+        //
+        //
         e.preventDefault();
         
         const formData = new FormData(login_form);
@@ -85,7 +89,7 @@
             method: "POST",
             body: formData
         });
-
+        // wait for the response
         if (await response.status == 201) {
             console.log(await response.json());
         } else {
