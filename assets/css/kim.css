@@ -700,7 +700,7 @@
             text-align: center;
         }
         .websa {
-            margin-left: 20%;
+            margin-left: 70%;
             margin-top: 16%;
             align-items: center;
             width: 90%;
@@ -713,6 +713,7 @@
             height: 200px;
         }
         .sub span {
+            margin-left: 50%;
             margin-top: -13%;
             display: flex;
             flex-direction: inherit;
