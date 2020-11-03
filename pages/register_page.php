@@ -80,9 +80,10 @@
     //this is the login form side....
     login_form.addEventListener('submit', async (e) => {
         //
-        //
+        //this will prevent it from submitting the form
         e.preventDefault();
-        
+        //
+        //
         const formData = new FormData(login_form);
 
         const response = await fetch("../src/auth/login.php", {
