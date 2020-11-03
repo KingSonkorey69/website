@@ -121,7 +121,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <label for="psw-repeat"><b>Repeat Password:</b></label>
                 <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
                 <label for="mobile"><b>Email:</b></label>
-                <input type="text" placeholder="Enter Mobile No.." name="mobilr" required>
+                <input type="text" placeholder="Enter Mobile No.." name="mobile" required>
 
                 <label>
                     <input type="checkbox" checked="checked" name="remember"> Remember me
