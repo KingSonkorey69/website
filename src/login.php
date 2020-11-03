@@ -73,6 +73,30 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
    <title>LOGIN FORM </title>
    <link rel="stylesheet" href="login.css">
    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet"> 
+   <script>
+   //
+    //this is the login form side....
+    login_form.addEventListener('submit', async (e) => {
+        //
+        //this will prevent it from submitting the form
+        e.preventDefault();
+        //
+        //
+        const formData = new FormData(login_form);
+
+        const response = await fetch("../src/auth/login.php", {
+            method: "POST",
+            body: formData
+        });
+        // wait for the response
+        if (await response.status == 201) {
+            console.log(await response.json());
+        } else {
+            const data = await response.json();
+
+        }
+    });
+   </script>
 </head>
 
 <body>

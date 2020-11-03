@@ -100,6 +100,38 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <title>Sign up</title>
         <link rel="stylesheet" href="sign_up.css">
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet"> 
+        <script>
+         const register_form = document.querySelector('#register');
+    const login_form = document.querySelector('#login');
+
+    register_form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        console.log("submit called");
+        const formData = new FormData(register_form);
+
+        const response = await fetch("../src/auth/register.php", {
+            method: "POST",
+            body: formData
+        });
+
+        if (await response.status == 201) {
+            console.log(await response.json());
+            // window.location.href()
+        } else {
+            const data = await response.json();
+            var alert = document.querySelector('.alert')
+            for (const [key, value] of Object.entries(data)) {
+                if (value !== "") {
+                    alert.innerHTML = value;
+                    alert.classList.remove('hide')
+                    alert.classList.add('show')
+                }
+            }
+
+
+        }
+    });
+        </script>
     </head>
     <body>
 
