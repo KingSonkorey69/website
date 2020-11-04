@@ -90,8 +90,8 @@ include_once "../src/crud.php";
             </div>
         </div>
 
-        <!-- This is the where the book images will be shown together with the (title, date) -->
-        <div class="middle" id="<?php echo $value['id'] ?> ">
+        <!-- This is the where the book images will be shown together with the (title, date) id="<?php echo $value['id'] ?> "-->
+        <div class="middle" >
            
                 <?php foreach (getImages('book_info') as $key => $value) : ?>
                     <a href="../src/get_data.php?q=<?php echo $value['id'] ?>">
