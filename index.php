@@ -113,7 +113,6 @@ include_once "./src/crud.php";
         and all the books id="<?php echo $value['id'] ?> -->
 
         <div class="middle"  >
-            
                 <?php foreach (getImages('book_info') as $key => $value) : ?>
                     <a href="../src/get_data.php?q=<?php echo $value['id'] ?>">
                         <div class="paragraph">
