@@ -122,8 +122,6 @@ include_once "./src/crud.php";
                             <p><?php echo $value['book_upload_date']; ?></p>
                         </div>
                     </a>
-
-
                 <?php
                 endforeach;
                 ?>
