@@ -98,7 +98,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <html>
     <head>
         <title>Sign up</title>
-        <link rel="stylesheet" href="sign_up.css">
+        <link rel="stylesheet" href="../assets/css/sign_up.css">
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet"> 
         <script>
          const register_form = document.querySelector('#register');
