@@ -700,13 +700,13 @@
             text-align: center;
         }
         .websa {
-            margin-left: 600px;
+            margin-left: 800px;
             margin-top: 16%;
             align-items: center;
             width: 90%;
         }
         .newsletter {
-            margin-top: -15%;
+            margin-top: -5%;
             display: flex;
             align-items: center;
             flex-direction: column;
