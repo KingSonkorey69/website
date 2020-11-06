@@ -142,7 +142,7 @@ include_once "./src/crud.php";
         <div class="join">
             <input type="email" name="EMAIL" value="" placeholder=" ENTER YOUR EMAIL......" class="ee">
 
-            <input type="submit" value="Join now" class="bb">
+           <a href=".src/login.php"> <input type="submit" value="Join now" class="bb"></a>
 
         </div>
 
