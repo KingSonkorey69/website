@@ -31,7 +31,7 @@ $data = $result->fetchObject();
     <!-- Font Awesome Icon Library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" type="text/css" href="../assets/css/info.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/get_data.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
@@ -63,7 +63,7 @@ $data = $result->fetchObject();
         
             
         <div class="kikuyu">
-        <img class="book" src="../assets/images/<?php echo $data->book_image?>"> 
+        <img src="../assets/images/<?php echo $data->book_image?>"> 
         </div>
       
 
@@ -76,7 +76,7 @@ $data = $result->fetchObject();
 
             <p>
             <?php echo $data->book_synopsis?>
-            </p>
+            </p><br><br>
 
             
        
