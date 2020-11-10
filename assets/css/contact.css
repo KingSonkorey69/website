@@ -91,6 +91,7 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    height: 500px;
     width: 100%;
     background-color: #f5f1da;
 }
@@ -116,8 +117,8 @@ a {
     margin-top: 3%;
     display: flex;
     flex-direction: row;
-    height: 80%;
-    width: 30%;
+    height: 750px;
+    width: 40%;
 }
 
 .kikuyu>img {
