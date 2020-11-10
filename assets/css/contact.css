@@ -479,7 +479,7 @@ span {
         width: 100%;
     }
     .newsletter {
-        margin-top: 15%;
+        margin-top: -5%;
         display: flex;
         align-items: center;
         flex-direction: column;

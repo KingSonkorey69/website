@@ -76,7 +76,7 @@ $data = $result->fetchObject();
 
             <p>
             <?php echo $data->book_synopsis?>
-            </p><br><br>
+            </p><br><br><br><br>
 
             
        
