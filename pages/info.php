@@ -59,11 +59,13 @@ include_once "../src/crud.php";
             <hr>
 
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Placeat temporibus tempora voluptas quam ut nostrum cumque consequuntur consequatur amet exercitationem,
-                consectetur saepe! Obcaecati veritatis nemo fugit minima dolorum dolore ut?
-                Atque incidunt reiciendis suscipit, numquam eaque quaerat.
-                Consectetur delectus excepturi itaque placeat doloremque quidem illo. A ipsa unde nam itaque!
+                Ithako riri riandikitwo gutuonia uria maundu maingi mahagukite maturaini maitu.
+                Ithako riri rirenda gutuonia ati andu aria mehokeirwo wathani na hinya wa matura
+                maitu nio mamathukagia. Kuma Cibu, Marigitari o nginya ahunjia gutiri uramenya 
+                wira wake utarii atia. Nikio muiritu umwe, 'Susan' arikia cukuru arokire guteng'urania mitugo
+                miuru na minungu ya itura riao. Kiria kia makirie Susan muno ni gukora ati ona andu
+                a nyumba yake nimaingiranite na mitugo iria yekikaga kuu.
+
             </p><br><br><br><br>
 
 
