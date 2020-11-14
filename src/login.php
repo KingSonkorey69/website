@@ -1,10 +1,10 @@
-<?php
+<!-- <?php
 require_once "database.php";
 require_once "./auth/login.php"
 
 
 
-?>
+?> -->
 <!DOCTYPE html>
 <html>
 
