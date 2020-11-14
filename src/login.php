@@ -1,6 +1,6 @@
 <?php
 require_once "database.php";
-require_once" ../src/auth/login.php";
+
 $database = new Database();
 
 //intialize variables 
