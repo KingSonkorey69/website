@@ -100,7 +100,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </head>
 
 <body>
-      <form class="box" method="POST">
+      <form class="box" method="post">
          <h1>Login</h1>
          <hr><br><br>
 
