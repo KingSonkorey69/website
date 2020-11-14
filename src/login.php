@@ -39,7 +39,7 @@ require_once "../auth/login.php"
 </head>
 
 <body>
-      <form class="box" method="post">
+      <form class="box" method="POST">
          <h1>Login</h1>
          <hr><br><br>
 
