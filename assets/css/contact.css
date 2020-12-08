@@ -37,8 +37,8 @@ body {
 }
 
 .logo {
-    width: 360px;
-    height: 200px;
+    width: 250px;
+    height: auto;
 }
 
 
@@ -117,7 +117,7 @@ a {
     margin-top: 3%;
     display: flex;
     flex-direction: row;
-    height: 750px;
+    height: 650px;
     width: 40%;
 }
 
