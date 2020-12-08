@@ -36,7 +36,6 @@ include_once "../src/crud.php";
 
     <section class="read1">
         <!-- The name of the author -->
-        <!-- The name of the author -->
         <a href="../index.php"><img class="logo" src="../assets/images/logo-01.png"></a>
 
         <div class="read_right">

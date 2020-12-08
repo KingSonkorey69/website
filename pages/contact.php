@@ -2,9 +2,8 @@
 <html>
 
 <head>
-    <title>
-
-    </title>
+    <!-- Title of the page -->
+    <title>Gabriel Githinji Kimotho</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -20,8 +19,7 @@
 <body>
     <section class="contact1">
         <!-- The name of the author -->
-        <!-- The name of the author -->
-        <a href="../index.php"><img class="logo" src="../assets/images/logo-01.png" ></a>
+        <a href="../index.php"><img class="logo" src="../assets/images/logo-01.png"></a>
 
         <div class="contact_title_right">
             <!-- <a>Books</a> -->

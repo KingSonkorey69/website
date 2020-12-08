@@ -6,9 +6,8 @@ include_once "../src/crud.php";
 <html>
 
 <head>
-    <title>
-
-    </title>
+    <!-- Title of the page -->
+    <title>Gabriel Githinji Kimotho</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
