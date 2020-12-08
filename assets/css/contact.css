@@ -37,8 +37,8 @@ body {
 }
 
 .logo {
-    width: 200px;
-    height: 660px;
+    width: 250px;
+    height: auto;
 }
 
 
@@ -204,11 +204,6 @@ a {
 
 .bb:hover {
     background-color: lavender;
-}
-
-.logo {
-    width: 250px;
-    height: 90px;
 }
 
 
