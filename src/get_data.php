@@ -117,7 +117,7 @@ $data = $result->fetchObject();
                     <a href="get_data.php?q=<?php echo $value['id'] ?>">
                         <img class="book" src="../assets/images/<?php echo $value['book_image']; ?>">
 
-                        <p><<?php echo $value['book_title']; ?></p>
+                        <p><?php echo $value['book_title']; ?></p>
                         <p><?php echo $value['book_upload_date']; ?></p>
                     </a>
                 </div>
