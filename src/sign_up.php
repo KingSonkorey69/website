@@ -1,8 +1,3 @@
-<?php
-require_once "../database.php";
-require_once "./auth/register.php"
-
-?>
 <!DOCTYPE html>
 <html>
     <head>

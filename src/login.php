@@ -1,10 +1,3 @@
-<?php
-require_once "database.php";
-require_once "./auth/login1.php"
-
-
-
-?>
 <!DOCTYPE html>
 <html>
 
@@ -23,7 +16,7 @@ require_once "./auth/login1.php"
         //
         const formData = new FormData(login_form);
 
-        const response = await fetch("./auth/login.php", {
+        const response = await fetch("./auth/login1.php", {
             method: "POST",
             body: formData
         });
