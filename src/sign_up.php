@@ -47,18 +47,20 @@
                 <hr>
 
                 <label for="username"><b>User Name:</b></label>
-                <input type="text" placeholder="Enter User Name" name="name" required>
+                <input type="text" placeholder="Enter User Name" name="name" id="name" required>
 
                 <label for="email"><b>Email:</b></label>
-                <input type="text" placeholder="Enter Email" name="email" required>
+                <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+                <label for="mobile"><b>Mobile:</b></label>
+                <input type="text" placeholder="Enter Mobile No.." name="mobile" id="mobile" required>
 
                 <label for="psw"><b>Password:</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
+                <input type="password" placeholder="Enter Password" name="password" id="password" required>
 
-                <!-- <label for="psw-repeat"><b>Repeat Password:</b></label>
-                <input type="password" placeholder="Repeat Password" name="psw-repeat" required> -->
-                <label for="mobile"><b>Mobile:</b></label>
-                <input type="text" placeholder="Enter Mobile No.." name="mobile" required>
+                <label for="psw-repeat"><b>Repeat Password:</b></label>
+                <input type="password" placeholder="Repeat Password" name="confirm_password" id="confirm_password" required>
+               
 
                 
                 <div class="clearfix">

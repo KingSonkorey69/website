@@ -44,9 +44,9 @@ $_SESSION['email'];
          <h1>Login</h1>
          <hr><br><br>
 
-         <input type="text" id="loginid2" name="email" placeholder="Email">
-         <input type="password" id="pass2" name="password" placeholder="Password">
-         <input type="submit" name="submit" type="submit" id="submit" value="Login"><br>
+         <input type="text" id="email" name="email" placeholder="Email">
+         <input type="password" id="password" name="password" placeholder="Password">
+         <input type="submit" name="submit" id="submit" value="Login"><br>
 
          <p> New User <a href="sign_up.php">Register Here</a></p>
    </form>
