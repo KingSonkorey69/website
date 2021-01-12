@@ -70,7 +70,7 @@ include_once "./src/crud.php";
             <a href="./pages/books.php">Books</a>
             <a href="./pages/contact.php">About</a>
             <!-- This will redirect the user to the login page-->
-            
+            <button class="login"><a href="../src/login.php">Login</a></button>
             <!-- If the user has not logged in then he should sign up-->
 
         </div>
