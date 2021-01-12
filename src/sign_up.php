@@ -9,7 +9,7 @@
     // const register_form = document.querySelector('#register');
     // const login_form = document.querySelector('#login');
 
-    register.addEventListener('submit', async (e) => {
+    register_form.addEventListener('submit', async (e) => {
         e.preventDefault();
         console.log("submit called");
         const formData = new FormData(register_form);
@@ -40,7 +40,7 @@
     </head>
     <body>
 
-        <form method="POST" >
+        <form id="register_form" method="POST" >
             <div class="box">
                 <h1>Sign Up</h1>
                 <p>Please fill in this form to create an account.</p>

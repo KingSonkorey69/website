@@ -40,7 +40,7 @@ $_SESSION['email'];
 </head>
 
 <body>
-      <form class="box" method="POST">
+      <form id="login_form" class="box" method="POST">
          <h1>Login</h1>
          <hr><br><br>
 
