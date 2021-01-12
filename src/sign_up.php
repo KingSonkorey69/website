@@ -56,7 +56,7 @@
 
                 <label for="psw-repeat"><b>Repeat Password:</b></label>
                 <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-                <label for="mobile"><b>Email:</b></label>
+                <label for="mobile"><b>Mobile:</b></label>
                 <input type="text" placeholder="Enter Mobile No.." name="mobile" required>
 
                 
