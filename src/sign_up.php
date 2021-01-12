@@ -5,13 +5,14 @@
         <link rel="stylesheet" href="../assets/css/sign_up.css">
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet"> 
         <script>
-        const register_form = document.querySelector('#register');
-        const login_form = document.querySelector('#login');
 
-    register_form.addEventListener('submit', async (e) => {
+    const register = document.querySelector('#register');
+    const login_form = document.querySelector('#login');
+
+    register.addEventListener('submit', async (e) => {
         e.preventDefault();
         console.log("submit called");
-        const formData = new FormData(register_form);
+        const formData = new FormData(register);
 
         const response = await fetch("./auth/register.php", {
             method: "POST",
