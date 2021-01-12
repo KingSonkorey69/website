@@ -15,7 +15,7 @@ $_SESSION['email'];
    <script>
    //
     //this is the login form side....
-    login_form.addEventListener('submit', async (e) => {
+    form.addEventListener('submit', async (e) => {
         //
         //this will prevent it from submitting the form
         e.preventDefault();

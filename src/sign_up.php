@@ -39,7 +39,7 @@
     </head>
     <body>
 
-        <form action="/action_page.php" >
+        <form method="POST" >
             <div class="box">
                 <h1>Sign Up</h1>
                 <p>Please fill in this form to create an account.</p>
