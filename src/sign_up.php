@@ -6,8 +6,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet"> 
         <script>
 
-    // const register_form = document.querySelector('#register');
-    // const login_form = document.querySelector('#login');
+    const register_form = document.querySelector('#register');
+  
 
     register_form.addEventListener('submit', async (e) => {
         e.preventDefault();
@@ -65,7 +65,7 @@
                 
                 <div class="clearfix">
                     <button type="button" class="cancelbtn">Cancel</button>
-                    <button type="submit" class="submit" id="submit">Sign Up</button>
+                    <button type="submit" class="submit" id="register">Sign Up</button>
                 </div>
             </div>
         </form>
