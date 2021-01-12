@@ -59,10 +59,7 @@
                 <label for="mobile"><b>Email:</b></label>
                 <input type="text" placeholder="Enter Mobile No.." name="mobile" required>
 
-                <label>
-                    <input type="checkbox" checked="checked" name="remember"> Remember me
-                </label>
-
+                
                 <div class="clearfix">
                     <button type="button" class="cancelbtn">Cancel</button>
                     <button type="submit" class="signupbtn">Sign Up</button>

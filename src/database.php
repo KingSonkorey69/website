@@ -1,5 +1,7 @@
 <?php
 require_once "config.php";
+//
+//This class extends the pdo 
 class Database extends PDO{
 
     function __construct()

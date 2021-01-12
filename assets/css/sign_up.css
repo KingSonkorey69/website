@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: san-serif;
-    background-color: #34495e;
+    background-color: #f8bd7f;
 }
 
 .box {
@@ -12,23 +12,23 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #191919;
+    background-color: #f5f1da;
 }
 
 .box h1 {
-    color: white;
+    color: #000000;
     text-transform: uppercase;
     font-weight: 500;
 }
 
 .box p {
-    color: white;
+    color: #000000;
     font-weight: 140;
     font-family: 'Playfair Display', serif;
 }
 
 .box label {
-    color: white;
+    color: #000000;
     font-family: 'Playfair Display', serif;
 }
 
@@ -69,9 +69,9 @@ body {
 }
 
 .box button:hover {
-    background: #2ecc71;
+    background: #fca311;
 }
 
 box button:hover {
-    background: #2ecc71;
+    background: #fca311;
 }

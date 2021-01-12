@@ -89,7 +89,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $obj->confirm_password_err = $confirm_password_err;
 
 
-
         echo json_encode($obj);
     }
 }
