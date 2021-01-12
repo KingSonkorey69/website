@@ -6,8 +6,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet"> 
         <script>
 
-    const register_form = document.querySelector('#register');
-    const login_form = document.querySelector('#login');
+    // const register_form = document.querySelector('#register');
+    // const login_form = document.querySelector('#login');
 
     register.addEventListener('submit', async (e) => {
         e.preventDefault();
