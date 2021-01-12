@@ -5,6 +5,7 @@ session_start();
 //i want to set the usename as a session variable
 $_SESSION['email'];
 ?>
+
 <!DOCTYPE html>
 <html>
 
