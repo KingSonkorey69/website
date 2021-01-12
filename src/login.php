@@ -15,13 +15,13 @@ $_SESSION['email'];
    <script>
    //
     //this is the login form side....
-    login.addEventListener('submit', async (e) => {
+    login_form.addEventListener('submit', async (e) => {
         //
         //this will prevent it from submitting the form
         e.preventDefault();
         //
         //
-        const formData = new FormData(login);
+        const formData = new FormData(login_form);
 
         const response = await fetch("./auth/login1.php", {
             method: "POST",
