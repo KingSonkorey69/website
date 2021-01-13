@@ -41,7 +41,7 @@
         e.preventDefault();
         console.log("submit called");
         const email =document.querySelector('#email').value;
-        const username =document.querySelector('#username').value;
+        const name =document.querySelector('#name').value;
         const confirm_password =document.querySelector('#confirm_password').value;
         const mobile =document.querySelector('#mobile').value;
         const password = document.querySelector('#password').value;
@@ -52,7 +52,7 @@
             formData.append('password', password)
             formData.append('confirm_password', confirm_password)
             formData.append('mobile', mobile)
-            formData.append('username', username)
+            formData.append('name', name)
         
 
         const response = await fetch("./auth/register.php", {
