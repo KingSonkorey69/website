@@ -4,6 +4,36 @@
         <title>Sign up</title>
         <link rel="stylesheet" href="../assets/css/sign_up.css">
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <form id="register" name="register_form" method="POST" >
+            <div class="box">
+                <h1>Sign Up</h1>
+                <p>Please fill in this form to create an account.</p><hr>
+
+                <label for="username"><b>User Name:</b></label>
+                <input type="text" placeholder="Enter User Name" name="name" id="name" required>
+
+                <label for="email"><b>Email:</b></label>
+                <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+                <label for="mobile"><b>Mobile:</b></label>
+                <input type="text" placeholder="Enter Mobile No.." name="mobile" id="mobile" required>
+
+                <label for="psw"><b>Password:</b></label>
+                <input type="password" placeholder="Enter Password" name="password" id="password" required>
+
+                <label for="psw-repeat"><b>Repeat Password:</b></label>
+                <input type="password" placeholder="Repeat Password" name="confirm_password" id="confirm_password" required>
+               
+
+                
+                <div class="clearfix">
+                    <button type="button" class="cancelbtn">Cancel</button>
+                    <button type="submit" name="submit" id="submit">Sign Up</button>
+                </div>
+            </div>
+        </form>
         <script>
     const register_form = document.querySelector("#register");
     
@@ -35,38 +65,5 @@
         }
     });
         </script>
-    </head>
-    <body>
-
-        <form id="register" name="register_form" method="POST" >
-            <div class="box">
-                <h1>Sign Up</h1>
-                <p>Please fill in this form to create an account.</p>
-                <hr>
-
-                <label for="username"><b>User Name:</b></label>
-                <input type="text" placeholder="Enter User Name" name="name" id="name" required>
-
-                <label for="email"><b>Email:</b></label>
-                <input type="text" placeholder="Enter Email" name="email" id="email" required>
-
-                <label for="mobile"><b>Mobile:</b></label>
-                <input type="text" placeholder="Enter Mobile No.." name="mobile" id="mobile" required>
-
-                <label for="psw"><b>Password:</b></label>
-                <input type="password" placeholder="Enter Password" name="password" id="password" required>
-
-                <label for="psw-repeat"><b>Repeat Password:</b></label>
-                <input type="password" placeholder="Repeat Password" name="confirm_password" id="confirm_password" required>
-               
-
-                
-                <div class="clearfix">
-                    <button type="button" class="cancelbtn">Cancel</button>
-                    <button type="submit" name="submit" id="submit">Sign Up</button>
-                </div>
-            </div>
-        </form>
-
     </body>
 </html>
