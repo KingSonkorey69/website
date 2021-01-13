@@ -6,9 +6,6 @@
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet"> 
         <script>
 
-    const register_form = document.querySelector('#register');
-  
-
     register_form.addEventListener('submit', async (e) => {
         e.preventDefault();
         console.log("submit called");
@@ -40,7 +37,7 @@
     </head>
     <body>
 
-        <form id="register_form" method="POST" >
+        <form name="register_form" method="POST" >
             <div class="box">
                 <h1>Sign Up</h1>
                 <p>Please fill in this form to create an account.</p>
@@ -65,7 +62,7 @@
                 
                 <div class="clearfix">
                     <button type="button" class="cancelbtn">Cancel</button>
-                    <button type="submit" class="submit" id="register">Sign Up</button>
+                    <button type="submit" name="submit" id="submit">Sign Up</button>
                 </div>
             </div>
         </form>

@@ -10,7 +10,9 @@ $email_err = $password_err = "";
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
-
+    //
+    //This will help us to trim the whitespaces in both the email
+    //and the password.
     $email = trim($_POST['email']);
     $password = trim($_POST['password']);
 
@@ -19,6 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $email_err = "Please enter the correct email";
         // die($email_err);
     } else {
+        //User has successfully inserted the correct email.
         $sql = "SELECT email from users where email = '$email'";
         $result = $database->query($sql);
         if ($result->rowCount() < 1) {
@@ -40,12 +43,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         $result = $database->query($sql)->fetchObject();
         // var_dump($result);
-
+        //
+        //Check if the given hash matches th results.
         if (!password_verify($password, $result->password)) {
+            //
+            //throw an error invalid passsword.
             $password_err = "Invalid Password";
         }
     }
-
+    //
+    //check if the email is valid
     if (empty($email_err) && empty($password_err)) {
         //user has successfully logged in 
         $sql = "SELECT name, mobile FROM users WHERE email = '$email'";

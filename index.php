@@ -69,6 +69,11 @@ include_once "./src/crud.php";
             <!-- This link will show you all the Books -->
             <a href="./pages/books.php">Books</a>
             <a href="./pages/contact.php">About</a>
+            <?php
+            // Echo session variables that were set
+            echo $_SESSION["email"];
+            ?>
+
             <!-- This will redirect the user to the login page-->
             <button class="login"><a href="../src/login.php">Login</a></button>
             <!-- If the user has not logged in then he should sign up-->

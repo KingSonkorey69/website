@@ -26,7 +26,10 @@
             <a href="books.php">Books</a>
             <!-- contact information -->
             <a href="contact.php">About</a>
-
+            <?php
+            // Echo session variables that were set
+            echo $_SESSION["email"] ;
+            ?>
         </div>
         </div>
     </section>

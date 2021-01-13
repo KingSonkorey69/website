@@ -14,7 +14,7 @@ $_SESSION['email'];
    <link rel="stylesheet" href="../assets/css/login.css">
    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet"> 
    <script>
-   //
+    //
     //this is the login form side....
     login_form.addEventListener('submit', async (e) => {
         //
@@ -40,7 +40,7 @@ $_SESSION['email'];
 </head>
 
 <body>
-      <form id="login_form" class="box" method="POST">
+      <form name="login_form" class="box" method="POST">
          <h1>Login</h1>
          <hr><br><br>
 
