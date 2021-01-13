@@ -14,6 +14,7 @@ $_SESSION['email'];
    <link rel="stylesheet" href="../assets/css/login.css">
    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet"> 
    <script>
+   const login_form = document.querySelector("#login");
     //
     //this is the login form side....
     login_form.addEventListener('submit', async (e) => {

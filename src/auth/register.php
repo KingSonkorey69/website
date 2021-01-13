@@ -22,7 +22,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $password = trim($_POST['password']);
     $confirm_password = trim($_POST['confirm_password']);
 
-
+    //
+    //check if the eamil is empty
     if (empty($email)) {
         $email_err = error_generator("email");
         // die($email_err);
