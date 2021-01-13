@@ -61,8 +61,10 @@ body {
     text-align: center;
     padding: 14px 40px;
     outline: none;
-    color: #fca311;
     border-radius: 24px;
+    border-color: #fca311;
+    background-color: #fca311;
+    color: #204051;
     transition: 0.25s;
     cursor: pointer;
 }
