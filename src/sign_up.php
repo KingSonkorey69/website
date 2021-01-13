@@ -6,7 +6,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet"> 
         <script>
     const register_form = document.querySelector("#register");
-    register_form.addEventListener('submit', async (e) => {
+    
+    register_form.addEventListener("submit", async (e) => {
         e.preventDefault();
         console.log("submit called");
         const formData = new FormData(register_form);

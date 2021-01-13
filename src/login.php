@@ -17,7 +17,7 @@ $_SESSION['email'];
    const login_form = document.querySelector("#login");
     //
     //this is the login form side....
-    login_form.addEventListener('submit', async (e) => {
+    login_form.addEventListener("submit", async (e) => {
         //
         //this will prevent it from submitting the form
         e.preventDefault();
