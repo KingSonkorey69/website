@@ -30,7 +30,6 @@ $_SESSION['email'];
 
     <script>
         const login_form = document.getElementById("login");
-        console.log(login_form);
         //
         //this is the login form side....
         login_form.addEventListener("submit", async (e) => {
@@ -39,8 +38,13 @@ $_SESSION['email'];
             e.preventDefault();
             //
             //
-            const formData = new FormData(login_form);
-            console.log(formData);
+            const email =document.querySelector('#email').value;
+            const password = document.querySelector('#password').value;
+            console.log(email, password);
+
+            const formData = new FormData();
+            formData.append('email', email)
+            formData.append('password', password)
 
             const response = await fetch("./auth/login1.php", {
                 method: "POST",
