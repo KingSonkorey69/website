@@ -40,7 +40,20 @@
     register_form.addEventListener("submit", async (e) => {
         e.preventDefault();
         console.log("submit called");
-        const formData = new FormData(register_form);
+        const email =document.querySelector('#email').value;
+        const username =document.querySelector('#username').value;
+        const confirm_password =document.querySelector('#confirm_password').value;
+        const mobile =document.querySelector('#mobile').value;
+        const password = document.querySelector('#password').value;
+            console.log(email, password);
+
+            const formData = new FormData();
+            formData.append('email', email)
+            formData.append('password', password)
+            formData.append('confirm_password', confirm_password)
+            formData.append('mobile', mobile)
+            formData.append('username', username)
+        
 
         const response = await fetch("./auth/register.php", {
             method: "POST",

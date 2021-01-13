@@ -52,7 +52,7 @@ $_SESSION['email'];
             });
             // wait for the response
             if (await response.status == 201) {
-                console.log(await response.json());
+                alert(response);
             } else {
                 const data = await response.json();
 
