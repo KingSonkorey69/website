@@ -41,7 +41,7 @@ $_SESSION['email'];
 </head>
 
 <body>
-      <form name="login_form" class="box" method="POST">
+      <form name="login_form" id="login" class="box" method="POST">
          <h1>Login</h1>
          <hr><br><br>
 
