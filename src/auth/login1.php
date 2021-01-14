@@ -1,6 +1,14 @@
 <?php
 require_once "../database.php";
 
+//This is how you start a session
+session_start();
+//
+//i want to set the email as a session variable
+$_SESSION['email'] = $_POST['email'];
+
+
+
 $database = new Database();
 
 //intialize variables 
@@ -60,13 +68,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         $result->email = $email;
 
+        header('location: ../index.php');
         echo json_encode($result);
     } else {
+        //
+        //set the http response code 
         http_response_code(401);
         $obj = new stdClass;
         $obj->email_err = $email_err;
         $obj->password_err = $password_err;
         $obj->status = http_response_code();
+        //
+        //echo the encoded object
         echo json_encode($obj);
     }
 } else {

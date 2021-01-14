@@ -41,27 +41,36 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             }
         }
     }
-
+    //
+    //check if the user has put the correct name
     if (empty($name)) {
         $name_err = error_generator("name");
     }
-
+    //
+    //check to see if the user has keyed in his/her mobile number
     if (empty($mobile)) {
         $mobile_err = error_generator("mobile");
     }
-
+    //
+    //check to see if the user has keyed in the password
     if (empty($password)) {
         $password_err = error_generator("password");
     }
-
+    //
+    //Check to see if the password is more than 8 characters if not throw an error message
     if (strlen($password) < 8) {
         $password_err = "Password Cannot be less than 8 Characters";
     }
-
+    //
+    //check to see if the user has already keyed in the confirm password input
     if (empty($confirm_password)) {
         $confirm_password_err = error_generator('confirm password');
     } else {
+        //
+        //check if the passwords match if the dont match throw an error message
         if ($password !== $confirm_password) {
+            //
+            //the error message to be thrown if the passwords dont match
             $confirm_password_err = 'Passwords do not match';
         }
     }
