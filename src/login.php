@@ -33,7 +33,7 @@
             //
             const email =document.querySelector('#email').value;
             const password = document.querySelector('#password').value;
-            console.log(email, password);
+
 
             const formData = new FormData();
             formData.append('email', email)

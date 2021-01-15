@@ -63,12 +63,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     //check if the email is valid
     if (empty($email_err) && empty($password_err)) {
         //user has successfully logged in 
+        header('location: ../index.php');
         $sql = "SELECT name, mobile FROM users WHERE email = '$email'";
         $result = $database->query($sql)->fetchObject();
 
         $result->email = $email;
 
-        header('location: ../index.php');
+        
         echo json_encode($result);
     } else {
         //
