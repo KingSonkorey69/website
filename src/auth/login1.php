@@ -66,8 +66,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         //
         //i want to set the email as a session variable
         $_SESSION['email'] = $_POST['email'];
-
-
+        //
+        //Return the user to the homepage.
         header('location: ../index.php');
         echo json_encode($result);
     } else {
