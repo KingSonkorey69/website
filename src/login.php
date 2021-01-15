@@ -9,7 +9,7 @@
 </head>
 
 <body>
-   
+
     <form name="login_form" id="login" class="box" method="POST">
         <h1>Login</h1>
         <hr><br><br>
@@ -43,7 +43,8 @@
                 method: "POST",
                 body: formData
             });
-            // wait for the response
+            //
+            //wait for the response
             // if (await response.status == 201) {
             //     alert(response);
             // } else {
