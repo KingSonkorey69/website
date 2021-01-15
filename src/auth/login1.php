@@ -58,7 +58,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         
         $sql = "SELECT name, mobile FROM users WHERE email = '$email'";
         $result = $database->query($sql)->fetchObject();
-
         $result->email = $email;
         
         //This is how you start a session
