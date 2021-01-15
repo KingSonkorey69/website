@@ -1,14 +1,6 @@
 <?php
 require_once "../database.php";
 
-//This is how you start a session
-session_start();
-//
-//i want to set the email as a session variable
-$_SESSION['email'] = $_POST['email'];
-
-
-
 $database = new Database();
 
 //intialize variables 
@@ -63,13 +55,20 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     //check if the email is valid
     if (empty($email_err) && empty($password_err)) {
         //user has successfully logged in 
-        header('location: ../index.php');
+        
         $sql = "SELECT name, mobile FROM users WHERE email = '$email'";
         $result = $database->query($sql)->fetchObject();
 
         $result->email = $email;
-
         
+        //This is how you start a session
+        session_start();
+        //
+        //i want to set the email as a session variable
+        $_SESSION['email'] = $_POST['email'];
+
+
+        header('location: ../index.php');
         echo json_encode($result);
     } else {
         //
