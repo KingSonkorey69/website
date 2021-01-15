@@ -44,12 +44,12 @@
                 body: formData
             });
             // wait for the response
-            if (await response.status == 201) {
-                alert(response);
-            } else {
-                const data = await response.json();
+            // if (await response.status == 201) {
+            //     alert(response);
+            // } else {
+            //     const data = await response.json();
 
-            }
+            // }
         });
     </script>
 </body>
