@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -29,6 +28,7 @@
             //
             //this will prevent it from submitting the form
             e.preventDefault();
+            alert(123);
             //
             //
             const email =document.querySelector('#email').value;
