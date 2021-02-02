@@ -208,7 +208,7 @@ if (isset($_GET['q'])) {
 
         <div class="sam">
             <span>© 2020 GGK, All rights reserved.</span>
-
+            <span>Website: Samuel Kimotho</span>
         </div>
     </section>
     <!-- This is where the user will be able to talk with the author directly -->

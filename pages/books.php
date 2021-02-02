@@ -188,6 +188,7 @@ session_start();
 
         <div class="sam">
             <span>© 2020 GGK, All rights reserved.</span>
+            <span>Website: Samuel Kimotho</span>
 
         </div>
     </section>
