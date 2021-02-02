@@ -85,7 +85,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $obj = new stdClass;
         $obj->message = "Inserted successfully";
 
-
+        
         echo json_encode($obj);
         // //implement logic for ui
         // header("location:");

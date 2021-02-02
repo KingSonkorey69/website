@@ -1,5 +1,10 @@
 <?php
 include_once "../src/crud.php";
+//
+//This is to show that references the crud.php which does all the getting of the books from
+//the database
+$crud = new Crud();
+session_start();
 ?>
 
 <!DOCTYPE html>
@@ -19,7 +24,7 @@ include_once "../src/crud.php";
     <link rel="stylesheet" type="text/css" href="../assets/css/info.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <?php echo $data->name ?>
+    
 
 </head>
 
@@ -37,10 +42,18 @@ include_once "../src/crud.php";
             <a href="books.php">Books</a>
             <!-- contact information -->
             <a href="contact.php">About</a>
-             <?php
-            // Echo session variables that were set
-            echo  $_SESSION["email"];
+            <!-- if the user has logged in the show the logout button otherwise show the login button -->
+            <?php
+                if(isset($_SESSION['email'])){
+                   
+                    echo "<a href='../src/auth/logout.php'>Logout</a>";
+
+                }else{
+                    echo "<a href='../src/login.php'>Login</a>";
+                }
+            
             ?>
+            
         </div>
 
 
@@ -75,8 +88,17 @@ include_once "../src/crud.php";
                 Author: Gabriel Githinji.<br><br>
 
 
-                Date Published: 2004.
+                Date Published: 2004.<br><br>
+                ISBNO: 21723244433.
             </p>
+            <?php 
+                            if(isset($_SESSION['email'])){ ?>
+                                <button class="websa">BUY NOW</button>
+                                
+                            <?php }else{ ?>
+                                <p>Please login to purchase</p>
+                            <?php }
+                        ?>
         </div>
 
     </section>
@@ -97,7 +119,7 @@ include_once "../src/crud.php";
         <!-- This is the where the book images will be shown together with the (title, date) id="<?php echo $value['id'] ?> "-->
         <div class="middle" >
            
-                <?php foreach (getImages('book_info') as $key => $value) : ?>
+                <?php foreach ($crud->getImages('book_info') as $key => $value) : ?>
                     <a href="../src/get_data.php?q=<?php echo $value['id'] ?>">
                     <div class="paragraph">
 

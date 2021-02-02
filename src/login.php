@@ -4,7 +4,8 @@
 <head>
     <title>LOGIN FORM </title>
     <link rel="stylesheet" href="../assets/css/login.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
@@ -28,8 +29,6 @@
             //
             //this will prevent it from submitting the form
             e.preventDefault();
-            alert(123);
-            //
             //
             const email =document.querySelector('#email').value;
             const password = document.querySelector('#password').value;
@@ -43,14 +42,18 @@
                 method: "POST",
                 body: formData
             });
-            //
+            console.log(await response.status)
             //wait for the response
-            // if (await response.status == 201) {
-            //     alert(response);
-            // } else {
-            //     const data = await response.json();
+            if (await response.status == 201) {
+                console.log(response);
+                alert(await response.body);
+                window.location.href = "http://localhost/website/index.php";
+            } else {
+                console.log("anything");
+                const data = await response.json();
 
-            // }
+
+            }
         });
     </script>
 </body>

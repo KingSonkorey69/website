@@ -1,21 +1,22 @@
 <?php
-require_once "database.php";
 include_once "crud.php";
-$conn = new Database();
-$id;
+session_start();
 //
 //get the data from the server 
 if (isset($_GET['q'])) {
+    //
+    //creating a new instance of the books representing the class in the crud.
+    $crud = new Crud();
+
     $id = $_GET['q'];
+    //getting the getbooks and also giving it the id
+    $value = $crud->getBooks($id)[0];
 } else {
-    //echo an error message if we dint get here
+    //
+    //echo an error message if we didnt get here
     die("you do not have the data");
 }
-//get the id from the database 
-$sql = "SELECT * FROM book_info WHERE id= $id";
-$result = $conn->query($sql);
-//
-$data = $result->fetchObject();
+
 ?>
 
 <!DOCTYPE html>
@@ -52,6 +53,17 @@ $data = $result->fetchObject();
             <a href="../pages/books.php">Books</a>
             <!-- contact information -->
             <a href="../pages/contact.php">About</a>
+             <!-- if the user has logged in the show the logout button otherwise show the login button -->
+             <?php
+                if(isset($_SESSION['email'])){
+                   
+                    echo "<a href='./auth/logout.php'>Logout</a>";
+
+                }else{
+                    echo "<a href='./login.php'>Login</a>";
+                }
+            
+            ?>
 
         </div>
 
@@ -60,38 +72,41 @@ $data = $result->fetchObject();
 
     <!-- This is where the book that you have clicked on will appear and will also appear with its information -->
     <section id="animated-example" class="animated bounceInLeft info2">
-        
-            
+
+
         <div class="kikuyu">
-        <img src="../assets/images/<?php echo $data->book_image?>"> 
+            <img src="../assets/images/<?php echo $value['book_image'];?>">
         </div>
       
-
-        <p><?php echo $value['book_title']; ?></p>
         <div class="info_detail">
             <b>
-                <h1 class="info_header"><?php echo $data->book_title?></h1>
+                <h1 class="info_header"><?php echo $value['book_title']; ?></h1>
             </b>
             <hr>
 
             <p>
-            <?php echo $data->book_synopsis?>
-            </p><br><br><br><br>
-
-            
-       
-            <p>
-                Author: <?php echo $data->book_author_name?>.<br><br>
-
-
-                Date Published: <?php echo $data->book_upload_date?>.<br><br>
-                ISBNO: <?php echo $data->book_isbno?>.
+            <?php echo $value['book_synopsis']; ?>
             </p>
-        </div>
+            <br>
+            <br>
+            <br>
+            <br>
 
-        <p><?php echo $value['book_synopsis']; ?></p>
-        <p><?php echo $value['book_author']; ?></p>
-        <p><?php echo $value['book_upload_date']; ?></p> 
+            <p>
+                Author: <?php echo $value['book_author_name']; ?>.
+                <br>
+                <br>
+                Date Published: <?php echo $value['book_upload_date']; ?>.<br><br>
+                ISBNO: <?php echo $value['book_isbno']; ?>.
+            </p>
+            <?php 
+                            if(isset($_SESSION['email'])){ ?>
+                                <button class="websa">BUY NOW</button>
+                                
+                            <?php }else{ ?>
+                                <p>Please login to purchase</p>
+                            <?php }
+                        ?>
         </div>
 
     </section>
@@ -110,8 +125,8 @@ $data = $result->fetchObject();
         </div>
 
         <!-- This is the where the book images will be shown together with the (title, date) -->
-        <div class="middle" id="<?php echo $value['id'] ?> ">
-            <?php foreach (getImages('book_info') as $key => $value) : ?>
+        <div class="middle ">
+            <?php foreach ($crud->getImages('book_info') as $key => $value) : ?>
 
                 <div class="paragraph">
                     <a href="get_data.php?q=<?php echo $value['id'] ?>">

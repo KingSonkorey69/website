@@ -129,6 +129,37 @@ hr {
     color: #292c2f;
 }
 
+.websa {
+    margin-top: 2.5rem;
+    margin-left: 585px;
+    margin-right: 650px;
+    -webkit-appearance: button;
+    width: 22%;
+    margin-bottom: 1.25rem;
+    padding: 0.675rem 1.5rem;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #fca311;
+    background-color: #fca311;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    -webkit-transition: color 300ms ease, border-color 300ms ease, background-color 300ms ease;
+    transition: color 300ms ease, border-color 300ms ease, background-color 300ms ease;
+    color: #204051;
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    transition: 0.5s ease-in-out;
+    outline: none;
+}
+
+.websa:hover {
+    background-color: #f5f1da;
+    outline: none;
+    transform: scale(1.1);
+}
+
 
 /* Starting of the section 3 */
 

@@ -2,17 +2,19 @@ body {
     margin: 0;
     padding: 0;
     font-family: san-serif;
-    background-color: #f8bd7f;
+    background-color: #f5f1da;
 }
 
 .box {
-    width: 450px;
+    width: 400px;
     padding: 40px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #f5f1da;
+    background-color: #f8bd7f;
+    border-radius: 4%;
+    box-shadow: 0 4px 6px -1px rgba(8, 8, 8, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 .box h1 {
@@ -44,7 +46,6 @@ body {
     width: 200px;
     outline: none;
     color: black;
-    border-radius: 24px;
     transition: 0.25s;
 }
 
@@ -54,25 +55,57 @@ body {
     border-color: black;
 }
 
-.box button {
-    border: 0;
-    background: none;
-    margin: 20px auto;
-    text-align: center;
-    padding: 14px 40px;
-    outline: none;
-    border-radius: 24px;
+#submit {
+    margin-left: 17%;
+    -webkit-appearance: button;
+    width: 200px;
+    padding: 10px 10px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     border-color: #fca311;
     background-color: #fca311;
+    -webkit-transition: color 300ms ease, border-color 300ms ease, background-color 300ms ease;
     color: #204051;
-    transition: 0.25s;
-    cursor: pointer;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    transition: 0.5s ease-in-out;
+    outline: none;
 }
 
-.box button:hover {
-    background: #fca311;
+
+/* button on hover */
+
+#submit:hover {
+    background-color: #f5f1da;
+    outline: none;
+    transform: scale(1.1);
 }
 
-box button:hover {
-    background: #fca311;
+.cancelbtn {
+    margin-left: 17%;
+    -webkit-appearance: button;
+    width: 150px;
+    padding: 10px 10px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    border-color: #fca311;
+    background-color: #fca311;
+    -webkit-transition: color 300ms ease, border-color 300ms ease, background-color 300ms ease;
+    color: #204051;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    transition: 0.5s ease-in-out;
+    outline: none;
+}
+
+.cancelbtn:hover {
+    background-color: #f5f1da;
+    outline: none;
+    transform: scale(1.1);
 }

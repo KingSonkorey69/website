@@ -1,5 +1,10 @@
 <?php
 include_once "./src/crud.php";
+//
+//This is to show that references the crud.php which does all the getting of the books from
+//the database
+$crud = new Crud();
+session_start();
 ?>
 
 <!DOCTYPE html>
@@ -70,12 +75,18 @@ include_once "./src/crud.php";
             <a href="./pages/books.php">Books</a>
             <a href="./pages/contact.php">About</a>
             <?php
-            // Echo session variables that were set
-            echo $_SESSION["email"];
+                if(isset($_SESSION['email'])){
+                    echo "<a href=''>Profile</a>";
+                    echo "<a href='src/auth/logout.php'>Logout</a>";
+
+                }else{
+                    echo "<a href='./src/login.php'>Login</a>";
+                }
+            
             ?>
 
             <!-- This will redirect the user to the login page-->
-            <button class="login"><a href="../src/login.php">Login</a></button>
+            
             <!-- If the user has not logged in then he should sign up-->
 
         </div>
@@ -121,8 +132,8 @@ include_once "./src/crud.php";
         <!-- This is the where the book images will be shown together with the (title, date)
         and all the books id="<?php echo $value['id'] ?> -->
 
-        <div class="middle" id="<?php echo $value['id'] ?>">
-                <?php foreach (getImages('book_info') as $key => $value) : ?>
+        <div class="middle">
+                <?php foreach ($crud->getImages('book_info') as $key => $value) : ?>
                     <a href="./src/get_data.php?q=<?php echo $value['id'] ?>">
                         <div class="paragraph">
                             <img class="book" src="./assets/images/<?php echo $value['book_image']; ?>">
@@ -214,7 +225,9 @@ include_once "./src/crud.php";
     <!-- This is where the user will be able to talk with the author directly -->
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
-        var Tawk_API = Tawk_API || {},
+
+        
+var Tawk_API = Tawk_API || {},
             Tawk_LoadStart = new Date();
         (function() {
             var s1 = document.createElement("script"),

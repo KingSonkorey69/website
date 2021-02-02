@@ -634,6 +634,17 @@
             flex-direction: column;
             justify-content: center;
         }
+        .title-right a {
+            margin-right: 20px;
+            font-size: 25px;
+            color: black;
+            /* transition: all 0.4s ease-in; */
+        }
+        .title-right a:hover {
+            /* text-decoration: underline; */
+            color: black;
+            /* //letter-spacing: 1em; */
+        }
         .logo {
             width: 200px;
             height: 100px;
@@ -701,12 +712,12 @@
         }
         .websa {
             margin-right: 580px;
-            margin-top: 16%;
+            margin-top: 1%;
             align-items: center;
             width: 90%;
         }
         .newsletter {
-            margin-top: -5%;
+            margin-top: -3%;
             display: flex;
             align-items: center;
             flex-direction: column;

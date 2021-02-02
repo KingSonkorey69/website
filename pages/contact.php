@@ -26,10 +26,18 @@
             <a href="books.php">Books</a>
             <!-- contact information -->
             <a href="contact.php">About</a>
+            <!-- if the user has logged in the show the logout button otherwise show the login button -->
             <?php
-            // Echo session variables that were set
-            echo $_SESSION["email"] ;
+                if(isset($_SESSION['email'])){
+                   
+                    echo "<a href='../src/auth/logout.php'>Logout</a>";
+
+                }else{
+                    echo "<a href='../src/login.php'>Login</a>";
+                }
+            
             ?>
+            
         </div>
         </div>
     </section>

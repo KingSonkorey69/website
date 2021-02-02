@@ -1,5 +1,10 @@
 <?php
 include_once "../src/crud.php";
+//This is to show that references the crud.php which does all the getting of the books from
+//the database
+$crud = new Crud();
+
+session_start();
 ?>
 
 <!DOCTYPE html>
@@ -43,10 +48,18 @@ include_once "../src/crud.php";
             <a href="books.php">Books</a>
             <!-- contact information -->
             <a href="contact.php">About</a>
+            <!-- if the user has logged in the show the logout button otherwise show the login button -->
             <?php
-            // Echo session variables that were set
-            echo $_SESSION["email"];
+                if(isset($_SESSION['email'])){
+                   
+                    echo "<a href='../src/auth/logout.php'>Logout</a>";
+
+                }else{
+                    echo "<a href='../src/login.php'>Login</a>";
+                }
+            
             ?>
+           
 
         </div>
     </section>
@@ -96,12 +109,13 @@ include_once "../src/crud.php";
 
         <div class="middle">
 
-            <?php foreach (getImages('book_info') as $key => $value) : ?>
+            <?php foreach ($crud->getImages('book_info') as $key => $value) : ?>
                 <a href="../src/get_data.php?q=<?php echo $value['id'] ?>">
                     <div class="paragraph">
                         <img class="book" src="../assets/images/<?php echo $value['book_image']; ?>">
                         <p><?php echo $value['book_title']; ?></p>
                         <p><?php echo $value['book_upload_date']; ?></p>
+                       
                 </a>
         </div>
 

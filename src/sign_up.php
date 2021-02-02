@@ -3,7 +3,8 @@
     <head>
         <title>Sign up</title>
         <link rel="stylesheet" href="../assets/css/sign_up.css">
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet"> 
     </head>
     <body>
         <form id="register" name="register_form" method="POST" >
@@ -45,7 +46,7 @@
         const confirm_password =document.querySelector('#confirm_password').value;
         const mobile =document.querySelector('#mobile').value;
         const password = document.querySelector('#password').value;
-            console.log(email, password);
+            
 
             const formData = new FormData();
             formData.append('email', email)
@@ -62,10 +63,10 @@
 
         if (await response.status == 201) {
             console.log(await response.json());
-            // window.location.href()
+             window.location.href = "http://localhost/website/src/login.php";
         } else {
             const data = await response.json();
-            var alert = document.querySelector('.alert')
+            var alert = document.querySelector('.alert');
             for (const [key, value] of Object.entries(data)) {
                 if (value !== "") {
                     alert.innerHTML = value;

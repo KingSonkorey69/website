@@ -1,6 +1,7 @@
 <?php
 require_once('database.php');
-require_once('crud.php');
+include_once "crud.php";
+$crud = new Crud();
 ?>
 
 <!DOCTYPE html>
@@ -45,7 +46,7 @@ require_once('crud.php');
             </tr>
         </thead>
 
-        <?php foreach (getImages('book_info') as $key) : ?>
+        <?php foreach ($crud->getImages('book_info') as $key) : ?>
             <img src="../assets/<?php echo $key['book_image']; ?>" /> <br>
             <tbody>
                 <tr>
