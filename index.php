@@ -14,6 +14,8 @@ session_start();
     <title>
         The Front Page
     </title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
     <!-- ttt -->
     <!-- All the links to various fonts and also animations -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">

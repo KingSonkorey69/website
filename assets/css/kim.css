@@ -578,7 +578,8 @@
         display: flex;
         flex-direction: row;
         align-items: flex-start;
-        width: 100%;
+        justify-content: space-between;
+        width: 60%;
     }
     
     .hr {
@@ -850,5 +851,12 @@
             font-size: 30px;
             text-align: center;
             text-decoration: none;
+        }
+        .sam {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            font-family: 'Playfair Display', serif;
+            justify-content: space-between;
         }
     }
