@@ -78,7 +78,7 @@ session_start();
             <a href="./pages/contact.php">About</a>
             <?php
                 if(isset($_SESSION['email'])){
-                    echo "<a href=''>Profile</a>";
+                    echo "<a href='pages/profile.php'>Profile</a>";
                     echo "<a href='src/auth/logout.php'>Logout</a>";
 
                 }else{

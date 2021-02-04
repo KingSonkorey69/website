@@ -50,9 +50,6 @@ $crud = new Crud();
             <img src="../assets/<?php echo $key['book_image']; ?>" /> <br>
             <tbody>
                 <tr>
-
-
-
                     <td>
                         <h4 class="crud"><?php echo $key['book_title']; ?></h4>
                     </td>

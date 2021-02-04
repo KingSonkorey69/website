@@ -35,4 +35,17 @@ class Crud
         //
         return $result->fetchAll(PDO::FETCH_ASSOC);
     }
+    function getUsers($id)
+    {
+        //get the id from the database 
+        $sql ="SELECT `users`.`name`, `users`.`email`, `users`.`mobile`, `book_info`.`book_title`,`book_info`.`book_price` 
+        FROM `invoice` 
+            INNER JOIN `users` ON `invoice`.`user`= `users`.`$id`
+            INNER JOIN `book_info` ON `invoice`.`book_info`= `book_info`.`$id`";
+        //return the result
+        $result = $this->db->query($sql);
+        //
+        return $result->fetchAll(PDO::FETCH_ASSOC);
+    }
+   
 }

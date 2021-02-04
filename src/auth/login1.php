@@ -64,7 +64,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         session_start();
         //
         //i want to set the email as a session variable
+        //channge and set id
         $_SESSION['email'] = $_POST['email'];
+        $_SESSION['id'] = $_POST['id'];
         
         //
         //return to home
