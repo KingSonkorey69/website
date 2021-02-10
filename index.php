@@ -1,16 +1,5 @@
 <?php
 include_once "./src/crud.php";
-require_once "vendor/autoload.php";
-
-use Monolog\Logger;
-use Monolog\Handler\StreamHandler;
-
-// create a log channel
-$log = new Logger('kimotho');
-$log->pushHandler(new StreamHandler(__DIR__ . 'debug.log', Logger::INFO));
-
-
-$log->info("hello world");
 //
 //This is to show that references the crud.php which does all the getting of the books from
 //the database

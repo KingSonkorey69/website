@@ -49,34 +49,35 @@ class Crud
     //profile and see how many books he has purchased.
     function getInvoiceByUser($userId)
     {
+
+        $sql = "SELECT name, email, mobile FROM users WHERE users.users = $userId";
+        $user = $this->db->query($sql)->fetch(PDO::FETCH_ASSOC);
+
         //
         //Create an sql statement and get the id from the database. 
-        $sql ="SELECT 
-            `users`.`name`,
-            `users`.`email`, 
-            `users`.`mobile`, 
-            `book_info`.`book_title`,
-            `book_info`.`book_price` 
+        $sql2 = "SELECT 
+            book_title,
+            book_price, 
+            book_image,
+            invoice_number 
         FROM 
             `invoice` 
         INNER JOIN 
-            `users` 
-        ON 
-            `invoice`.`users`
-            = `users`.`users`
-        INNER JOIN 
-            `book_info`
-        ON 
-            `invoice`.`book_info`
-            = `book_info`.`book_info`
+            `book_info` ON `invoice`.`book_info` = `book_info`.`book_info`
         WHERE 
-            `users`.`users` 
-            = `$userId`";
+            `invoice`.`users` = $userId";
+
         //
         //return the result
-        $result = $this->db->query($sql);
-        //
-        return $result->fetchAll(PDO::FETCH_ASSOC);
+        $result = $this->db->query($sql2);
+
+        $data = $result->fetchAll(PDO::FETCH_ASSOC);
+
+        $arr = array(
+            'user' => $user,
+            'books' => $data
+        );
+
+        return $arr;
     }
-   
 }
