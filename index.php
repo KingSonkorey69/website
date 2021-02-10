@@ -1,5 +1,16 @@
 <?php
 include_once "./src/crud.php";
+require_once "vendor/autoload.php";
+
+use Monolog\Logger;
+use Monolog\Handler\StreamHandler;
+
+// create a log channel
+$log = new Logger('kimotho');
+$log->pushHandler(new StreamHandler(__DIR__ . 'debug.log', Logger::INFO));
+
+
+$log->info("hello world");
 //
 //This is to show that references the crud.php which does all the getting of the books from
 //the database
@@ -15,7 +26,7 @@ session_start();
         The Front Page
     </title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
     <!-- ttt -->
     <!-- All the links to various fonts and also animations -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
@@ -29,7 +40,7 @@ session_start();
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
+
     <!-- ww -->
     <script>
         //
@@ -77,18 +88,17 @@ session_start();
             <a href="./pages/books.php">Books</a>
             <a href="./pages/contact.php">About</a>
             <?php
-                if(isset($_SESSION['email'])){
-                    echo "<a href='pages/profile.php'>Profile</a>";
-                    echo "<a href='src/auth/logout.php'>Logout</a>";
+            if (isset($_SESSION['email'])) {
+                echo "<a href='pages/profile.php'>Profile</a>";
+                echo "<a href='src/auth/logout.php'>Logout</a>";
+            } else {
+                echo "<a href='./src/login.php'>Login</a>";
+            }
 
-                }else{
-                    echo "<a href='./src/login.php'>Login</a>";
-                }
-            
             ?>
 
             <!-- This will redirect the user to the login page-->
-            
+
             <!-- If the user has not logged in then he should sign up-->
 
         </div>
@@ -136,19 +146,19 @@ session_start();
             and all the books.
          -->
         <div class="middle">
-                <?php foreach ($crud->getImages('book_info') as $key => $value) : ?>
-                    <a href="./src/get_data.php?q=<?php echo $value['book_info'] ?>">
-                        <div class="paragraph">
-                            <img class="book" src="./assets/images/<?php echo $value['book_image']; ?>">
-                            <p><?php echo $value['book_title']; ?></p>
-                            <p><?php echo $value['book_upload_date']; ?></p>
-                        </div>
-                    </a>
-                <?php
-                endforeach;
-                ?>
-            
-           
+            <?php foreach ($crud->getImages('book_info') as $key => $value) : ?>
+                <a href="./src/get_data.php?q=<?php echo $value['book_info'] ?>">
+                    <div class="paragraph">
+                        <img class="book" src="./assets/images/<?php echo $value['book_image']; ?>">
+                        <p><?php echo $value['book_title']; ?></p>
+                        <p><?php echo $value['book_upload_date']; ?></p>
+                    </div>
+                </a>
+            <?php
+            endforeach;
+            ?>
+
+
         </div>
 
 
@@ -165,7 +175,7 @@ session_start();
         <div class="join">
             <input type="email" name="EMAIL" value="" placeholder=" ENTER YOUR EMAIL......" class="ee">
 
-           <a href="../src/login.php"> <input type="submit" value="Join now" class="bb"></a>
+            <a href="../src/login.php"> <input type="submit" value="Join now" class="bb"></a>
 
         </div>
 
@@ -227,10 +237,8 @@ session_start();
 
     <!-- This is where the user will be able to talk with the author directly -->
     <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-
-        
-var Tawk_API = Tawk_API || {},
+    <!-- <script type="text/javascript" async>
+        var Tawk_API = Tawk_API || {},
             Tawk_LoadStart = new Date();
         (function() {
             var s1 = document.createElement("script"),
@@ -241,7 +249,7 @@ var Tawk_API = Tawk_API || {},
             s1.setAttribute('crossorigin', '*');
             s0.parentNode.insertBefore(s1, s0);
         })();
-    </script>
+    </script> -->
     <!--End of Tawk.to Script-->
 </body>
 

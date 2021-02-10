@@ -1,0 +1,14 @@
+{
+    "name": "amshel/website",
+    "description": "wanjata books",
+    "require": {
+        "monolog/monolog": "^2.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "amshel hack3r",
+            "email": "amshelhack3r@gmail.com"
+        }
+    ]
+}
