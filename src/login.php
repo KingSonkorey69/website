@@ -44,8 +44,8 @@
             });
             console.log(await response.status)
             //wait for the response
-            if (await response.status == 201) {
-                console.log(response);
+            if (await response.status == 200) {
+                console.log(await response.json());
                 alert(await response.body);
                 window.location.href = "http://localhost/website/index.php";
             } else {

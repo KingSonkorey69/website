@@ -87,7 +87,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         
         echo json_encode($obj);
-        // //implement logic for ui
+        //
         // header("location:");
     } else {
         http_response_code(400);

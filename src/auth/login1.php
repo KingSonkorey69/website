@@ -59,14 +59,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $sql = "SELECT name, mobile FROM users WHERE email = '$email'";
         $result = $database->query($sql)->fetchObject();
         $result->email = $email;
-        http_response_code(201);
         //This is how you start a session
         session_start();
         //
         //i want to set the email as a session variable
         //channge and set id
         $_SESSION['email'] = $_POST['email'];
-        $_SESSION['id'] = $_POST['id'];
+        $_SESSION['id'] = $result->users;
         
         //
         //return to home

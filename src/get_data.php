@@ -129,7 +129,7 @@ if (isset($_GET['q'])) {
             <?php foreach ($crud->getImages('book_info') as $key => $value) : ?>
 
                 <div class="paragraph">
-                    <a href="get_data.php?q=<?php echo $value['id'] ?>">
+                    <a href="get_data.php?q=<?php echo $value['book_info'] ?>">
                         <img class="book" src="../assets/images/<?php echo $value['book_image']; ?>">
 
                         <p><?php echo $value['book_title']; ?></p>

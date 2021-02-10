@@ -110,7 +110,7 @@ session_start();
         <div class="middle">
 
             <?php foreach ($crud->getImages('book_info') as $key => $value) : ?>
-                <a href="../src/get_data.php?q=<?php echo $value['id'] ?>">
+                <a href="../src/get_data.php?q=<?php echo $value['book_info'] ?>">
                     <div class="paragraph">
                         <img class="book" src="../assets/images/<?php echo $value['book_image']; ?>">
                         <p><?php echo $value['book_title']; ?></p>
