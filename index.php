@@ -16,7 +16,7 @@ session_start();
     </title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
-    <!-- ttt -->
+   
     <!-- All the links to various fonts and also animations -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <!-- <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap" rel="stylesheet"> -->
@@ -150,13 +150,17 @@ session_start();
 
         </div>
 
-
-        <!-- This button will lead you to the books page where all the books will be displayed  -->
+        <!-- 
+            This button will lead you to the books page where all the books will be displayed
+        -->
         <button class="websa"><a href="./pages/books.php">View More Books</a></button>
 
 
     </section>
-
+     <!-- 
+        This is the newsletter section where the users when they submitt their emails will
+        recieve emails about every new book that comes out.
+    -->
     <section class="newsletter">
         <div class="sub">
             <span>Subscribe To Our Newsletter</span>
@@ -164,7 +168,7 @@ session_start();
         <div class="join">
             <input type="email" name="EMAIL" value="" placeholder=" ENTER YOUR EMAIL......" class="ee">
 
-            <a href="../src/login.php"> <input type="submit" value="Join now" class="bb"></a>
+            <a href="src/login.php"> <input type="submit" value="Join now" class="bb"></a>
 
         </div>
 
@@ -172,7 +176,9 @@ session_start();
 
     <div class="hr"></div>
 
-    <!-- The footer will some information of the author -->
+    <!-- 
+        The footer which conatins the links, social media handles and contacts of the author 
+    -->
     <section class="section4 ">
 
         <div class="footer-left">
@@ -226,7 +232,7 @@ session_start();
 
     <!-- This is where the user will be able to talk with the author directly -->
     <!--Start of Tawk.to Script-->
-    <!-- <script type="text/javascript" async>
+    <script type="text/javascript" async>
         var Tawk_API = Tawk_API || {},
             Tawk_LoadStart = new Date();
         (function() {
@@ -238,8 +244,8 @@ session_start();
             s1.setAttribute('crossorigin', '*');
             s0.parentNode.insertBefore(s1, s0);
         })();
-    </script> -->
-    <!--End of Tawk.to Script-->
+    </script>
+    <!--End of Tawk.to Script -->
 </body>
 
 </html>

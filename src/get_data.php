@@ -36,7 +36,42 @@ if (isset($_GET['q'])) {
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
+    <script>
+            //
+            //get the button id
+            const btn = document.querySelector("#button");
+           
+            //listen to the button when clicked
+            btn.addEventListener("button", async (e) => {
+                alert("hello");
+                //
+                //this will prevent it from submitting the form
+                e.preventDefault();
+                //
+                const formData = new formData();
+                formData.append('book_info');
+                formData.append('book_price');
+                formData.append('mobile');
 
+                const response = await fetch("mrequest.php", {
+                    method: "POST",
+                    body: formData
+                });
+                console.log(await response.status)
+                //wait for the response
+                if (await response.status == 200) {
+                    console.log(await response.json());
+                    alert(await response.body);
+                    window.location.href = "http://localhost/website/pages/mpesa_request.php";
+                } else {
+                    console.log("anything");
+                    const data = await response.json();
+
+
+                }
+            });
+        
+    </script>
 </head>
 
 <body>
@@ -53,16 +88,15 @@ if (isset($_GET['q'])) {
             <a href="../pages/books.php">Books</a>
             <!-- contact information -->
             <a href="../pages/contact.php">About</a>
-             <!-- if the user has logged in the show the logout button otherwise show the login button -->
-             <?php
-                if(isset($_SESSION['email'])){
-                   
-                    echo "<a href='./auth/logout.php'>Logout</a>";
+            <!-- if the user has logged in the show the logout button otherwise show the login button -->
+            <?php
+            if (isset($_SESSION['email'])) {
 
-                }else{
-                    echo "<a href='./login.php'>Login</a>";
-                }
-            
+                echo "<a href='./auth/logout.php'>Logout</a>";
+            } else {
+                echo "<a href='./login.php'>Login</a>";
+            }
+
             ?>
 
         </div>
@@ -75,9 +109,9 @@ if (isset($_GET['q'])) {
 
 
         <div class="kikuyu">
-            <img src="../assets/images/<?php echo $value['book_image'];?>">
+            <img src="../assets/images/<?php echo $value['book_image']; ?>">
         </div>
-      
+
         <div class="info_detail">
             <b>
                 <h1 class="info_header"><?php echo $value['book_title']; ?></h1>
@@ -85,7 +119,7 @@ if (isset($_GET['q'])) {
             <hr>
 
             <p>
-            <?php echo $value['book_synopsis']; ?>
+                <?php echo $value['book_synopsis']; ?>
             </p>
             <br>
             <br>
@@ -97,16 +131,17 @@ if (isset($_GET['q'])) {
                 <br>
                 <br>
                 Date Published: <?php echo $value['book_upload_date']; ?>.<br><br>
-                ISBNO: <?php echo $value['book_isbno']; ?>.
+                ISBNO: <?php echo $value['book_isbno']; ?>.<br><br>
+                Price: <?php echo "Ksh" . $value['book_price']; ?>
             </p>
-            <?php 
-                            if(isset($_SESSION['email'])){ ?>
-                                <button class="websa">BUY NOW</button>
-                                
-                            <?php }else{ ?>
-                                <p>Please login to purchase</p>
-                            <?php }
-                        ?>
+            <?php
+            if (isset($_SESSION['email'])) { ?>
+                <button id="button" class="websa" >BUY NOW </button>
+
+            <?php } else { ?>
+                <p>Please login to purchase</p>
+            <?php }
+            ?>
         </div>
 
     </section>

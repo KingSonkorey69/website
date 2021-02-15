@@ -35,7 +35,7 @@ $crud = new Crud();
     <table class="content-table">
         <thead>
             <tr>
-
+                <th>Book Image</th>
                 <th>Book Title</th>
                 <th>Book Author Name</th>
                 <th>Book Upload date</th>
@@ -47,8 +47,13 @@ $crud = new Crud();
         </thead>
 
         <?php foreach ($crud->getImages('book_info') as $key) : ?>
-            <img src="../assets/<?php echo $key['book_image']; ?>" /> <br>
+
             <tbody>
+                <tr>
+                    <td>
+                        <img src="../assets/<?php echo $key['book_image']; ?>" /> <br>
+                    </td>
+                </tr>
                 <tr>
                     <td>
                         <h4 class="crud"><?php echo $key['book_title']; ?></h4>
@@ -85,14 +90,14 @@ $crud = new Crud();
                     <td><input type="text" name="book_isbno" id="book_isbno" placeholder="Book ISBNO..."></td>
                     <td><input type="text" name="book_synopsis" id="book_synopsis" placeholder="Book Synopsis"></td>
                     <td><input type="text" name="book_price" id="book_price" placeholder="Book Price"></td>
-                    <input type="text" name="update" id="update" hidden value="<?php echo $key['id'] ?>">
+                    <input type="text" name="update" id="update" hidden value="<?php echo $key['book_info'] ?>">
                     <td> <input type="submit" class="update" value="update" /></td>
 
 
                 </form>
                 <form action="img_delete.php" method="post">
 
-                    <input type="text" name="delete" name="delete " id="delete" hidden value="<?php echo $key['id'] ?>">
+                    <input type="text" name="delete" name="delete " id="delete" hidden value="<?php echo $key['book_info'] ?>">
 
                     <td><input type="submit" class="delete" value="delete" /></td>
                 </form>

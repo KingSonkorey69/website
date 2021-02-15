@@ -80,4 +80,32 @@ class Crud
 
         return $arr;
     }
+    function mrequest($id){
+       
+       $sql = 
+       "SELECT
+	        book_info.book_title, book_info.book_price, users.mobile
+        FROM 
+	        book_info 
+        INNER JOIN 
+            invoice 
+    	ON
+             invoice.book_info = book_info.book_info
+        INNER JOIN 
+            users
+    	ON
+             invoice.users =  users.users
+        WHERE
+	        invoice.invoice =$id";
+        //return the result
+        $result = $this->db->query($sql);
+        //
+        return $result->fetchAll(PDO::FETCH_ASSOC);
+    try {
+        $this->db->query($sql);
+        header('location: ../pages/mpesa_request.php');
+    } catch (Exception $e) {
+        echo $e->getMessage();
+    }
+}
 }

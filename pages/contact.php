@@ -29,7 +29,7 @@
             <!-- if the user has logged in the show the logout button otherwise show the login button -->
             <?php
                 if(isset($_SESSION['email'])){
-                   
+                    echo "<a href='../pages/profile.php'>Profile</a>";
                     echo "<a href='../src/auth/logout.php'>Logout</a>";
 
                 }else{
@@ -142,22 +142,6 @@
         </div>
     </section>
 
-    <!-- This is where the user will be able to talk with the author directly -->
-    <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-        var Tawk_API = Tawk_API || {},
-            Tawk_LoadStart = new Date();
-        (function() {
-            var s1 = document.createElement("script"),
-                s0 = document.getElementsByTagName("script")[0];
-            s1.async = true;
-            s1.src = 'https://embed.tawk.to/5f197d4fa45e787d128bfc8a/default';
-            s1.charset = 'UTF-8';
-            s1.setAttribute('crossorigin', '*');
-            s0.parentNode.insertBefore(s1, s0);
-        })();
-    </script>
-    <!--End of Tawk.to Script-->
     </section>
 
 </body>

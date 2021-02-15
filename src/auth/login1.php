@@ -57,16 +57,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     //check if the email is valid
     if (empty($email_err) && empty($password_err)) {
         //user has successfully logged in 
-
+        //
         $sql = "SELECT users, name, mobile FROM users WHERE email = '$email'";
         $result = $database->query($sql)->fetchObject();
-
-
         //
         //i want to set the email as a session variable
         //channge and set id
         $_SESSION['email'] = $_POST['email'];
         $_SESSION['id'] = $result->users;
+        $_SESSION['mobile'] = $result->mobile;
+
 
         //
         //return to home

@@ -4,15 +4,15 @@ session_start();
 include_once "../src/crud.php";
 include_once '../debug.php';
 
-use Monolog\Logger;
-use Monolog\Handler\StreamHandler;
+ use Monolog\Logger;
+ use Monolog\Handler\StreamHandler;
 
-include_once "../vendor/autoload.php";
+ include_once "../vendor/autoload.php";
 
 
 // create a log channel
-$log = new Logger('kimotho');
-$log->pushHandler(new StreamHandler(__DIR__ . '/../debug.log', Logger::INFO));
+ $log = new Logger('kimotho');
+ $log->pushHandler(new StreamHandler(__DIR__ . '/../debug.log', Logger::INFO));
 $user;
 $books;
 

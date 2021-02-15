@@ -29,15 +29,15 @@ class Stk extends Mpesa
             "PhoneNumber" => $this->detail->partyA,
             "CallBackURL" => CALLBACK_URL,
             "AccountReference" => $this->detail->accountRef,
-            "TransactionDesc" => "book"
+            "TransactionDesc" => $this->detail->book_info
         );
     }
 
     
 }
 
-require "./details.php";
-$d = new Details("254702129493", "4000");
-$stk = new Stk($d);
+// require "./details.php";_
+// $d = new Details("254702129493", "4000", "book_");
+// $stk = new Stk($d);
 
-var_dump($stk->result);
+// var_dump($stk->result);

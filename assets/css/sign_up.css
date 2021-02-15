@@ -6,14 +6,14 @@ body {
 }
 
 .box {
-    width: 400px;
+    width: 380px;
+    height: auto;
     padding: 40px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #f8bd7f;
-    border-radius: 4%;
     box-shadow: 0 4px 6px -1px rgba(8, 8, 8, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
@@ -56,9 +56,9 @@ body {
 }
 
 #submit {
-    margin-left: 17%;
+    margin-left: 27%;
     -webkit-appearance: button;
-    width: 200px;
+    width: 250px;
     padding: 10px 10px;
     border-style: solid;
     border-width: 1px;
@@ -85,9 +85,10 @@ body {
 }
 
 .cancelbtn {
-    margin-left: 17%;
+    margin-left: 7%;
     -webkit-appearance: button;
     width: 150px;
+    height: 30%;
     padding: 10px 10px;
     border-style: solid;
     border-width: 1px;
@@ -108,4 +109,9 @@ body {
     background-color: #f5f1da;
     outline: none;
     transform: scale(1.1);
+}
+
+.clearfix {
+    display: flex;
+    flex-direction: row;
 }
