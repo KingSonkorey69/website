@@ -12,9 +12,9 @@
 <body>
     <section class="mreq">
     <div>
-            <p><?php echo $value['book_info']; ?></p>
-            <p><?php echo $value['mobile']; ?></p>
-            <p><?php echo $value['book_price']; ?></p>
+            <p id="info"><?php echo $value['book_info']; ?></p>
+            <p id="mobile"><?php echo $value['mobile']; ?></p>
+            <p id="amount"><?php echo $value['book_price']; ?></p>
         </div>
     </section>
     

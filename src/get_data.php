@@ -1,5 +1,6 @@
 <?php
 include_once "crud.php";
+include_once "mrequest.php";
 session_start();
 //
 //get the data from the server 
@@ -39,8 +40,8 @@ if (isset($_GET['q'])) {
     <script>
             //
             //get the button id
-            const btn = document.querySelector("#button");
-           
+            const btn = document.getElementById("button");
+           alert("hello");
             //listen to the button when clicked
             btn.addEventListener("button", async (e) => {
                 alert("hello");
@@ -48,10 +49,13 @@ if (isset($_GET['q'])) {
                 //this will prevent it from submitting the form
                 e.preventDefault();
                 //
+                const book_info =document.querySelector('#info').value;
+                const mobile = document.querySelector('#mobile').value;
+                const amount =document.querySelector('#amount').value;
                 const formData = new formData();
-                formData.append('book_info');
-                formData.append('book_price');
+                formData.append('info');
                 formData.append('mobile');
+                formData.append('amount');
 
                 const response = await fetch("mrequest.php", {
                     method: "POST",

@@ -1,6 +1,6 @@
 <?php
 require_once "database.php";
-require "./mpesa/details.php";
+require "../src/mpesa/details.php";
 //
 //chech if the requets is post 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {

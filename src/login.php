@@ -46,7 +46,8 @@
             //wait for the response
             if (await response.status == 200) {
                 console.log(await response.json());
-                alert(await response.body);
+                //alert(await response.body);
+                alert("You Have Successfully Logged in");
                 window.location.href = "http://localhost/website/index.php";
             } else {
                 console.log("anything");
