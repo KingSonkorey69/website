@@ -295,9 +295,10 @@ h2 {
     width: 260px;
     padding-top: 0.675rem;
     padding-bottom: 0.675rem;
-    border: 1px solid #00416d;
+    border: 1px solid #fca311;
+    background-color: #fca311;
     background-color: transparent;
-    color: #f2f2f2;
+    color: #204051;
     font-family: "Bitter", serif;
     letter-spacing: 0.1rem;
     font-size: 14px;
@@ -306,19 +307,20 @@ h2 {
 }
 
 .ee:hover {
-    background-color: lavender;
+    background-color: #f5f1da;
+    outline: none;
+    transform: scale(1.1);
 }
 
 .bb {
     width: 30%;
     padding: 0.675rem 1.5rem;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #00416d;
-    background-color: transparent;
+    border: 1px solid #fca311;
+    background-color: #fca311;
+    color: #204051;
+    /* background-color: transparent; */
     -webkit-transition: color 300ms ease, border-color 300ms ease, background-color 300ms ease;
     transition: color 300ms ease, border-color 300ms ease, background-color 300ms ease;
-    color: #f2f2f2;
     font-family: "Bitter", serif;
     font-size: 0.675rem;
     letter-spacing: 0.1rem;
@@ -327,7 +329,9 @@ h2 {
 }
 
 .bb:hover {
-    background-color: lavender;
+    background-color: #f5f1da;
+    outline: none;
+    transform: scale(1.1);
 }
 
 
