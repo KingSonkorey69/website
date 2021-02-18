@@ -37,48 +37,11 @@ if (isset($_GET['q'])) {
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
-    <script>
-            //
-            //get the button id
-            const btn = document.getElementById("button");
-           alert("hello");
-            //listen to the button when clicked
-            btn.addEventListener("button", async (e) => {
-                alert("hello");
-                //
-                //this will prevent it from submitting the form
-                e.preventDefault();
-                //
-                const book_info =document.querySelector('#info').value;
-                const mobile = document.querySelector('#mobile').value;
-                const amount =document.querySelector('#amount').value;
-                const formData = new formData();
-                formData.append('info');
-                formData.append('mobile');
-                formData.append('amount');
-
-                const response = await fetch("mrequest.php", {
-                    method: "POST",
-                    body: formData
-                });
-                console.log(await response.status)
-                //wait for the response
-                if (await response.status == 200) {
-                    console.log(await response.json());
-                    alert(await response.body);
-                    window.location.href = "http://localhost/website/pages/mpesa_request.php";
-                } else {
-                    console.log("anything");
-                    const data = await response.json();
-
-
-                }
-            });
-        
-    </script>
+    
 </head>
 
 <body>
+
     <!-- This will be the information navigation bar will be -->
     <section class="info1">
 
@@ -250,6 +213,48 @@ if (isset($_GET['q'])) {
             <span>Website: Samuel Kimotho</span>
         </div>
     </section>
+    <script>
+       
+            //
+            //get the button id
+            const btn = document.getElementById("button");
+            console.log(btn);
+            //listen to the button when clicked
+            btn.addEventListener("button", async (e) => {
+                alert("hello");
+                //
+                //this will prevent it from submitting the form
+                e.preventDefault();
+                //
+                const book_info =document.querySelector('#info').value;
+                const mobile = document.querySelector('#mobile').value;
+                const amount =document.querySelector('#amount').value;
+                const formData = new formData();
+                formData.append('info');
+                formData.append('mobile');
+                formData.append('amount');
+
+                const response = await fetch("mrequest.php", {
+                    method: "POST",
+                    body: formData
+                });
+               
+                //wait for the response
+                if (await response.status == 200) {
+                    console.log(await response.json());
+                    alert(await response.body);
+                    window.location.href = "http://localhost/website/pages/mpesa_request.php";
+                } else {
+                    console.log("anything");
+                    const data = await response.json();
+
+
+                }
+            });
+       
+            
+        
+    </script>
     <!-- This is where the user will be able to talk with the author directly -->
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
@@ -266,6 +271,7 @@ if (isset($_GET['q'])) {
         })();
     </script>
     <!--End of Tawk.to Script-->
+   
 </body>
 
 

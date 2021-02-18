@@ -771,4 +771,19 @@ span {
     .bb:hover {
         background-color: #e7dfd5;
     }
+    .sam {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        font-family: 'Playfair Display', serif;
+        justify-content: space-between;
+    }
+    .sam span {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-size: 20px;
+        height: 50px;
+        align-items: center;
+    }
 }
