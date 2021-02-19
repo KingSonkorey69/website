@@ -4,13 +4,15 @@ require "../src/mpesa/details.php";
 //
 //chech if the requets is post 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    //
     $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
+    //
     if(isset($_POST['button'])){
         
      $d = new Details("254702129493", "200", "book_info");
      $stk = new Stk($d);
         //
-        //
+        //select the book_info, amount, mobile from the db.
         $sql = 
        "SELECT
 	        book_info.book_title, book_info.book_price, users.mobile
@@ -29,9 +31,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         //return the result
         $result = $this->db->query($sql);
         //
-        return $result->fetchAll(PDO::FETCH_ASSOC);
+        echo $result->fetchAll(PDO::FETCH_ASSOC);
+        echo json_encode($result);
     }else{
-
+        http_response_code(404);
     }
 }
 

@@ -233,7 +233,7 @@ var_dump($id);
                const book_info = d.getAttribute("class");
                //
                console.log(d);
-               
+               //
                 const formData = new FormData();
                 formData.append('d', book_info);
                 //save
@@ -248,7 +248,8 @@ var_dump($id);
                     alert(await response.body);
                     window.location.href = "http://localhost/website/pages/mpesa_request.php";
                 } else {
-                    console.log("anything");
+                    //
+                    console.log(await response.status);
                     const data = await response.json();
 
 
