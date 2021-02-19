@@ -236,9 +236,7 @@ var_dump($id);
                
                 const formData = new FormData();
                 formData.append('d', book_info);
-               
-                
-
+                //save
                 const response = await fetch("mrequest.php", {
                     method: "POST",
                     body: formData
