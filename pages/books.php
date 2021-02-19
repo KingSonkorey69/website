@@ -51,7 +51,7 @@ session_start();
             <!-- if the user has logged in the show the logout button otherwise show the login button -->
             <?php
                 if(isset($_SESSION['email'])){
-                    echo "<a href='../pages/profile.php'>Profile</a>";
+                    
                     echo "<a href='../src/auth/logout.php'>Logout</a>";
 
                 }else{

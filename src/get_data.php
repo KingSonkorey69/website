@@ -12,6 +12,7 @@ if (isset($_GET['q'])) {
     $id = $_GET['q'];
     //getting the getbooks and also giving it the id
     $value = $crud->getBooks($id)[0];
+   
 } else {
     //
     //echo an error message if we didnt get here
@@ -70,6 +71,9 @@ if (isset($_GET['q'])) {
 
 
     </section>
+    <?php
+var_dump($id);
+?>
 
     <!-- This is where the book that you have clicked on will appear and will also appear with its information -->
     <section id="animated-example" class="animated bounceInLeft info2">
@@ -79,7 +83,7 @@ if (isset($_GET['q'])) {
             <img src="../assets/images/<?php echo $value['book_image']; ?>">
         </div>
 
-        <div class="info_detail">
+        <div class="info_detail" data-bookid="<?php echo $value ['book_info']?>;">
             <b>
                 <h1 class="info_header"><?php echo $value['book_title']; ?></h1>
             </b>
@@ -218,21 +222,22 @@ if (isset($_GET['q'])) {
             //
             //get the button id
             const btn = document.getElementById("button");
-            console.log(btn);
             //listen to the button when clicked
-            btn.addEventListener("button", async (e) => {
-                alert("hello");
+            btn.addEventListener("click", async (e) => {
                 //
                 //this will prevent it from submitting the form
                 e.preventDefault();
-                //
-                const book_info =document.querySelector('#info').value;
-                const mobile = document.querySelector('#mobile').value;
-                const amount =document.querySelector('#amount').value;
-                const formData = new formData();
-                formData.append('info');
-                formData.append('mobile');
-                formData.append('amount');
+               //
+               //
+               const d = document.querySelector(".info_header")
+               const book_info = d.getAttribute("class");
+               //
+               console.log(d);
+               
+                const formData = new FormData();
+                formData.append('d', book_info);
+               
+                
 
                 const response = await fetch("mrequest.php", {
                     method: "POST",
