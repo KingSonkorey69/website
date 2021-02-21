@@ -7,7 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     //
     $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
     //
-    if(isset($_POST['button'])){
+
         
      $d = new Details("254702129493", "200", "book_info");
      $stk = new Stk($d);
@@ -32,9 +32,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $result = $this->db->query($sql);
         //
         echo $result->fetchAll(PDO::FETCH_ASSOC);
-        echo json_encode($result);
-    }else{
-        http_response_code(404);
-    }
+        //echo json_encode($result);
+        //echo json_decode(file_get_contents('mpesa_request.php'));
+        $result = file_get_contents('mpesa_request.php');
+        echo json_decode($result);
+    
+}else{
+    http_response_code(404);
+    $arr = [
+    "message" => "this is an error"
+    ];
+    echo json_encode($arr);
 }
 

@@ -37,8 +37,8 @@ if (isset($_GET['q'])) {
     <link rel="stylesheet" type="text/css" href="../assets/css/get_data.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-
-    
+    <!-- This is for disabling someone to right click on my website and make changes -->
+    <!-- <script language="javascript">document.onmousedown=disableclick;status="We Dont do that here";function disableclick(event){  if(event.button==2)   {     alert(status);     return false;       }}</script>  -->
 </head>
 
 <body>
@@ -71,9 +71,7 @@ if (isset($_GET['q'])) {
 
 
     </section>
-    <?php
-var_dump($id);
-?>
+    
 
     <!-- This is where the book that you have clicked on will appear and will also appear with its information -->
     <section id="animated-example" class="animated bounceInLeft info2">
@@ -251,8 +249,8 @@ var_dump($id);
                     //
                     console.log(await response.status);
                     const data = await response.json();
-
-
+                    //
+                    console.log(data);
                 }
             });
        
