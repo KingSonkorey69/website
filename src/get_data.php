@@ -227,6 +227,7 @@ if (isset($_GET['q'])) {
                 e.preventDefault();
                //
                //
+               //
                const d = document.querySelector(".info_header")
                const book_info = d.getAttribute("class");
                //
@@ -239,7 +240,8 @@ if (isset($_GET['q'])) {
                     method: "POST",
                     body: formData
                 });
-               
+                console.log(await response.status);
+                console.log(await response.json());
                 //wait for the response
                 if (await response.status == 200) {
                     console.log(await response.json());

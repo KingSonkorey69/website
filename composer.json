@@ -1,9 +1,6 @@
 {
     "name": "amshel/website",
     "description": "wanjata books",
-    "require": {
-        "monolog/monolog": "^2.2"
-    },
     "license": "MIT",
     "authors": [
         {
