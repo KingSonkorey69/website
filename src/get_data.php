@@ -13,7 +13,7 @@ $log = new Logger('name');
 //specify where to log the error and  also put the name of the file.
 $log->pushHandler(new StreamHandler(__DIR__ . '/../kimotho.log', Logger::INFO));
 // add records to the log
-$log->info('await responsejson()');
+$log->info('await response.json()');
 //get the data from the server 
 
 if (isset($_GET['q'])) {
@@ -238,21 +238,23 @@ if (isset($_GET['q'])) {
                 //this will prevent it from submitting the form
                 e.preventDefault();
                //
+               //queryselect the div tag 
+               const d = document.querySelector(".info_header");
                //
-               //
-               const d = document.querySelector(".info_header")
+               //get the div attribute
                const book_info = d.getAttribute("class");
                //
                console.log(d);
                //
                 const formData = new FormData();
+                //
                 formData.append('d', book_info);
                 //save
                 const response = await fetch("mrequest.php", {
                     method: "POST",
                     body: formData
                 });
-                console.log(await response.status);
+                alert(await response.body);
                
                 //wait for the response
                 if (await response.status == 200) {
