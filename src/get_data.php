@@ -3,17 +3,7 @@ session_start();
  
 include_once "crud.php";
 include_once "mrequest.php";
-include_once '../debug.php';
-include_once "../vendor/autoload.php";
-use Monolog\Logger;
-use Monolog\Handler\StreamHandler;
-//
-// create a log channel
-$log = new Logger('name');
-//specify where to log the error and  also put the name of the file.
-$log->pushHandler(new StreamHandler(__DIR__ . '/../kimotho.log', Logger::INFO));
-// add records to the log
-$log->info('await response.json()');
+
 //get the data from the server 
 
 if (isset($_GET['q'])) {
@@ -227,8 +217,7 @@ if (isset($_GET['q'])) {
             <span>Website: Samuel Kimotho</span>
         </div>
     </section>
-    <script>
-       
+    <script> 
             //
             //get the button id
             const btn = document.getElementById("button");
@@ -254,8 +243,6 @@ if (isset($_GET['q'])) {
                     method: "POST",
                     body: formData
                 });
-                alert(await response.body);
-               
                 //wait for the response
                 if (await response.status == 200) {
                     console.log(await response.json());
