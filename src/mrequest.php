@@ -1,7 +1,17 @@
 <?php
 require_once "database.php";
 require "../src/mpesa/details.php";
-
+include_once '../debug.php';
+include_once "../vendor/autoload.php";
+use Monolog\Logger;
+use Monolog\Handler\StreamHandler;
+//
+// create a log channel
+$log = new Logger('name');
+//specify where to log the error and  also put the name of the file.
+$log->pushHandler(new StreamHandler(__DIR__ . '/../kimotho.log', Logger::INFO));
+// add records to the log
+$log->info(json_encode($result));
 //
 //chech if the requets is post 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
