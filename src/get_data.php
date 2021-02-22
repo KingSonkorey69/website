@@ -1,9 +1,21 @@
 <?php
+session_start();
+ 
 include_once "crud.php";
 include_once "mrequest.php";
-session_start();
+include_once '../debug.php';
+include_once "../vendor/autoload.php";
+use Monolog\Logger;
+use Monolog\Handler\StreamHandler;
 //
+// create a log channel
+$log = new Logger('name');
+//specify where to log the error and  also put the name of the file.
+$log->pushHandler(new StreamHandler(__DIR__ . '/../kimotho.log', Logger::INFO));
+// add records to the log
+$log->info('await responsejson()');
 //get the data from the server 
+
 if (isset($_GET['q'])) {
     //
     //creating a new instance of the books representing the class in the crud.
@@ -44,7 +56,7 @@ if (isset($_GET['q'])) {
 <body>
 
     <!-- This will be the information navigation bar will be -->
-    <section class="info1">
+     <section class="info1">
 
         <!-- The name of the author -->
         <!-- The name of the author -->
@@ -70,7 +82,7 @@ if (isset($_GET['q'])) {
         </div>
 
 
-    </section>
+    </section> 
     
 
     <!-- This is where the book that you have clicked on will appear and will also appear with its information -->
@@ -241,7 +253,7 @@ if (isset($_GET['q'])) {
                     body: formData
                 });
                 console.log(await response.status);
-                console.log(await response.json());
+               
                 //wait for the response
                 if (await response.status == 200) {
                     console.log(await response.json());

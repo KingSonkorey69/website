@@ -9,13 +9,11 @@ include_once '../debug.php';
 
  include_once "../vendor/autoload.php";
 
-
 // create a log channel
  $log = new Logger('kimotho');
  $log->pushHandler(new StreamHandler(__DIR__ . '/../debug.log', Logger::INFO));
 $user;
 $books;
-
 
 $log->info(json_encode($_SESSION));
 //
@@ -56,7 +54,7 @@ if (isset($_SESSION['id'])) {
         <!--
                  The name of the author
             -->
-        <a href="index.php"> <img class="logo" src="../assets/images/logo-01.png"></a>
+        <a href="../index.php"> <img class="logo" src="../assets/images/logo-01.png"></a>
 
         <!-- 
                 The quick links will be at the right
@@ -65,11 +63,11 @@ if (isset($_SESSION['id'])) {
             <!-- 
                     This link will show you all the Books
                 -->
-            <a href="./pages/books.php">Books</a>
+            <a href="./books.php">Books</a>
             <!-- 
                     This link will show the users details
                 -->
-            <a href="./pages/contact.php">About</a>
+            <a href=".contact.php">About</a>
             <!-- 
                     Show the user the profile button and 
                     the logout button if they have logged in.

@@ -7,5 +7,8 @@
             "name": "amshel hack3r",
             "email": "amshelhack3r@gmail.com"
         }
-    ]
+    ],
+    "require": {
+        "monolog/monolog": "^1.26"
+    }
 }
