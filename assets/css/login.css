@@ -101,3 +101,126 @@ body {
     outline: none;
     transform: scale(1.1);
 }
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+    /* CSS */
+}
+
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    /* CSS */
+}
+
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* CSS */
+}
+
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    /* CSS */
+}
+
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+    /* CSS */
+}
+
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (max-width: 767px) {
+    /* CSS */
+    .box {
+        width: 70%;
+        padding: 40px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #f8bd7f;
+        border-radius: 5%;
+        text-align: center;
+        box-shadow: 0 4px 6px -1px rgba(8, 8, 8, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    .box h1 {
+        text-align: center;
+        color: #000000;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+    .box p {
+        text-align: center;
+        color: #000000;
+        font-weight: 150;
+        font-family: 'Playfair Display', serif;
+    }
+    .box input[type="text"],
+    .box input[type="password"] {
+        border: 0;
+        background: none;
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+        border: 2px solid #000000;
+        padding: 14px 10px;
+        width: 200px;
+        outline: none;
+        color: #000000;
+        /* border-radius: 24px; */
+        transition: 0.25s;
+    }
+    .box input[type="text"]:focus,
+    .box input[type="password"]:focus {
+        width: 280px;
+        border-color: #000000;
+    }
+    .box input[type="submit"] {
+        margin-left: -2%;
+        -webkit-appearance: button;
+        width: 200px;
+        padding: 10px 10px;
+        border-style: solid;
+        border-width: 1px;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        border-color: #fca311;
+        background-color: #fca311;
+        -webkit-transition: color 300ms ease, border-color 300ms ease, background-color 300ms ease;
+        color: #204051;
+        font-family: 'Playfair Display', serif;
+        font-size: 20px;
+        letter-spacing: 0.1rem;
+        text-transform: uppercase;
+        transition: 0.5s ease-in-out;
+        outline: none;
+    }
+}

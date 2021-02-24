@@ -22,7 +22,6 @@ body {
 /* to actually make the navigation stick even when you scroll  */
 
 .section1 {
-
     top: 0px;
     width: 100%;
     z-index: 30;
@@ -35,7 +34,6 @@ body {
     align-items: center;
     box-shadow: 0 4px 6px -1px rgba(8, 8, 8, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
-
 
 section.hero {
     display: flex;
@@ -53,14 +51,12 @@ section.hero {
     height: auto;
 }
 
-
 section.books {
     width: 90%;
     margin: 90px auto 0 auto;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-
 }
 
 section.books div {
@@ -69,7 +65,6 @@ section.books div {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 section.books div a {
@@ -89,6 +84,7 @@ section.books div a {
 section.books div a:hover {
     cursor: pointer;
 }
+
 
 /* the title */
 
@@ -122,8 +118,6 @@ a {
     text-decoration: none;
     color: inherit;
 }
-
-
 
 .section4 {
     position: fixed;
@@ -290,4 +284,102 @@ a {
 span {
     color: #e9a331;
     font: bold 25px "Playfair Display", serif;
+}
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+    /* CSS */
+}
+
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    /* CSS */
+}
+
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* CSS */
+}
+
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    /* CSS */
+}
+
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+    /* CSS */
+}
+
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (max-width: 767px) {
+    /* CSS */
+    .section1 {
+        margin-top: -3%;
+        position: static;
+        /* -webkit-mask-position: static; */
+        height: 300px;
+        width: 100%;
+        padding: 0%;
+        box-shadow: 0 4px 6px -1px rgba(8, 8, 8, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    .section1 {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .title-right {
+        margin-top: 5%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 60%;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .title-right a {
+        font-size: 27px;
+        color: rgb(2, 2, 2);
+        transition: all 0.4s ease-in;
+    }
+    .title-right a:hover {
+        /* text-decoration: underline; */
+        color: black;
+        letter-spacing: 0.1em;
+    }
+    .section1>a {
+        color: black;
+        font-weight: 800;
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
 }

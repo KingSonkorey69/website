@@ -652,12 +652,12 @@
         .title-right a {
             font-size: 27px;
             color: rgb(2, 2, 2);
-            /* transition: all 0.4s ease-in; */
+            transition: all 0.4s ease-in;
         }
         .title-right a:hover {
             /* text-decoration: underline; */
             color: black;
-            /* //letter-spacing: 1em; */
+            letter-spacing: 0.1em;
         }
         .section1>a {
             color: black;

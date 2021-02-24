@@ -16,6 +16,8 @@ class Stk extends Mpesa
        
         $this->result = $this->execute(STK_PUSH);
     }
+    //
+    //This is where will generate the body of the mpesa
     function generateBody()
     {
         return array(

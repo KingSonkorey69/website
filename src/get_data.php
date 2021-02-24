@@ -5,7 +5,6 @@ include_once "crud.php";
 include_once "mrequest.php";
 
 //get the data from the server 
-
 if (isset($_GET['q'])) {
     //
     //creating a new instance of the books representing the class in the crud.
@@ -103,11 +102,11 @@ if (isset($_GET['q'])) {
                 <br>
                 Date Published: <?php echo $value['book_upload_date']; ?>.<br><br>
                 ISBNO: <?php echo $value['book_isbno']; ?>.<br><br>
-                Price: <?php echo "Ksh" . $value['book_price']; ?>
+                Price: Ksh<p class="price">  <?php echo $value['book_price'];?></p>
             </p>
             <?php
             if (isset($_SESSION['email'])) { ?>
-                <button id="button" class="websa" >BUY NOW </button>
+                <button id="button" class="websa" onclick="get_details(this)" >BUY NOW </button>
 
             <?php } else { ?>
                 <p>Please login to purchase</p>
@@ -218,47 +217,50 @@ if (isset($_GET['q'])) {
         </div>
     </section>
     <script> 
+        //
+        //Get the user details i.e the moile number, book title and the amount of the book
+        //And sent it to database 
+        async function get_details(button){
+            // 
+            //The mobile number is saved as a php session            
+            const mobile = `<?php echo $_SESSION['mobile'];?>`;
+            // 
+            //The book title is the text content of the header h1 elements 
+            const title = document.querySelector('.info_header').textContent;
+            // 
+            //The amount of the book to be bought 
+            const amount = eval(document.querySelector('.price').textContent);
+            // 
+            //For debuging
+            console.log({mobile, title, amount});
+            // 
             //
-            //get the button id
-            const btn = document.getElementById("button");
-            //listen to the button when clicked
-            btn.addEventListener("click", async (e) => {
-                //
-                //this will prevent it from submitting the form
-                e.preventDefault();
-               //
-               //queryselect the div tag 
-               const d = document.querySelector(".info_header");
-               //
-               //get the div attribute
-               const book_info = d.getAttribute("class");
-               //
-               console.log(d);
-               //
-                const formData = new FormData();
-                //
-                formData.append('d', book_info);
-                //save
-                const response = await fetch("mrequest.php", {
+            const formData = new FormData();
+            //
+            formData.append('title', title);
+            formData.append('amount', amount);
+            formData.append('mobile', mobile);
+            
+            save
+            const response = await fetch("mrequest.php", {
                     method: "POST",
                     body: formData
                 });
+          
                 //wait for the response
                 if (await response.status == 200) {
-                    console.log(await response.json());
-                    alert(await response.body);
-                    window.location.href = "http://localhost/website/pages/mpesa_request.php";
-                } else {
-                    //
-                    console.log(await response.status);
-                    const data = await response.json();
-                    //
-                    console.log(data);
-                }
-            });
-       
-            
-        
+                  
+                  // alert(await response.body);
+                  window.location.href = `http://localhost/website/pages/mpesa_request.php?title=${title}&amount=${amount}`;
+              } else {
+                  // //
+                  // console.log(await response.status);
+                  const data = await response.json();
+                  //
+                  console.log(data);
+              }
+        }
+    
     </script>
     <!-- This is where the user will be able to talk with the author directly -->
     <!--Start of Tawk.to Script-->
