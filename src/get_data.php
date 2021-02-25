@@ -222,38 +222,32 @@ if (isset($_GET['q'])) {
         //And sent it to database 
         async function get_details(button){
             // 
-            //The mobile number is saved as a php session            
-            const mobile = `<?php echo $_SESSION['mobile'];?>`;
-            // 
-            //The book title is the text content of the header h1 elements 
-            const title = document.querySelector('.info_header').textContent;
-            // 
-            //The amount of the book to be bought 
-            const amount = eval(document.querySelector('.price').textContent);
+            //The book_id which represents the structure of the book
+            //so as to send the book_id to the server.           
+            const id = `<?php echo $value['book_info'];?>`;
+           
             // 
             //For debuging
-            console.log({mobile, title, amount});
-            // 
-            //
+            console.log({id});
+            
+            
             const formData = new FormData();
             //
-            formData.append('title', title);
-            formData.append('amount', amount);
-            formData.append('mobile', mobile);
-            
-            save
+            formData.append('id', id);
+            //
+            //save
             const response = await fetch("mrequest.php", {
                     method: "POST",
                     body: formData
                 });
-          
+                //
                 //wait for the response
                 if (await response.status == 200) {
                   
                   // alert(await response.body);
-                  window.location.href = `http://localhost/website/pages/mpesa_request.php?title=${title}&amount=${amount}`;
+                  window.location.href = "http://localhost/website/pages/mpesa_request.php";
               } else {
-                  // //
+                  //
                   // console.log(await response.status);
                   const data = await response.json();
                   //

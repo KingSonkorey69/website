@@ -1,6 +1,8 @@
 <?php
 session_start();
 
+include_once "../src/mrequest.php";
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,13 +18,13 @@ session_start();
     <section class="mreq">
     <div>
             <p class="title">
-                <?php 
-                    if(isset($_REQUEST['title'])){echo  $_REQUEST['title']; }
-                    else{echo "no title was found";}
-                ?>
+                <!-- <?php 
+                    if(isset($_REQUEST['book_info'])){echo  $_REQUEST['book_info']; }
+                    else{echo "No book was found";}
+                ?> -->
             </p>
             <p class="mobile"><?php echo $_SESSION['mobile'];?></p>
-            <p class="amount"><?php echo $_REQUEST['amount'][0]; ?></p>
+            
         </div>
     </section>
     
