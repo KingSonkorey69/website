@@ -17,13 +17,11 @@ include_once "../src/mrequest.php";
 <body>
     <section class="mreq">
     <div>
-            <p class="title">
-                <!-- <?php 
-                    if(isset($_REQUEST['book_info'])){echo  $_REQUEST['book_info']; }
-                    else{echo "No book was found";}
-                ?> -->
-            </p>
+            <p class="details">
+            <p class="id"><?php echo $value['book_info'];?></p>
             <p class="mobile"><?php echo $_SESSION['mobile'];?></p>
+            </p>
+           
             
         </div>
     </section>

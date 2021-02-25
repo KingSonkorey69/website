@@ -230,7 +230,6 @@ if (isset($_GET['q'])) {
             //For debuging
             console.log({id});
             
-            
             const formData = new FormData();
             //
             formData.append('id', id);
