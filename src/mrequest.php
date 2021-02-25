@@ -4,6 +4,7 @@ include_once "crud.php";
 require "../src/mpesa/details.php";
 include_once '../debug.php';
 include_once "../vendor/autoload.php";
+
 use Monolog\Logger;
 use Monolog\Handler\StreamHandler;
 
@@ -16,7 +17,7 @@ $log->pushHandler(new StreamHandler(__DIR__ . '/../kimotho.log', Logger::INFO));
 // add records to the log
 $log->info(json_encode($_POST));
 
-        
+
 //
 //check if the requets is post 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -59,8 +60,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }else{
     http_response_code(404);
     $arr = [
-    "message" => "this is an error"
+        "message" => "this is an error"
     ];
     echo json_encode($arr);
 }
-
