@@ -22,6 +22,7 @@ $log->info(json_encode($_POST));
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     //
     $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
+    //get the id through the post['$id'];
     
         //  
         $d = new Details("254702129493", "200", "book_info");
