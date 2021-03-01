@@ -1,4 +1,6 @@
 <?php
+session_start();
+//get the number , get the tite id and books...
 require_once "database.php";
 include_once "crud.php";
 require "../src/mpesa/details.php";
@@ -18,8 +20,8 @@ $log->pushHandler(new StreamHandler(__DIR__ . '/../kimotho.log', Logger::INFO));
 $log->info(json_encode($_POST));
 
 
-// //
-// //check if the requets is post 
+//
+//check if the requets is post 
 if (isset($_POST['id'])) {
     //
     $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
