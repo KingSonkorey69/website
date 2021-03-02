@@ -1,5 +1,4 @@
 <?php
-session_start();
 include_once "../src/mrequest.php";
 ?>
 <!DOCTYPE html>
@@ -16,7 +15,8 @@ include_once "../src/mrequest.php";
     <section class="mreq">
     <div>
             <p class="details">
-            <p class="id"><?php echo ['book_info'][0];?></p>
+            <!-- <p class="id"><?php echo ['book_title'][0];?></p>
+            <p class="id"><?php echo [$book][0];?></p> -->
             <p class="mobile"><?php echo $_SESSION['mobile'];?></p>
             </p>
            

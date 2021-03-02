@@ -1,8 +1,9 @@
 <?php
 session_start();
+include_once "crud.php";
 //get the number , get the tite id and books...
 require_once "database.php";
-include_once "crud.php";
+
 require "../src/mpesa/details.php";
 include_once '../debug.php';
 include_once "../vendor/autoload.php";
@@ -17,7 +18,7 @@ $log = new Logger('name');
 //specify where to log the error and  also put the name of the file.
 $log->pushHandler(new StreamHandler(__DIR__ . '/../kimotho.log', Logger::INFO));
 // add records to the log
-$log->info(json_encode($_POST));
+$log->info(json_encode($purchase));
 
 
 //
@@ -36,7 +37,11 @@ if (isset($_POST['id'])) {
     $book = $crud->getBooks($id);
 
     //create a new details object. it requires 3parameters mobile->gotten from sessions,  price->gotten from getBooks and title->gotten from getBooks 
-    $purchase = new Details("user mobile", "book price", "book title"); //replace with actual values
+    $purchase = new Details(
+        $_SESSION['mobile'],
+         $book, 
+         $book
+    ); //replace with actual values
     $stk = new Stk($purchase);
 
     //return the mpesa result

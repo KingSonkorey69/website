@@ -2,7 +2,7 @@
 session_start();
  
 include_once "crud.php";
-include_once "mrequest.php";
+
 
 //get the data from the server 
 if (isset($_GET['q'])) {
