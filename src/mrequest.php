@@ -39,8 +39,8 @@ if (isset($_POST['id'])) {
     //create a new details object. it requires 3parameters mobile->gotten from sessions,  price->gotten from getBooks and title->gotten from getBooks 
     $purchase = new Details(
         $_SESSION['mobile'],
-         $book, 
-         $book
+         $book["book_price"], 
+         $book["book_title"]
     ); //replace with actual values
     $stk = new Stk($purchase);
 
