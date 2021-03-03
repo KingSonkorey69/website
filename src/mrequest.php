@@ -18,7 +18,7 @@ $log = new Logger('name');
 //specify where to log the error and  also put the name of the file.
 $log->pushHandler(new StreamHandler(__DIR__ . '/../kimotho.log', Logger::INFO));
 // add records to the log
-$log->info(json_encode($purchase));
+$log->info(json_encode($_POST));
 
 
 //
