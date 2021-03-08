@@ -1,9 +1,10 @@
 <?php
+//
 session_start();
- 
+//
+//
 include_once "crud.php";
-
-
+//
 //get the data from the server 
 if (isset($_GET['q'])) {
     //
@@ -13,13 +14,11 @@ if (isset($_GET['q'])) {
     $id = $_GET['q'];
     //getting the getbooks and also giving it the id
     $value = $crud->getBooks($id)[0];
-   
 } else {
     //
     //echo an error message if we didnt get here
     die("you do not have the data");
 }
-
 ?>
 
 <!DOCTYPE html>
